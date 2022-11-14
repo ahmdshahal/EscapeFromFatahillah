@@ -7,10 +7,11 @@ using UnityEngine.InputSystem;
 public class InputManager : MonoBehaviour
 {
     private PlayerInput playerInput;
-    private PlayerInput.OnFootActions onFootActions;
     private PlayerController playerController;
     private PlayerLook playerLook;
-    
+
+    public PlayerInput.OnFootActions onFootActions;
+
     void Awake()
     {
         playerInput = new PlayerInput();
