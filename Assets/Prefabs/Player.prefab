@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 4389937456706390549}
   - component: {fileID: 403844340205243}
   - component: {fileID: 5975955647414972109}
+  - component: {fileID: 6336974907271808406}
+  - component: {fileID: 3235566107189100757}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -148,6 +150,34 @@ MonoBehaviour:
   cam: {fileID: 6265135444639785149}
   xSensitivity: 30
   ySensitivity: 30
+--- !u!114 &6336974907271808406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6265135444109190960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22d4456a5e25c934a89f13fda73f0e54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distance: 3
+  mask:
+    serializedVersion: 2
+    m_Bits: 64
+--- !u!114 &3235566107189100757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6265135444109190960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 847307fbd0a09d94b8430dcda5b05564, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6265135444639785151
 GameObject:
   m_ObjectHideFlags: 0
