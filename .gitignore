@@ -2,6 +2,9 @@ Library/*
 Logs/* 
 Temp/* 
 obj/*
+
+# Visual Studio cache directory
+.vs/
  
 .vsconfig 
 *.sln 
