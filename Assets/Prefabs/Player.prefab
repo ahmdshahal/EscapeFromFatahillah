@@ -166,6 +166,10 @@ MonoBehaviour:
   mask:
     serializedVersion: 2
     m_Bits: 64
+  timerUI: {fileID: 0}
+  timerText: {fileID: 0}
+  imgTimer: {fileID: 0}
+  timerValue: 0
 --- !u!114 &3235566107189100757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -178,6 +182,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 847307fbd0a09d94b8430dcda5b05564, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  prompText: {fileID: 0}
 --- !u!1 &6265135444639785151
 GameObject:
   m_ObjectHideFlags: 0
