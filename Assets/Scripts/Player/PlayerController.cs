@@ -57,4 +57,9 @@ public class PlayerController : MonoBehaviour
         else
             speed = 5;
     }
+
+    public void Pause()
+    {
+        Time.timeScale = 0;
+    }
 }

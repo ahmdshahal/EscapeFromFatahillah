@@ -53,13 +53,15 @@ public class PlayerInteract : MonoBehaviour
             {
                 Interactable interactable = hitInfo.collider.GetComponent<Interactable>();
                 playerUI.UpdateText(interactable.promptMessage);
-                if (inputManager.onFootActions.Interact.IsPressed())
+
+                if (interactable.timer == 0)
                 {
-                    if (interactable.timer == 0)
-                    {
-                        interactable.BaseInteract();
-                    }
-                    else
+                    if (inputManager.onFootActions.Interact.triggered) interactable.BaseInteract();
+                    return;
+                }
+                else
+                {
+                    if (inputManager.onFootActions.Interact.IsPressed())
                     {
                         timerText.text = timerValue.ToString("0.0");
                         if (timerValue <= 0)
@@ -79,17 +81,19 @@ public class PlayerInteract : MonoBehaviour
                                 {
                                     interactable.BaseInteract();
                                     isCount = false;
+                                    return;
                                 }
                             }
                         }
                     }
+                    else
+                    {
+                        isCount = false;
+                        timerUI.SetActive(false);
+                        timerValue = 0;
+                    }
                 }
-                else
-                {
-                    isCount = false;
-                    timerUI.SetActive(false);
-                    timerValue = 0;
-                }
+                
             }
         }
         else
