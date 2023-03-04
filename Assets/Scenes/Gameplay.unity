@@ -1530,6 +1530,123 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8723736344447605153, guid: ea6e59eeb3aa4194995007b8d96ecbd5, type: 3}
   m_PrefabInstance: {fileID: 281845623}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &314190172
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 314190173}
+  - component: {fileID: 314190177}
+  - component: {fileID: 314190176}
+  - component: {fileID: 314190175}
+  - component: {fileID: 314190174}
+  m_Layer: 6
+  m_Name: Key
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &314190173
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 314190172}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5.81, y: 0.5423312, z: -2.5150602}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1382713705}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &314190174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 314190172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c60c3b3058585c4fa0d5b99e8387768, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  useEvents: 0
+  promptMessage: Ambil
+  timer: 0
+  hand: {fileID: 688625851}
+  pickID: Green Key
+  pickDropSystem: {fileID: 1787128711}
+  isKey: 1
+--- !u!65 &314190175
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 314190172}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &314190176
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 314190172}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 9095899143662246272, guid: aea1bde980a3af943b91dfcbbb59675d, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &314190177
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 314190172}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &337361381
 GameObject:
   m_ObjectHideFlags: 0
@@ -3936,6 +4053,8 @@ MonoBehaviour:
   pickDropSystem: {fileID: 1787128711}
   dropID: Puzzle 1
   dropPoint: {fileID: 67140219}
+  isDoor: 0
+  LoadToScene: 
 --- !u!65 &696123087
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4369,6 +4488,7 @@ MonoBehaviour:
   hand: {fileID: 688625851}
   pickID: Puzzle 1
   pickDropSystem: {fileID: 1787128711}
+  isKey: 0
 --- !u!1001 &736863068
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5454,6 +5574,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: a82b78ffd6279724dab5e944b181168e, type: 2}
     - target: {fileID: -3345651356163980188, guid: 87e5e86c06c2c644cb28137d1109c5b4, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -3345651356163980188, guid: 87e5e86c06c2c644cb28137d1109c5b4, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -5554,6 +5678,10 @@ PrefabInstance:
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 5092708244707826562, guid: 87e5e86c06c2c644cb28137d1109c5b4, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5092708244707826562, guid: 87e5e86c06c2c644cb28137d1109c5b4, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -5584,6 +5712,10 @@ PrefabInstance:
     - target: {fileID: 8392523003221983095, guid: 87e5e86c06c2c644cb28137d1109c5b4, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8617835151230357669, guid: 87e5e86c06c2c644cb28137d1109c5b4, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8617835151230357669, guid: 87e5e86c06c2c644cb28137d1109c5b4, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -9245,6 +9377,38 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -231140442016029500, guid: 87e5e86c06c2c644cb28137d1109c5b4, type: 3}
   m_PrefabInstance: {fileID: 898293060}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1382713704
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1382713705}
+  m_Layer: 0
+  m_Name: Key
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1382713705
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1382713704}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.5066965, y: 0.3876688, z: 6.21506}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 314190173}
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1390494352
 GameObject:
   m_ObjectHideFlags: 0
@@ -10391,6 +10555,44 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1526546606 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -1442730713245454409, guid: 87e5e86c06c2c644cb28137d1109c5b4, type: 3}
+  m_PrefabInstance: {fileID: 898293060}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1526546607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 803715211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 695a5f02b7aac6d4d8fc0686f0d00f95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  useEvents: 0
+  promptMessage: Buka dengan Kunci
+  timer: 0
+  pickDropSystem: {fileID: 1787128711}
+  dropID: Green Key
+  dropPoint: {fileID: 1526546606}
+  isDoor: 1
+  LoadToScene: Sliding Puzzle
+--- !u!65 &1526546608
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 803715211}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 8.2, y: 0.35824594, z: 10.299999}
+  m_Center: {x: 0, y: -1.4542199, z: 4.1499996}
 --- !u!1001 &1534265144
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11661,6 +11863,92 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1746774742}
   m_CullTransparentMesh: 1
+--- !u!4 &1751385991 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 418086715792842097, guid: 87e5e86c06c2c644cb28137d1109c5b4, type: 3}
+  m_PrefabInstance: {fileID: 898293060}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1751385992 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8617835151230357669, guid: 87e5e86c06c2c644cb28137d1109c5b4, type: 3}
+  m_PrefabInstance: {fileID: 898293060}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1751385993 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8135426111661466322, guid: 87e5e86c06c2c644cb28137d1109c5b4, type: 3}
+  m_PrefabInstance: {fileID: 898293060}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1751385994 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5092708244707826562, guid: 87e5e86c06c2c644cb28137d1109c5b4, type: 3}
+  m_PrefabInstance: {fileID: 898293060}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1751385995
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1751385992}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.1000004, y: 0.48195067, z: 10.299999}
+  m_Center: {x: -2.0500002, y: -1.5348743, z: 4.1499996}
+--- !u!114 &1751385996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1751385992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 695a5f02b7aac6d4d8fc0686f0d00f95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  useEvents: 0
+  promptMessage: Blue Door
+  timer: 0
+  pickDropSystem: {fileID: 1787128711}
+  dropID: Blue Key
+  dropPoint: {fileID: 1751385991}
+  isDoor: 1
+  LoadToScene: Sliding Puzzle
+--- !u!65 &1751385997
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1751385994}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.1000004, y: 0.4759728, z: 10.299999}
+  m_Center: {x: 2.0499997, y: -1.5340285, z: 4.1499996}
+--- !u!114 &1751385998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1751385994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 695a5f02b7aac6d4d8fc0686f0d00f95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  useEvents: 0
+  promptMessage: Blue Door
+  timer: 0
+  pickDropSystem: {fileID: 1787128711}
+  dropID: Blue Key
+  dropPoint: {fileID: 1751385993}
+  isDoor: 1
+  LoadToScene: Sliding Puzzle
 --- !u!1001 &1755635030
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12728,6 +13016,8 @@ MonoBehaviour:
   pickDropSystem: {fileID: 1787128711}
   dropID: Puzzle 2
   dropPoint: {fileID: 1055884721}
+  isDoor: 0
+  LoadToScene: 
 --- !u!65 &1869085070
 BoxCollider:
   m_ObjectHideFlags: 0
