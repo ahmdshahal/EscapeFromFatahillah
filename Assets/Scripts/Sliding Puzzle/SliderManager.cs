@@ -52,10 +52,11 @@ public class SliderManager : MonoBehaviour
     private void Shuffle()
     {
         //Looping 500x to shuffle the puzzle
-        for (int i = 0; i < 100; i++)
+        for (int i = 0; i < 500; i++)
         {
             //Make random tile button index and click the tile button
             int randomIndex = Random.Range(0, tilesPuzzle.Length);
+            Debug.Log(randomIndex);
             tilesPuzzle[randomIndex].onClick.Invoke();
         }
     }
