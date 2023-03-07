@@ -18,6 +18,7 @@ public class CodePanel : MonoBehaviour
 	{
 		codeText.text = codeTextValue;
 
+		//Gaperlu backspace, enter buat ngereset sekaligus ngecek
 		if (codeTextValue.Length == 4)
 		{
 			if (codeTextValue == "1837")
