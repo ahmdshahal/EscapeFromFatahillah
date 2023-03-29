@@ -9,4 +9,9 @@ public class MenuController : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+
+    public void GoToScene(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
+    }
 }

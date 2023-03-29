@@ -8,6 +8,7 @@ public class InputManager : MonoBehaviour
 {
     private PlayerInput playerInput;
     private PlayerController playerController;
+    private HintSystem hintSystem;
     private PlayerLook playerLook;
 
     public PlayerInput.OnFootActions onFootActions;
@@ -21,8 +22,10 @@ public class InputManager : MonoBehaviour
 
         playerController = GetComponent<PlayerController>();
         playerLook = GetComponent<PlayerLook>();
+        hintSystem = GetComponent<HintSystem>();
 
         onFootActions.Jump.performed += ctx => playerController.Jump();
+        onFootActions.Hint.performed += ctx => StartCoroutine(hintSystem.HintInstinct());
         onFootActions.Sprint.performed += ctx => playerController.Sprint();
 
         onGameActions.Pause.performed += ctx => playerController.Pause();
