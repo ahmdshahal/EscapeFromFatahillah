@@ -1,40 +1,63 @@
-using System;
 using UnityEngine;
+using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
 public class SliderManager : MonoBehaviour
 {
+    [SerializeField] private RectTransform emptySpace;
     [SerializeField] private Transform[] tiles;
-    
-    public int correctPuzzle;
+    [SerializeField] private Button[] tilesPuzzle;
+    [SerializeField] private int correctPuzzle;
 
     private void Start()
     {
         Shuffle();
     }
 
-    public void Shuffle()
+    public void SlidePuzzle(Slider button)
     {
-        for (int j = 0; j < 10; j++)
+        //Check position distance between empty space and clicked button
+        var distance = Vector3.Distance(emptySpace.localPosition, button.targetPosition);
+        
+        if (distance <= 55)
         {
-            for (int i = 0; i < tiles.Length; i++)
-            {
-                int randomIndex = Random.Range(0, tiles.Length);
-                var distance = Vector3.Distance(tiles[i].position, tiles[randomIndex].position);
+            //Swap Position clicked Button and empty space 
+            (button.targetPosition, emptySpace.localPosition) = (emptySpace.localPosition, button.targetPosition);
             
-                if (distance <= 20)
-                {
-                    (tiles[i].transform.position, tiles[randomIndex].transform.position) = (tiles[randomIndex].transform.position, tiles[i].transform.position);
-                }
+            //Check Correct Puzzle
+            if (button.correctPosition == button.targetPosition)
+            {
+                correctPuzzle++;
+                button.inRightPlace = true;
             }
+            else if(button.correctPosition != button.targetPosition && button.inRightPlace)
+            {
+                correctPuzzle--;
+                button.inRightPlace = false;
+            }
+            
+            //Check The Puzzle is solved
+            PuzzleSolvedChecker();
         }
     }
 
-    private void Update()
+    private void PuzzleSolvedChecker()
     {
-        if (correctPuzzle == 8)
+        if (correctPuzzle == tiles.Length - 1)
         {
-            Debug.Log("Solved!");
+            Debug.Log("Solved");
+        }
+    }
+
+    private void Shuffle()
+    {
+        //Looping 500x to shuffle the puzzle
+        for (int i = 0; i < 500; i++)
+        {
+            //Make random tile button index and click the tile button
+            int randomIndex = Random.Range(0, tilesPuzzle.Length);
+            Debug.Log(randomIndex);
+            tilesPuzzle[randomIndex].onClick.Invoke();
         }
     }
 }

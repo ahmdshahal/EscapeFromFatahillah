@@ -36,7 +36,7 @@ public class PlayerInteract : MonoBehaviour
         inputManager= GetComponent<InputManager>();
     }
 
-    void FixedUpdate()
+    void Update()
     {
         InteractObject();
     }
