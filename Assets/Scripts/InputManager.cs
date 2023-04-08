@@ -24,7 +24,7 @@ public class InputManager : MonoBehaviour
         playerLook = GetComponent<PlayerLook>();
         hintSystem = GetComponent<HintSystem>();
 
-        onFootActions.Jump.performed += ctx => playerController.Jump();
+        //onFootActions.Jump.performed += ctx => playerController.Crouch();
         onFootActions.Hint.performed += ctx => StartCoroutine(hintSystem.HintInstinct());
         onFootActions.Sprint.performed += ctx => playerController.Sprint();
 

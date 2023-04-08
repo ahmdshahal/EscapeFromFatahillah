@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
@@ -12,6 +13,8 @@ public class PlayerInteract : MonoBehaviour
     private float distance = 3f;
     [SerializeField]
     private LayerMask mask;
+    [SerializeField]
+    private LayerMask dragMask;
 
     [SerializeField]
     private GameObject timerUI;
@@ -21,6 +24,8 @@ public class PlayerInteract : MonoBehaviour
     private Image imgTimer;
     [SerializeField]
     private float timerValue;
+    [SerializeField]
+    private Transform hand;
 
     private float countTime;
     private bool isCount;
@@ -102,6 +107,23 @@ public class PlayerInteract : MonoBehaviour
             timerUI.SetActive(false);
             playerUI.UpdateText(string.Empty);
             timerValue = 0;
+        }
+
+        if (Physics.Raycast(ray, out hitInfo, distance, dragMask))
+        {
+            if (inputManager.onFootActions.Interact.IsPressed())
+            {
+                Debug.Log("Geser");
+                hitInfo.transform.SetParent(hand.transform);
+            }
+            else
+            {
+                hand.DetachChildren();
+            }
+        }
+        else
+        {
+            hand.DetachChildren();
         }
 
     }
