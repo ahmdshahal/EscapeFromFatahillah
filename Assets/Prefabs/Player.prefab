@@ -213,6 +213,7 @@ Transform:
   m_Children:
   - {fileID: 1367860680523669944}
   - {fileID: 1367860681224049494}
+  - {fileID: 8295043486345519724}
   m_Father: {fileID: 1367860681488408815}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -95.956, z: 0}
@@ -606,6 +607,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1988e389cf2f4e04e832136c7801f6f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cam: {fileID: 1367860680962074270}
   speed: 5
   gravity: -9.8
   jumpHeight: 1.5
@@ -640,10 +642,14 @@ MonoBehaviour:
   mask:
     serializedVersion: 2
     m_Bits: 64
+  dragMask:
+    serializedVersion: 2
+    m_Bits: 128
   timerUI: {fileID: 5549474472467517508}
   timerText: {fileID: 5549474472323899338}
   imgTimer: {fileID: 5549474471162714770}
   timerValue: 0
+  dragHand: {fileID: 8295043486345519724}
 --- !u!114 &7561173581255509750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -681,35 +687,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfc66b6d21c186e469be8fb523e510e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactObjects:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  interactObjects: []
   hintMat: {fileID: 2100000, guid: 32a76832b79e84347ad9df08b12709c3, type: 2}
   time: 3
 --- !u!1 &5549474471162714768
@@ -1038,3 +1016,34 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &5628402755174622921
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8295043486345519724}
+  m_Layer: 0
+  m_Name: DragHand
+  m_TagString: Untagged
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8295043486345519724
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5628402755174622921}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.6, y: -0.4, z: 1.25}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1367860680962074265}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

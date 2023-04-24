@@ -5,27 +5,20 @@ using System.Runtime.CompilerServices;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class PlayerInteract : MonoBehaviour
 {
-    [SerializeField]
-    private float distance = 3f;
-    [SerializeField]
-    private LayerMask mask;
-    [SerializeField]
-    private LayerMask dragMask;
+    [SerializeField] private float distance = 3f;
+    [SerializeField] private LayerMask mask;
+    [SerializeField] private LayerMask dragMask;
 
-    [SerializeField]
-    private GameObject timerUI;
-    [SerializeField]
-    private TMP_Text timerText;
-    [SerializeField]
-    private Image imgTimer;
-    [SerializeField]
-    private float timerValue;
-    [SerializeField]
-    private Transform hand;
+    [SerializeField] private GameObject timerUI;
+    [SerializeField] private TMP_Text timerText;
+    [SerializeField] private Image imgTimer;
+    [SerializeField] private float timerValue;
+    [SerializeField] private Transform dragHand;
 
     private float countTime;
     private bool isCount;
@@ -37,8 +30,8 @@ public class PlayerInteract : MonoBehaviour
     void Awake()
     {
         cam = GetComponent<PlayerLook>().cam;
-        playerUI= GetComponent<PlayerUI>();
-        inputManager= GetComponent<InputManager>();
+        playerUI = GetComponent<PlayerUI>();
+        inputManager = GetComponent<InputManager>();
     }
 
     void Update()
@@ -98,7 +91,7 @@ public class PlayerInteract : MonoBehaviour
                         timerValue = 0;
                     }
                 }
-                
+
             }
         }
         else
@@ -114,16 +107,16 @@ public class PlayerInteract : MonoBehaviour
             if (inputManager.onFootActions.Interact.IsPressed())
             {
                 Debug.Log("Geser");
-                hitInfo.transform.SetParent(hand.transform);
+                hitInfo.transform.SetParent(dragHand.transform);
             }
             else
             {
-                hand.DetachChildren();
+                dragHand.DetachChildren();
             }
         }
         else
         {
-            hand.DetachChildren();
+            dragHand.DetachChildren();
         }
 
     }
