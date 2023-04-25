@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class DropObject : Interactable
 {
     [SerializeField] private PickDropSystem pickDropSystem;
+    [SerializeField] private MainMenuTask mainMenuTask;
     [SerializeField] private string dropID;
     [SerializeField] private Transform dropPoint;
     [SerializeField] private bool isDoor;
@@ -28,7 +29,11 @@ public class DropObject : Interactable
                     pickDropSystem.pickObject.transform.SetParent(dropPoint);
                     pickDropSystem.pickObject.transform.position = dropPoint.position;
                     pickDropSystem.pickObject.transform.rotation = dropPoint.rotation;
+
+                    pickDropSystem.pickObject.layer = 0;
                 }
+                
+                mainMenuTask.PuzzleCompleted();
             }
         }
     }

@@ -5,35 +5,36 @@ using UnityEngine;
 
 public class HintSystem : MonoBehaviour
 {
-    [SerializeField] private GameObject[] interactObjects;
-    [SerializeField] private Material hintMat;
-    [SerializeField] private float time;
-    
-    private List<Material> normalMat = new();
+    public Renderer[] hintObjects; // list dari semua objek hint
+    private Material[] originalMaterials; // list dari material asli dari setiap objek hint
 
-    private void Awake()
+    private void Start()
     {
-        foreach (var t in interactObjects)
+        originalMaterials = new Material[hintObjects.Length];
+        for (int i = 0; i < hintObjects.Length; i++)
         {
-            var rend = t.GetComponent<Renderer>();
-            normalMat.Add(rend.material);
+            originalMaterials[i] = hintObjects[i].material; // menyimpan material asli dari setiap objek hint
         }
     }
 
-    public IEnumerator HintInstinct()
+    // method untuk mengubah material dari semua objek hint
+    public void ChangeHintMaterial(Material hintMaterial, float duration)
     {
-        foreach (var o in interactObjects)
+        StartCoroutine(ChangeHintMaterialCoroutine(hintMaterial, duration));
+    }
+
+    private IEnumerator ChangeHintMaterialCoroutine(Material hintMaterial, float duration)
+    {
+        foreach (Renderer hintObject in hintObjects)
         {
-            var rend = o.GetComponent<Renderer>();
-            rend.material = hintMat;
+            hintObject.material = hintMaterial; // mengubah material dari objek hint
         }
 
-        yield return new WaitForSeconds(time);
+        yield return new WaitForSeconds(duration);
 
-        for (var i = 0; i < interactObjects.Length; i++)
+        for (int i = 0; i < hintObjects.Length; i++)
         {
-            var rend = interactObjects[i].GetComponent<Renderer>();
-            rend.material = normalMat[i];
+            hintObjects[i].material = originalMaterials[i]; // mengembalikan material objek hint ke material aslinya
         }
     }
 }
