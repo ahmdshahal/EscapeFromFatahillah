@@ -9,9 +9,10 @@ public class DropObject : Interactable
     [SerializeField] private PickDropSystem pickDropSystem;
     [SerializeField] private MainMenuTask mainMenuTask;
     [SerializeField] private string dropID;
+    [SerializeField] private string LoadToScene;
+    [SerializeField] private int scene;
     [SerializeField] private Transform dropPoint;
     [SerializeField] private bool isDoor;
-    [SerializeField] private string LoadToScene;
     
     protected override void Interact()
     {
@@ -32,8 +33,22 @@ public class DropObject : Interactable
 
                     pickDropSystem.pickObject.layer = 0;
                 }
-                
-                mainMenuTask.PuzzleCompleted();
+
+                switch (scene)
+                {
+                    case 0:
+                        mainMenuTask.PuzzleCompleted();
+                        break;
+                    case 1:
+                        
+                        break;
+                    case 2:
+                        
+                        break;
+                    case 3:
+                        
+                        break;
+                }
             }
         }
     }

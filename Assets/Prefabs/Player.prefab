@@ -481,6 +481,7 @@ GameObject:
   - component: {fileID: 7561173581255509745}
   - component: {fileID: 7561173581255509744}
   - component: {fileID: 3592690509867010107}
+  - component: {fileID: 6088650979473950510}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -704,8 +705,23 @@ MonoBehaviour:
   hintSystem: {fileID: 7561173581255509744}
   hintMaterial: {fileID: 2100000, guid: 32a76832b79e84347ad9df08b12709c3, type: 2}
   currentTaskIndex: 0
-  taskPuzzlesList: []
   hintDuration: 3
+  taskPuzzlesList: []
+--- !u!114 &6088650979473950510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1367860681488408851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26335405bb0c69c4abec93d30a0a11bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 
+  pickObject: {fileID: 0}
+  isEmpty: 0
 --- !u!1 &5549474471162714768
 GameObject:
   m_ObjectHideFlags: 0

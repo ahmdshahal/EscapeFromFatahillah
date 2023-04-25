@@ -274,6 +274,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1367860680523669944, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
   m_PrefabInstance: {fileID: 741674056}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &741674058 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6088650979473950510, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+  m_PrefabInstance: {fileID: 741674056}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26335405bb0c69c4abec93d30a0a11bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &744457161 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4902390569410494616, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
@@ -1144,7 +1155,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 543450652959799478}
-  - component: {fileID: 919132148687905293}
   m_Layer: 0
   m_Name: puzzlemainmenu
   m_TagString: Untagged
@@ -1152,21 +1162,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &919132148687905293
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 919132148687905292}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 26335405bb0c69c4abec93d30a0a11bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  id: 
-  pickObject: {fileID: 0}
-  isEmpty: 0
 --- !u!4 &958049588282153661
 Transform:
   m_ObjectHideFlags: 0
@@ -3428,7 +3423,7 @@ MonoBehaviour:
   timer: 0
   hand: {fileID: 893313539}
   pickID: penta
-  pickDropSystem: {fileID: 919132148687905293}
+  pickDropSystem: {fileID: 741674058}
   isKey: 0
 --- !u!65 &5262417925220694601
 BoxCollider:
@@ -4095,7 +4090,7 @@ MonoBehaviour:
   useEvents: 0
   promptMessage: Letakkan di sini!
   timer: 0
-  pickDropSystem: {fileID: 919132148687905293}
+  pickDropSystem: {fileID: 741674058}
   mainMenuTask: {fileID: 1658890987}
   dropID: kotak
   dropPoint: {fileID: 2671904947826447589}
@@ -4488,7 +4483,7 @@ MonoBehaviour:
   timer: 0
   hand: {fileID: 893313539}
   pickID: kotak
-  pickDropSystem: {fileID: 919132148687905293}
+  pickDropSystem: {fileID: 741674058}
   isKey: 0
 --- !u!65 &6914781848677967148
 BoxCollider:
@@ -4874,7 +4869,7 @@ MonoBehaviour:
   useEvents: 0
   promptMessage: Letakkan di sini!
   timer: 0
-  pickDropSystem: {fileID: 919132148687905293}
+  pickDropSystem: {fileID: 741674058}
   mainMenuTask: {fileID: 1658890987}
   dropID: segitiga
   dropPoint: {fileID: 452730169940237489}
@@ -5280,7 +5275,7 @@ MonoBehaviour:
   timer: 0
   hand: {fileID: 893313539}
   pickID: segitiga
-  pickDropSystem: {fileID: 919132148687905293}
+  pickDropSystem: {fileID: 741674058}
   isKey: 0
 --- !u!65 &8188053412647384440
 BoxCollider:
@@ -5758,7 +5753,7 @@ MonoBehaviour:
   useEvents: 0
   promptMessage: Letakkan di sini!
   timer: 0
-  pickDropSystem: {fileID: 919132148687905293}
+  pickDropSystem: {fileID: 741674058}
   mainMenuTask: {fileID: 1658890987}
   dropID: penta
   dropPoint: {fileID: 8832277846204306098}
