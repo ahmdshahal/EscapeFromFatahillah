@@ -15,7 +15,10 @@ public class TaskManager : MonoBehaviour
 
     private void Start()
     {
-        SetHintObjectsByTaskIndex(); // mengatur objek hint pada hint system sesuai dengan tugas yang sedang aktif
+        if (taskPuzzlesList != null)
+        {
+            SetHintObjectsByTaskIndex(); // mengatur objek hint pada hint system sesuai dengan tugas yang sedang aktif
+        }
     }
 
     // method untuk menyelesaikan tugas yang sedang aktif
@@ -31,17 +34,20 @@ public class TaskManager : MonoBehaviour
     // method untuk mengatur objek hint pada hint system sesuai dengan tugas yang sedang aktif
     private void SetHintObjectsByTaskIndex()
     {
-        List<Renderer> currentTaskHintObjects = new List<Renderer>();
-        
-        for (int j = 0; j < taskPuzzlesList[currentTaskIndex].hintObjects.Length; j++)
+        if (taskPuzzlesList != null)
         {
-            if (j < taskPuzzlesList[currentTaskIndex].hintObjects.Length)
+            List<Renderer> currentTaskHintObjects = new List<Renderer>();
+        
+            for (int j = 0; j < taskPuzzlesList[currentTaskIndex].hintObjects.Length; j++)
             {
-                currentTaskHintObjects.Add(taskPuzzlesList[currentTaskIndex].hintObjects[j]); // menambahkan objek hint dari tugas yang sedang aktif
+                if (j < taskPuzzlesList[currentTaskIndex].hintObjects.Length)
+                {
+                    currentTaskHintObjects.Add(taskPuzzlesList[currentTaskIndex].hintObjects[j]); // menambahkan objek hint dari tugas yang sedang aktif
+                }
             }
-        }
 
-        hintSystem.hintObjects = currentTaskHintObjects.ToArray(); // mengatur objek hint pada hint system sesuai dengan tugas yang sedang aktif
+            hintSystem.hintObjects = currentTaskHintObjects.ToArray(); // mengatur objek hint pada hint system sesuai dengan tugas yang sedang aktif
+        }
     }
 
     // method untuk menampilkan hint pada objek hint

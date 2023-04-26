@@ -1,8 +1,8 @@
 using UnityEngine;
-using UnityEngine.Serialization;
 
 public class PickObject : Interactable
 {
+    [SerializeField] private Vector3 desiredRotation; // Menyimpan rotasi yang diinginkan
     [SerializeField] private Transform hand;
     [SerializeField] private string pickID;
     [SerializeField] private PickDropSystem pickDropSystem;
@@ -13,17 +13,24 @@ public class PickObject : Interactable
     /// </summary>
     protected override void Interact()
     {
+        // Cek apakah tangan pemain kosong
         if (pickDropSystem.isEmpty)
         {
+            // Jika tangan kosong, ambil objek dan tampilkan di tangan pemain
             pickDropSystem.id = pickID;
             pickDropSystem.pickObject = gameObject;
             pickDropSystem.isEmpty = false;
             
-            if 
-                (isKey)gameObject.SetActive(false);
+            if (isKey)
+            {
+                // Jika objek yang diambil adalah kunci, nonaktifkan objek
+                gameObject.SetActive(false);
+            }
             else
             {
-                transform.position = hand.position; 
+                // Jika bukan kunci, letakkan objek di tangan pemain
+                transform.position = hand.position;
+                transform.rotation = Quaternion.Euler(desiredRotation); // Mengatur rotasi objek
                 transform.SetParent(hand);
             }
         }
