@@ -2,11 +2,11 @@ using UnityEngine;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
-public class SliderManager : MonoBehaviour
+public class SlidePuzzleManager : MonoBehaviour
 {
-    [SerializeField] private RectTransform emptySpace;
+    [SerializeField] private Transform emptySpace;
     [SerializeField] private Transform[] tiles;
-    [SerializeField] private Button[] tilesPuzzle;
+    [SerializeField] private SlidePuzzle[] tilesPuzzle;
     [SerializeField] private int correctPuzzle;
 
     private void Start()
@@ -14,34 +14,34 @@ public class SliderManager : MonoBehaviour
         Shuffle();
     }
 
-    public void SlidePuzzle(Slider button)
+    public void SlidePuzzle(SlidePuzzle puzzle)
     {
         //Check position distance between empty space and clicked button
-        var distance = Vector3.Distance(emptySpace.localPosition, button.targetPosition);
+        var distance = Vector3.Distance(emptySpace.localPosition, puzzle.targetPosition);
         
         if (distance <= 55)
         {
             //Swap Position clicked Button and empty space 
-            (button.targetPosition, emptySpace.localPosition) = (emptySpace.localPosition, button.targetPosition);
+            (puzzle.targetPosition, emptySpace.localPosition) = (emptySpace.localPosition, puzzle.targetPosition);
             
             //Check Correct Puzzle
-            if (button.correctPosition == button.targetPosition)
+            if (puzzle.correctPosition == puzzle.targetPosition)
             {
                 correctPuzzle++;
-                button.inRightPlace = true;
+                puzzle.inRightPlace = true;
             }
-            else if(button.correctPosition != button.targetPosition && button.inRightPlace)
+            else if(puzzle.correctPosition != puzzle.targetPosition && puzzle.inRightPlace)
             {
                 correctPuzzle--;
-                button.inRightPlace = false;
+                puzzle.inRightPlace = false;
             }
             
             //Check The Puzzle is solved
-            PuzzleSolvedChecker();
+            PuzzleSolvedCheck();
         }
     }
 
-    private void PuzzleSolvedChecker()
+    private void PuzzleSolvedCheck()
     {
         if (correctPuzzle == tiles.Length - 1)
         {
@@ -57,7 +57,7 @@ public class SliderManager : MonoBehaviour
             //Make random tile button index and click the tile button
             int randomIndex = Random.Range(0, tilesPuzzle.Length);
             Debug.Log(randomIndex);
-            tilesPuzzle[randomIndex].onClick.Invoke();
+            tilesPuzzle[randomIndex].Slide();
         }
     }
 }
