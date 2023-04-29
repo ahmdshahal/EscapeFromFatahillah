@@ -691,7 +691,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hintSystem: {fileID: 7561173581255509744}
-  hintMaterial: {fileID: 2100000, guid: 32a76832b79e84347ad9df08b12709c3, type: 2}
+  hintMaterial: {fileID: 2100000, guid: 695ca3a6c4956bd4aa091f9e7ccb14f3, type: 2}
   currentTaskIndex: 0
   hintDuration: 3
   taskPuzzlesList: []

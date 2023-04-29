@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,16 +6,12 @@ using UnityEngine;
 public class HintSystem : MonoBehaviour
 {
     public Renderer[] hintObjects; // list dari semua objek hint
+    public bool canShowHint;
     private Dictionary<Renderer, Material[]> originalMaterials; // dictionary dari material asli dari setiap objek hint
 
     private void Start()
     {
-        originalMaterials = new Dictionary<Renderer, Material[]>();
-        foreach (Renderer hintObject in hintObjects)
-        {
-            Material[] materials = hintObject.materials;
-            originalMaterials.Add(hintObject, materials); // menyimpan material asli dari setiap objek hint
-        }
+        canShowHint = true;
     }
 
     /// <summary>
@@ -30,6 +27,14 @@ public class HintSystem : MonoBehaviour
     // method untuk mengubah material dari semua objek hint
     private IEnumerator ChangeHintMaterialCoroutine(Material hintMaterial, float duration)
     {
+        canShowHint = false;
+        originalMaterials = new Dictionary<Renderer, Material[]>();
+        foreach (Renderer hintObject in hintObjects)
+        {
+            Material[] materials = hintObject.materials;
+            originalMaterials.Add(hintObject, materials); // menyimpan material asli dari setiap objek hint
+        }
+        
         foreach (Renderer hintObject in hintObjects)
         {
             Material[] materials = hintObject.materials;
@@ -51,5 +56,7 @@ public class HintSystem : MonoBehaviour
                 if (originalMaterial != null) materials[j] = originalMaterial[j];
             hintObject.materials = materials;
         }
+
+        canShowHint = true;
     }
 }

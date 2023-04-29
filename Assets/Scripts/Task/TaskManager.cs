@@ -53,7 +53,10 @@ public class TaskManager : MonoBehaviour
     // method untuk menampilkan hint pada objek hint
     public void ShowHintOnHintObjects()
     {
-        hintSystem.ChangeHintMaterial(hintMaterial, hintDuration); // menampilkan hint pada objek hint
+        if (hintSystem.canShowHint)
+        {
+            hintSystem.ChangeHintMaterial(hintMaterial, hintDuration); // menampilkan hint pada objek hint
+        }
     }
 }
 
