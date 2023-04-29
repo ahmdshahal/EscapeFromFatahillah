@@ -3,19 +3,20 @@ using Random = UnityEngine.Random;
 
 public class SlidePuzzleManager : MonoBehaviour
 {
+    [SerializeField] private TaskManager taskManager;
     [SerializeField] private Transform emptySpace;
-    [SerializeField] private Transform[] tiles;
     [SerializeField] private SlidePuzzle[] tilesPuzzle;
     [SerializeField] private int correctPuzzle;
     [SerializeField] private Renderer lukisan;
     [SerializeField] private Material materialLukisan;
 
     private float minDistance;
+    private bool isSolved;
 
     private void Start()
     {
-        minDistance = Vector3.Distance(tilesPuzzle[0].correctPosition, tilesPuzzle[1].correctPosition);
-        Debug.Log(("Min Distance: " + minDistance));
+        isSolved = false;
+        minDistance = Vector3.Distance(tilesPuzzle[0].correctPosition, tilesPuzzle[1].correctPosition) + .1f;
         Shuffle();
     }
 
@@ -24,7 +25,7 @@ public class SlidePuzzleManager : MonoBehaviour
         //Check position distance between empty space and clicked button
         var distance = Vector3.Distance(emptySpace.localPosition, puzzle.targetPosition);
         
-        if (distance <= minDistance + .1f)
+        if (distance <= minDistance && !isSolved)
         {
             //Swap Position clicked Button and empty space 
             (puzzle.targetPosition, emptySpace.localPosition) = (emptySpace.localPosition, puzzle.targetPosition);
@@ -48,13 +49,16 @@ public class SlidePuzzleManager : MonoBehaviour
 
     private void PuzzleSolvedCheck()
     {
-        if (correctPuzzle == tiles.Length - 1)
+        if (correctPuzzle == tilesPuzzle.Length)
         {
+            isSolved = true;
             lukisan.material = materialLukisan;
             foreach (var puzzle in tilesPuzzle)
             {
                 puzzle.promptMessage = "Perhatikan lukisan!";
             }
+            
+            taskManager.CompleteCurrentTask();
         }
     }
 
