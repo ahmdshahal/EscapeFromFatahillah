@@ -18,7 +18,7 @@ public class SlidePuzzle : Interactable
 
     private void Update()
     {
-        transform.localPosition = Vector3.Lerp(transform.localPosition, targetPosition, 0.05f);
+        transform.localPosition = Vector3.Lerp(transform.localPosition, targetPosition, 5f * Time.deltaTime);
     }
 
     protected override void Interact()

@@ -10,9 +10,11 @@ public class PlayerController : MonoBehaviour
     private CharacterController controller;
     private InputManager inputManager;
     private Vector3 playerVelocity;
+    private Vector3 originalPositionCam;
     private bool isGrounded;
     private bool isCrouch;
     private bool isSprint;
+    private bool isPause;
 
     public float speed = 5f;
     public float gravity = -9.8f;
@@ -26,8 +28,10 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
-        isCrouch = true;
+        isCrouch = false;
         isSprint = false;
+
+        originalPositionCam = cam.transform.localPosition;
     }
 
     void Update()
@@ -67,24 +71,28 @@ public class PlayerController : MonoBehaviour
     public void Crouch()
     {
         isCrouch = !isCrouch;
-        
-        if(!isCrouch)
-            cam.transform.localPosition = new Vector3(cam.transform.localPosition.x, 0.65f, cam.transform.localPosition.z);
-        else
-            cam.transform.localPosition = new Vector3(cam.transform.localPosition.x, 1.8f, cam.transform.localPosition.z);
+
+        cam.transform.localPosition = isCrouch ? originalPositionCam / 2.7f : originalPositionCam;
+        speed = isCrouch ? 3 : 5;
     }
 
     public void Sprint()
     {
         isSprint = !isSprint;
-        if (isSprint)
+        
+        if (isSprint && !isCrouch)
             speed = 8;
-        else
+        else if(!isSprint && !isCrouch)
             speed = 5;
     }
 
     public void Pause()
     {
-        Time.timeScale = 0;
+        isPause = !isPause;
+        
+        if(isPause)
+            Time.timeScale = 0;
+        else
+            Time.timeScale = 1;
     }
 }
