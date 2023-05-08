@@ -31,19 +31,24 @@ public class SlidePuzzleManager : MonoBehaviour
             (puzzle.targetPosition, emptySpace.localPosition) = (emptySpace.localPosition, puzzle.targetPosition);
             
             //Check Correct Puzzle
-            if (puzzle.correctPosition == puzzle.targetPosition)
-            {
-                correctPuzzle++;
-                puzzle.inRightPlace = true;
-            }
-            else if(puzzle.correctPosition != puzzle.targetPosition && puzzle.inRightPlace)
-            {
-                correctPuzzle--;
-                puzzle.inRightPlace = false;
-            }
+            CheckCorrectPuzzle(puzzle);
             
             //Check The Puzzle is solved
             PuzzleSolvedCheck();
+        }
+    }
+
+    private void CheckCorrectPuzzle(SlidePuzzle puzzle)
+    {
+        if (puzzle.correctPosition == puzzle.targetPosition)
+        {
+            correctPuzzle++;
+            puzzle.inRightPlace = true;
+        }
+        else if(puzzle.correctPosition != puzzle.targetPosition && puzzle.inRightPlace)
+        {
+            correctPuzzle--;
+            puzzle.inRightPlace = false;
         }
     }
 

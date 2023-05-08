@@ -2,43 +2,48 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Serialization;
 
 public class CodePanel : MonoBehaviour 
 {
-	[SerializeField]
-	private TextMeshProUGUI codeText;
-	private string codeTextValue = "";
+	[SerializeField] private TextMeshProUGUI inputNum;
+	[SerializeField] private string rightCode;
+	[SerializeField] private AudioSource rightSound, wrongSound, numPress;
 
-	public Animator anim;
-	public GameObject numPanel;
-	public GameObject puzzle;
-	public AudioSource audioSource;
+	private string codeTextValue;
 
-	void Update () 
+	private void Start()
 	{
-		codeText.text = codeTextValue;
+		codeTextValue = null;
+		inputNum.text = codeTextValue;
+	}
 
+	public void AddNumCode(string num)
+	{
+		codeTextValue += num;
+		inputNum.text = codeTextValue;
+		numPress.Play();
+		
+		CheckCorrectCode();
+	}
+
+	private void CheckCorrectCode()
+	{
 		//Gaperlu backspace, enter buat ngereset sekaligus ngecek
-		if (codeTextValue.Length == 4)
+		if (codeTextValue.Length == 3)
 		{
-			if (codeTextValue == "1837")
+			if (codeTextValue == rightCode)
 			{
-				anim.SetBool("Active", true);
-                puzzle.SetActive(true);
-                numPanel.SetActive(false);
-                codeTextValue = "";
-            }
+				codeTextValue = null;
+                
+				rightSound.Play();
+			}
 			else
 			{
-				codeTextValue = "";
-				audioSource.Play();
+				codeTextValue = null;
+				
+				wrongSound.Play();
 			}
 		}
 	}
-
-	public void AddDigit(string digit)
-	{
-		codeTextValue += digit;
-	}
-
 }

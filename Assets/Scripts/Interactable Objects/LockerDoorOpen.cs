@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class LockerDoorOpen : Interactable
 {
+    [SerializeField] private bool isDifferentFace;
     private Animator anim;
     private bool isOpen;
 
@@ -20,17 +21,30 @@ public class LockerDoorOpen : Interactable
     protected override void Interact()
     {
         isOpen = !isOpen;
-
+        
         if (isOpen)
         {
-            anim.Play("LockerDoorOpen");
             promptMessage = "Tutup!";
+            if (!isDifferentFace)
+            {
+                anim.Play("LockerDoorOpen");
+            }
+            else
+            {
+                anim.Play("AnotherLockerDoorOpen");
+            }
         }
         else
         {
-            anim.Play("LockerDoorClose");
             promptMessage = "Buka!";
+            if (!isDifferentFace)
+            {
+                anim.Play("LockerDoorClose");
+            }
+            else
+            {
+                anim.Play("AnotherLockerDoorClose");
+            }
         }
-            
     }
 }
