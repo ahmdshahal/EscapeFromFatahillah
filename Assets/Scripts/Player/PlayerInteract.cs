@@ -93,18 +93,16 @@ public class PlayerInteract : MonoBehaviour
         // Jika raycast mengenai object yang dapat digeser dan tombol interaksi ditekan, geser object
         if (Physics.Raycast(ray, out RaycastHit dragHit, distance, dragMask))
         {
+            playerUI.UpdateText("Geser");
             if (inputManager.onFootActions.Interact.IsPressed())
-            {
-                Debug.Log("Geser");
                 dragHit.transform.SetParent(dragHand.transform);
-            }
             else
-            {
                 dragHand.DetachChildren(); // Lepaskan object yang digeser dari tangan
-            }
+
         }
         else // Jika tidak, lepaskan object yang digeser dari tangan
         {
+            playerUI.UpdateText(string.Empty);
             dragHand.DetachChildren();
         }
     }

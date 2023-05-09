@@ -1,10 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class MainMenuTask : MonoBehaviour
 {
     [SerializeField] TaskManager taskManager;
+    [SerializeField] Interactable interactable;
     
     public int puzzlePlaced;
 
@@ -15,6 +14,7 @@ public class MainMenuTask : MonoBehaviour
         if (puzzlePlaced >= 3)
         {
             taskManager.CompleteCurrentTask();
+            interactable.BaseInteract();
             Debug.Log("Task 1 Completed");
         }
     }

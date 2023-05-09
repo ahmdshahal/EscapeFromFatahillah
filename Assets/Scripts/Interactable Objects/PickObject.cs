@@ -1,8 +1,9 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class PickObject : Interactable
 {
-    [SerializeField] private Vector3 desiredRotation; // Menyimpan rotasi yang diinginkan
+    [SerializeField] private Vector3 targetRotation; // Menyimpan rotasi yang diinginkan
     [SerializeField] private Transform hand;
     [SerializeField] private string pickID;
     [SerializeField] private PickDropSystem pickDropSystem;
@@ -30,7 +31,7 @@ public class PickObject : Interactable
             {
                 // Jika bukan kunci, letakkan objek di tangan pemain
                 transform.position = hand.position;
-                transform.rotation = Quaternion.Euler(desiredRotation); // Mengatur rotasi objek
+                transform.rotation = Quaternion.Euler(targetRotation); // Mengatur rotasi objek
                 transform.SetParent(hand);
             }
         }

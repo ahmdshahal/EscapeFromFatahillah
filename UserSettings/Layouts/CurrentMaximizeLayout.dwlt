@@ -26,7 +26,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 95
+  controlID: 128
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -69,7 +69,7 @@ MonoBehaviour:
   m_UseMipMap: 0
   m_VSyncEnabled: 0
   m_Gizmos: 0
-  m_Stats: 1
+  m_Stats: 0
   m_SelectedSizes: 0000000000000000000000000e000000000000000000000000000000000000000000000000000000
   m_ZoomArea:
     m_HRangeLocked: 0
@@ -176,23 +176,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 2c740000
-      m_LastClickedID: 0
-      m_ExpandedIDs: e8f8ffff2efbffff98690000726a0000fa6a00000e6b0000586b0000a06b0000806c0000866c0000be6c0000ea6c0000f06c00001e6d0000a26d00001e6e0000
+      m_SelectedIDs: 2c060100
+      m_LastClickedID: 67116
+      m_ExpandedIDs: c4c4feffaee3feffbee3feff3a2cffff4a2cffff4e2cffff582cffff3478ffff367bffff66f6ffffa0faffffb4faffffc4faffffccfaffffd4faffffdcfaffffe8faffff08fbffff0cfbffff16fbffffee690000106b000070a0000074a000004e06010076060100780601008a060100fa0601002807010080070100f0070100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: Penta
+        m_OriginalName: Penta
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: -71000
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 3}
       m_SearchString: 
@@ -226,7 +226,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 44
+  controlID: 28
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -294,22 +294,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Scripts/Task
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Scripts/Task
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\College\TA\EscapeFromFatahillah
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 300}
-    m_SelectedIDs: a8720000
-    m_LastClickedID: 29352
-    m_ExpandedIDs: 0000000086720000887200008a7200008c7200008e72000090720000927200009472000096720000987200009a7200009c7200009e720000a0720000a2720000a4720000a6720000a8720000aa720000ac720000ae720000b0720000b2720000b4720000b6720000b8720000ba720000bc720000be720000c0720000c2720000c472000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 198}
+    m_SelectedIDs: 18700000
+    m_LastClickedID: 28696
+    m_ExpandedIDs: 000000008a6f00008c6f00008e6f0000906f0000926f0000946f0000966f0000986f00009a6f00009c6f00009e6f0000a06f0000a26f0000a46f0000a66f0000a86f0000aa6f0000ac6f0000ae6f0000b06f0000b26f0000b46f0000b66f0000b86f0000ba6f0000bc6f0000be6f0000c06f0000c26f0000c46f0000c66f0000c86f0000fa6f000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -337,7 +337,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000086720000887200008a7200008c7200008e72000090720000927200009472000096720000987200009a7200009c7200009e720000a0720000a2720000a4720000a6720000a8720000aa720000ac720000ae720000b0720000b2720000b4720000b6720000b8720000ba720000bc720000be720000c0720000c2720000c4720000
+    m_ExpandedIDs: 000000008a6f00008c6f00008e6f0000906f0000926f0000946f0000966f0000986f00009a6f00009c6f00009e6f0000a06f0000a26f0000a46f0000a66f0000a86f0000aa6f0000ac6f0000ae6f0000b06f0000b26f0000b46f0000b66f0000b86f0000ba6f0000bc6f0000be6f0000c06f0000c26f0000c46f0000c66f0000c86f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -362,10 +362,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 2c740000
-    m_LastClickedInstanceID: 29740
+    m_SelectedInstanceIDs: 2c060100
+    m_LastClickedInstanceID: 67116
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: d29d00003a84000084880000
+    m_ExpandedInstanceIDs: d29d00003a84000084880000000000007aa70000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -478,12 +478,11 @@ MonoBehaviour:
     m_SaveData: []
   generateLightmapUV: 1
   optimizeMeshBuffer: 1
-  backUpOriginalOjects: 1
+  backUpOriginalOjects: 0
   addMeshCollider: 0
   use32BitIndex: 0
-  combinedName: Combined_Models
-  mf:
-  - {fileID: 0}
+  combinedName: Kotak Laci
+  mf: []
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -508,7 +507,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 96
+  controlID: 129
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -752,7 +751,7 @@ MonoBehaviour:
       index: 10
       layout: 4
   m_WindowGUID: 154150a55b0dbb647a4faa5ae5aa43a5
-  m_Gizmos: 0
+  m_Gizmos: 1
   m_OverrideSceneCullingMask: 6917529027641081856
   m_SceneIsLit: 1
   m_SceneLighting: 1
@@ -761,9 +760,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -5.1401634, y: 1.0742166, z: 1.0410035}
+    m_Target: {x: 2.0210326, y: 1.4640002, z: -0.16633183}
     speed: 2
-    m_Value: {x: -5.1401634, y: 1.0742166, z: 1.0410035}
+    m_Value: {x: 2.0210326, y: 1.4640002, z: -0.16633183}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -810,13 +809,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.049613204, y: -0.88858736, z: 0.0990402, w: 0.44512734}
+    m_Target: {x: -0.25797793, y: -0.28947902, z: 0.08132817, w: -0.9182023}
     speed: 2
-    m_Value: {x: 0.049613297, y: -0.888589, z: 0.09904039, w: 0.44512817}
+    m_Value: {x: -0.25797015, y: -0.2894703, z: 0.08132572, w: -0.91817456}
   m_Size:
-    m_Target: 0.21410076
+    m_Target: 1.0779619
     speed: 2
-    m_Value: 0.21410076
+    m_Value: 1.0779619
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -962,7 +961,7 @@ MonoBehaviour:
     m_SaveData: []
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 47996
+  m_LastSelectedObjectID: 67116
 --- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
