@@ -13,9 +13,10 @@ public class MainMenuTask : MonoBehaviour
 
         if (puzzlePlaced >= 3)
         {
-            taskManager.CompleteCurrentTask();
             drawerLock.BaseInteract();
             Debug.Log("Task 1 Completed");
+
+            taskManager.CompleteCurrentTask();
         }
     }
 }

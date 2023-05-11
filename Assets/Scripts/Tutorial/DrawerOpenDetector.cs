@@ -1,19 +1,19 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class DrawerOpenDetector : MonoBehaviour
 {
     [SerializeField] private OpenDrawer openDrawer;
-    [SerializeField] private GameObject currentScreen;
+    [SerializeField] private TaskManager taskManager;
     [SerializeField] private GameObject nextScreen;
 
     private void Update()
     {
         if (openDrawer.isOpen)
         {
-            currentScreen.SetActive(false);
+            gameObject.SetActive(false);
             nextScreen.SetActive(true);
+
+            taskManager.CompleteCurrentTask();
         }
     }
 }

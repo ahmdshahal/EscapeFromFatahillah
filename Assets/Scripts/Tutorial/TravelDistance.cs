@@ -7,7 +7,6 @@ using UnityEngine.UI;
 public class TravelDistance : MonoBehaviour
 {
     [SerializeField] private Transform player;
-    [SerializeField] private GameObject currentScreen;
     [SerializeField] private GameObject nextScreen;
     [SerializeField] private Image distanceBar;
     [SerializeField] private float maxDistance;
@@ -59,7 +58,7 @@ public class TravelDistance : MonoBehaviour
     {
         if (distanceBar.fillAmount >= 1)
         {
-            currentScreen.SetActive(false);
+            gameObject.SetActive(false);
             nextScreen.SetActive(true);
         }
     }

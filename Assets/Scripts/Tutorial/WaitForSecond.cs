@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class WaitForSecond : MonoBehaviour
 {
-    [SerializeField] private GameObject currentScreen;
     [SerializeField] private GameObject nextScreen;
     [SerializeField] private Image durationBar;
     [SerializeField] private float setDuration;
@@ -27,11 +26,10 @@ public class WaitForSecond : MonoBehaviour
         durationBar.fillAmount = duration / setDuration;
         if (duration >= setDuration)
         {
-            currentScreen.SetActive(false);
+            gameObject.SetActive(false);
             isCount = false;
 
-            if (nextScreen != null)
-                nextScreen.SetActive(true);
+            nextScreen.SetActive(true);
         }
     }
 }

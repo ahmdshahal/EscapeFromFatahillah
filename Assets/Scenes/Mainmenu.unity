@@ -215,10 +215,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 422e1ff0b6531ee4c97b60b0b98850bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentScreen: {fileID: 9424352}
-  nextScreen: {fileID: 0}
+  nextScreen: {fileID: 1726754671}
   durationBar: {fileID: 625181130}
-  setDuration: 10
+  setDuration: 20
+--- !u!23 &11460294 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 3630336463472306531, guid: 3640e77d28b9a416cbf4c9b9f11292e4, type: 3}
+  m_PrefabInstance: {fileID: 1144254455}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &23314889 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 4392836646565859033, guid: 3640e77d28b9a416cbf4c9b9f11292e4, type: 3}
+  m_PrefabInstance: {fileID: 1144254455}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &46894555
 GameObject:
   m_ObjectHideFlags: 0
@@ -854,7 +863,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 151478322}
-  currentScreen: {fileID: 151478321}
   nextScreen: {fileID: 2005674608}
   distanceBar: {fileID: 1225980183}
   maxDistance: 3
@@ -961,6 +969,11 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!23 &185379220 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 7621398573360556756, guid: 3640e77d28b9a416cbf4c9b9f11292e4, type: 3}
+  m_PrefabInstance: {fileID: 1144254455}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &187422597
 GameObject:
   m_ObjectHideFlags: 0
@@ -1189,7 +1202,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 422e1ff0b6531ee4c97b60b0b98850bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentScreen: {fileID: 207966860}
   nextScreen: {fileID: 1524141481}
   durationBar: {fileID: 1466693360}
   setDuration: 10
@@ -1420,21 +1432,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openDrawer: {fileID: 5010710963794124748}
-  currentScreen: {fileID: 349184186}
+  taskManager: {fileID: 1527071172}
   nextScreen: {fileID: 9424352}
---- !u!65 &359658840
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5761530332911313422}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.019686129, y: 0.019838579, z: 0.021769304}
-  m_Center: {x: 7.186079e-10, y: 1.3002266e-18, z: -0.0009653835}
 --- !u!1 &399391549
 GameObject:
   m_ObjectHideFlags: 0
@@ -1724,6 +1723,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 458847237}
   m_CullTransparentMesh: 1
+--- !u!23 &466925655 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 637087382773006181, guid: 3640e77d28b9a416cbf4c9b9f11292e4, type: 3}
+  m_PrefabInstance: {fileID: 1144254455}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &482326268
 GameObject:
   m_ObjectHideFlags: 0
@@ -1842,6 +1846,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 482326268}
   m_Mesh: {fileID: 1841072354}
+--- !u!23 &487017170 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 7676218664292281003, guid: 3640e77d28b9a416cbf4c9b9f11292e4, type: 3}
+  m_PrefabInstance: {fileID: 1144254455}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &488833239
 GameObject:
   m_ObjectHideFlags: 0
@@ -1908,7 +1917,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &501660254
 GameObject:
@@ -2063,6 +2072,83 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 544545466}
+  m_CullTransparentMesh: 1
+--- !u!1 &596169146
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 596169147}
+  - component: {fileID: 596169149}
+  - component: {fileID: 596169148}
+  m_Layer: 5
+  m_Name: Gamepad
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &596169147
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 596169146}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
+  m_ConstrainProportionsScale: 1
+  m_Children:
+  - {fileID: 2001356192}
+  m_Father: {fileID: 1726754672}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 251}
+  m_SizeDelta: {x: 1117, y: 762}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &596169148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 596169146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: cf0902d335d5e4ecca472bee4c25c998, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &596169149
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 596169146}
   m_CullTransparentMesh: 1
 --- !u!1 &625181128
 GameObject:
@@ -2474,25 +2560,57 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 893313539}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: notHintMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 8bdfeaaa0b88ad64c94415ecf189b9b6, type: 2}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.size
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.size
-      value: 6
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[1].hintObjects.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[2].hintObjects.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[3].hintObjects.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.size
+      value: 54
+      objectReference: {fileID: 0}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.size
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[2].otherObjects.Array.size
+      value: 49
+      objectReference: {fileID: 0}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.size
+      value: 55
       objectReference: {fileID: 0}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[0]
       value: 
-      objectReference: {fileID: 6360205568878409976}
+      objectReference: {fileID: 7989205951696873607}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[1]
       value: 
-      objectReference: {fileID: 9125047358490603737}
+      objectReference: {fileID: 7165000979120261843}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[2]
       value: 
-      objectReference: {fileID: 7480059780885719860}
+      objectReference: {fileID: 2086183313562926941}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[3]
       value: 
@@ -2505,6 +2623,1150 @@ PrefabInstance:
       propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[5]
       value: 
       objectReference: {fileID: 3401049561142578638}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[6]
+      value: 
+      objectReference: {fileID: 3401049561142578638}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[7]
+      value: 
+      objectReference: {fileID: 3401049561142578638}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[8]
+      value: 
+      objectReference: {fileID: 3401049561142578638}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[9]
+      value: 
+      objectReference: {fileID: 3401049561142578638}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[1].hintObjects.Array.data[0]
+      value: 
+      objectReference: {fileID: 2886503754907660197}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[1].hintObjects.Array.data[1]
+      value: 
+      objectReference: {fileID: 7478359970217831314}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[1].hintObjects.Array.data[2]
+      value: 
+      objectReference: {fileID: 2086183313562926941}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[2].hintObjects.Array.data[0]
+      value: 
+      objectReference: {fileID: 6360205568878409976}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[2].hintObjects.Array.data[1]
+      value: 
+      objectReference: {fileID: 9125047358490603737}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[2].hintObjects.Array.data[2]
+      value: 
+      objectReference: {fileID: 7480059780885719860}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[2].hintObjects.Array.data[3]
+      value: 
+      objectReference: {fileID: 6914781848677967146}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[2].hintObjects.Array.data[4]
+      value: 
+      objectReference: {fileID: 3401049561142578638}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[2].hintObjects.Array.data[5]
+      value: 
+      objectReference: {fileID: 96525181}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[2].hintObjects.Array.data[6]
+      value: 
+      objectReference: {fileID: 2125734422}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[2].hintObjects.Array.data[7]
+      value: 
+      objectReference: {fileID: 5454705309397387293}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[3].hintObjects.Array.data[0]
+      value: 
+      objectReference: {fileID: 482326272}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[3].hintObjects.Array.data[1]
+      value: 
+      objectReference: {fileID: 1007704725}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[3].hintObjects.Array.data[2]
+      value: 
+      objectReference: {fileID: 7480059780885719860}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[3].hintObjects.Array.data[3]
+      value: 
+      objectReference: {fileID: 6914781848677967146}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[3].hintObjects.Array.data[4]
+      value: 
+      objectReference: {fileID: 3401049561142578638}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[3].hintObjects.Array.data[5]
+      value: 
+      objectReference: {fileID: 96525181}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[3].hintObjects.Array.data[6]
+      value: 
+      objectReference: {fileID: 2125734422}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[3].hintObjects.Array.data[7]
+      value: 
+      objectReference: {fileID: 5454705309397387293}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[10]
+      value: 
+      objectReference: {fileID: 3401049561142578638}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[11]
+      value: 
+      objectReference: {fileID: 3401049561142578638}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[12]
+      value: 
+      objectReference: {fileID: 3401049561142578638}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[13]
+      value: 
+      objectReference: {fileID: 3401049561142578638}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[14]
+      value: 
+      objectReference: {fileID: 3401049561142578638}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[15]
+      value: 
+      objectReference: {fileID: 3401049561142578638}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[16]
+      value: 
+      objectReference: {fileID: 3401049561142578638}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[17]
+      value: 
+      objectReference: {fileID: 3401049561142578638}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[18]
+      value: 
+      objectReference: {fileID: 3401049561142578638}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[19]
+      value: 
+      objectReference: {fileID: 3401049561142578638}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[20]
+      value: 
+      objectReference: {fileID: 3401049561142578638}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[21]
+      value: 
+      objectReference: {fileID: 3401049561142578638}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[22]
+      value: 
+      objectReference: {fileID: 3401049561142578638}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[23]
+      value: 
+      objectReference: {fileID: 3401049561142578638}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[24]
+      value: 
+      objectReference: {fileID: 3401049561142578638}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[25]
+      value: 
+      objectReference: {fileID: 3401049561142578638}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[26]
+      value: 
+      objectReference: {fileID: 3401049561142578638}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[27]
+      value: 
+      objectReference: {fileID: 3401049561142578638}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[28]
+      value: 
+      objectReference: {fileID: 3401049561142578638}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[29]
+      value: 
+      objectReference: {fileID: 3401049561142578638}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[30]
+      value: 
+      objectReference: {fileID: 3401049561142578638}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[31]
+      value: 
+      objectReference: {fileID: 3401049561142578638}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[32]
+      value: 
+      objectReference: {fileID: 3401049561142578638}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[33]
+      value: 
+      objectReference: {fileID: 3401049561142578638}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[34]
+      value: 
+      objectReference: {fileID: 3401049561142578638}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[35]
+      value: 
+      objectReference: {fileID: 3401049561142578638}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[36]
+      value: 
+      objectReference: {fileID: 3401049561142578638}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[37]
+      value: 
+      objectReference: {fileID: 3401049561142578638}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[38]
+      value: 
+      objectReference: {fileID: 3401049561142578638}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[39]
+      value: 
+      objectReference: {fileID: 3401049561142578638}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[40]
+      value: 
+      objectReference: {fileID: 3401049561142578638}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[41]
+      value: 
+      objectReference: {fileID: 3401049561142578638}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[42]
+      value: 
+      objectReference: {fileID: 3401049561142578638}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[43]
+      value: 
+      objectReference: {fileID: 3401049561142578638}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[44]
+      value: 
+      objectReference: {fileID: 3401049561142578638}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[45]
+      value: 
+      objectReference: {fileID: 3401049561142578638}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[46]
+      value: 
+      objectReference: {fileID: 3401049561142578638}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[47]
+      value: 
+      objectReference: {fileID: 3401049561142578638}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[48]
+      value: 
+      objectReference: {fileID: 3401049561142578638}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[49]
+      value: 
+      objectReference: {fileID: 3401049561142578638}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[50]
+      value: 
+      objectReference: {fileID: 3401049561142578638}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[51]
+      value: 
+      objectReference: {fileID: 3401049561142578638}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[52]
+      value: 
+      objectReference: {fileID: 3401049561142578638}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[53]
+      value: 
+      objectReference: {fileID: 3401049561142578638}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[54]
+      value: 
+      objectReference: {fileID: 3401049561142578638}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[55]
+      value: 
+      objectReference: {fileID: 3401049561142578638}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[56]
+      value: 
+      objectReference: {fileID: 3401049561142578638}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[57]
+      value: 
+      objectReference: {fileID: 3401049561142578638}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[58]
+      value: 
+      objectReference: {fileID: 3401049561142578638}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[59]
+      value: 
+      objectReference: {fileID: 3401049561142578638}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[0]
+      value: 
+      objectReference: {fileID: 1711813855690627713}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[1]
+      value: 
+      objectReference: {fileID: 6665878274095286866}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[2]
+      value: 
+      objectReference: {fileID: 6360205568878409976}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[3]
+      value: 
+      objectReference: {fileID: 9125047358490603737}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[4]
+      value: 
+      objectReference: {fileID: 7480059780885719860}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[5]
+      value: 
+      objectReference: {fileID: 6914781848677967146}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[6]
+      value: 
+      objectReference: {fileID: 3401049561142578638}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[7]
+      value: 
+      objectReference: {fileID: 96525181}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[8]
+      value: 
+      objectReference: {fileID: 2125734422}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[9]
+      value: 
+      objectReference: {fileID: 2879335493788484692}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[0]
+      value: 
+      objectReference: {fileID: 1711813855690627713}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[1]
+      value: 
+      objectReference: {fileID: 6665878274095286866}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[2]
+      value: 
+      objectReference: {fileID: 7989205951696873607}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[3]
+      value: 
+      objectReference: {fileID: 7165000979120261843}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[4]
+      value: 
+      objectReference: {fileID: 2086183313562926941}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[5]
+      value: 
+      objectReference: {fileID: 6360205568878409976}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[6]
+      value: 
+      objectReference: {fileID: 9125047358490603737}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[7]
+      value: 
+      objectReference: {fileID: 7480059780885719860}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[8]
+      value: 
+      objectReference: {fileID: 6914781848677967146}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[9]
+      value: 
+      objectReference: {fileID: 3401049561142578638}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[2].otherObjects.Array.data[0]
+      value: 
+      objectReference: {fileID: 1711813855690627713}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[2].otherObjects.Array.data[1]
+      value: 
+      objectReference: {fileID: 6665878274095286866}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[2].otherObjects.Array.data[2]
+      value: 
+      objectReference: {fileID: 7989205951696873607}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[2].otherObjects.Array.data[3]
+      value: 
+      objectReference: {fileID: 7165000979120261843}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[2].otherObjects.Array.data[4]
+      value: 
+      objectReference: {fileID: 2086183313562926941}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[2].otherObjects.Array.data[5]
+      value: 
+      objectReference: {fileID: 2879335493788484692}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[2].otherObjects.Array.data[6]
+      value: 
+      objectReference: {fileID: 55178232837691324}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[2].otherObjects.Array.data[7]
+      value: 
+      objectReference: {fileID: 6144858040022921448}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[2].otherObjects.Array.data[8]
+      value: 
+      objectReference: {fileID: 5647464808616906832}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[2].otherObjects.Array.data[9]
+      value: 
+      objectReference: {fileID: 6482263928364847551}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[0]
+      value: 
+      objectReference: {fileID: 1711813855690627713}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[1]
+      value: 
+      objectReference: {fileID: 6665878274095286866}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[2]
+      value: 
+      objectReference: {fileID: 7989205951696873607}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[3]
+      value: 
+      objectReference: {fileID: 7165000979120261843}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[4]
+      value: 
+      objectReference: {fileID: 2086183313562926941}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[5]
+      value: 
+      objectReference: {fileID: 6360205568878409976}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[6]
+      value: 
+      objectReference: {fileID: 9125047358490603737}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[7]
+      value: 
+      objectReference: {fileID: 7480059780885719860}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[8]
+      value: 
+      objectReference: {fileID: 6914781848677967146}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[9]
+      value: 
+      objectReference: {fileID: 3401049561142578638}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[10]
+      value: 
+      objectReference: {fileID: 55178232837691324}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[11]
+      value: 
+      objectReference: {fileID: 6144858040022921448}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[12]
+      value: 
+      objectReference: {fileID: 5647464808616906832}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[13]
+      value: 
+      objectReference: {fileID: 6482263928364847551}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[14]
+      value: 
+      objectReference: {fileID: 4595292587059606295}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[15]
+      value: 
+      objectReference: {fileID: 3915462642277759252}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[16]
+      value: 
+      objectReference: {fileID: 2143177570525337164}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[17]
+      value: 
+      objectReference: {fileID: 4925464912648730998}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[18]
+      value: 
+      objectReference: {fileID: 6575030401764739537}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[19]
+      value: 
+      objectReference: {fileID: 1007704725}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[20]
+      value: 
+      objectReference: {fileID: 5454705309397387293}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[21]
+      value: 
+      objectReference: {fileID: 8202224254307916173}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[22]
+      value: 
+      objectReference: {fileID: 6824688470573831728}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[23]
+      value: 
+      objectReference: {fileID: 7822350161175594128}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[24]
+      value: 
+      objectReference: {fileID: 7412201281712156894}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[25]
+      value: 
+      objectReference: {fileID: 4455462286894677275}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[26]
+      value: 
+      objectReference: {fileID: 2121484738212618540}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[27]
+      value: 
+      objectReference: {fileID: 2865840433242682543}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[28]
+      value: 
+      objectReference: {fileID: 3847565996628944517}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[29]
+      value: 
+      objectReference: {fileID: 8726465197014626670}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[30]
+      value: 
+      objectReference: {fileID: 482326272}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[31]
+      value: 
+      objectReference: {fileID: 1709133651034879144}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[32]
+      value: 
+      objectReference: {fileID: 2886503754907660197}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[33]
+      value: 
+      objectReference: {fileID: 7478359970217831314}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[34]
+      value: 
+      objectReference: {fileID: 6747151828124725617}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[35]
+      value: 
+      objectReference: {fileID: 1554760949}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[36]
+      value: 
+      objectReference: {fileID: 1846799693}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[37]
+      value: 
+      objectReference: {fileID: 1231384447}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[38]
+      value: 
+      objectReference: {fileID: 2001565651}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[39]
+      value: 
+      objectReference: {fileID: 23314889}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[40]
+      value: 
+      objectReference: {fileID: 487017170}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[41]
+      value: 
+      objectReference: {fileID: 466925655}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[42]
+      value: 
+      objectReference: {fileID: 11460294}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[43]
+      value: 
+      objectReference: {fileID: 1857964233}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[44]
+      value: 
+      objectReference: {fileID: 959966285}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[45]
+      value: 
+      objectReference: {fileID: 1461296901}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[46]
+      value: 
+      objectReference: {fileID: 1427598643}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[47]
+      value: 
+      objectReference: {fileID: 1374733785}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[48]
+      value: 
+      objectReference: {fileID: 185379220}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[49]
+      value: 
+      objectReference: {fileID: 397888215315197654}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[50]
+      value: 
+      objectReference: {fileID: 455238733255764751}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[51]
+      value: 
+      objectReference: {fileID: 3994072662545557620}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[52]
+      value: 
+      objectReference: {fileID: 8157302720861044073}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[53]
+      value: 
+      objectReference: {fileID: 719386923000626255}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[10]
+      value: 
+      objectReference: {fileID: 96525181}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[11]
+      value: 
+      objectReference: {fileID: 2125734422}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[12]
+      value: 
+      objectReference: {fileID: 2879335493788484692}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[13]
+      value: 
+      objectReference: {fileID: 55178232837691324}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[14]
+      value: 
+      objectReference: {fileID: 6144858040022921448}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[15]
+      value: 
+      objectReference: {fileID: 5647464808616906832}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[16]
+      value: 
+      objectReference: {fileID: 6482263928364847551}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[17]
+      value: 
+      objectReference: {fileID: 4595292587059606295}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[18]
+      value: 
+      objectReference: {fileID: 3915462642277759252}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[19]
+      value: 
+      objectReference: {fileID: 2143177570525337164}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[20]
+      value: 
+      objectReference: {fileID: 4925464912648730998}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[21]
+      value: 
+      objectReference: {fileID: 6575030401764739537}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[22]
+      value: 
+      objectReference: {fileID: 1007704725}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[23]
+      value: 
+      objectReference: {fileID: 5454705309397387293}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[24]
+      value: 
+      objectReference: {fileID: 8202224254307916173}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[25]
+      value: 
+      objectReference: {fileID: 6824688470573831728}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[26]
+      value: 
+      objectReference: {fileID: 7822350161175594128}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[27]
+      value: 
+      objectReference: {fileID: 7412201281712156894}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[28]
+      value: 
+      objectReference: {fileID: 4455462286894677275}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[29]
+      value: 
+      objectReference: {fileID: 2121484738212618540}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[30]
+      value: 
+      objectReference: {fileID: 2865840433242682543}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[31]
+      value: 
+      objectReference: {fileID: 3847565996628944517}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[32]
+      value: 
+      objectReference: {fileID: 8726465197014626670}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[33]
+      value: 
+      objectReference: {fileID: 482326272}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[34]
+      value: 
+      objectReference: {fileID: 1709133651034879144}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[35]
+      value: 
+      objectReference: {fileID: 6747151828124725617}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[36]
+      value: 
+      objectReference: {fileID: 1554760949}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[37]
+      value: 
+      objectReference: {fileID: 1846799693}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[38]
+      value: 
+      objectReference: {fileID: 1231384447}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[39]
+      value: 
+      objectReference: {fileID: 2001565651}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[40]
+      value: 
+      objectReference: {fileID: 23314889}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[41]
+      value: 
+      objectReference: {fileID: 487017170}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[42]
+      value: 
+      objectReference: {fileID: 466925655}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[43]
+      value: 
+      objectReference: {fileID: 11460294}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[44]
+      value: 
+      objectReference: {fileID: 1857964233}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[45]
+      value: 
+      objectReference: {fileID: 959966285}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[46]
+      value: 
+      objectReference: {fileID: 1461296901}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[47]
+      value: 
+      objectReference: {fileID: 1427598643}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[48]
+      value: 
+      objectReference: {fileID: 1374733785}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[49]
+      value: 
+      objectReference: {fileID: 185379220}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[50]
+      value: 
+      objectReference: {fileID: 397888215315197654}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[51]
+      value: 
+      objectReference: {fileID: 455238733255764751}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[52]
+      value: 
+      objectReference: {fileID: 3994072662545557620}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[53]
+      value: 
+      objectReference: {fileID: 8157302720861044073}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[54]
+      value: 
+      objectReference: {fileID: 719386923000626255}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[2].otherObjects.Array.data[10]
+      value: 
+      objectReference: {fileID: 4595292587059606295}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[2].otherObjects.Array.data[11]
+      value: 
+      objectReference: {fileID: 3915462642277759252}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[2].otherObjects.Array.data[12]
+      value: 
+      objectReference: {fileID: 2143177570525337164}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[2].otherObjects.Array.data[13]
+      value: 
+      objectReference: {fileID: 4925464912648730998}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[2].otherObjects.Array.data[14]
+      value: 
+      objectReference: {fileID: 6575030401764739537}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[2].otherObjects.Array.data[15]
+      value: 
+      objectReference: {fileID: 1007704725}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[2].otherObjects.Array.data[16]
+      value: 
+      objectReference: {fileID: 8202224254307916173}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[2].otherObjects.Array.data[17]
+      value: 
+      objectReference: {fileID: 6824688470573831728}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[2].otherObjects.Array.data[18]
+      value: 
+      objectReference: {fileID: 7822350161175594128}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[2].otherObjects.Array.data[19]
+      value: 
+      objectReference: {fileID: 7412201281712156894}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[2].otherObjects.Array.data[20]
+      value: 
+      objectReference: {fileID: 4455462286894677275}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[2].otherObjects.Array.data[21]
+      value: 
+      objectReference: {fileID: 2121484738212618540}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[2].otherObjects.Array.data[22]
+      value: 
+      objectReference: {fileID: 2865840433242682543}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[2].otherObjects.Array.data[23]
+      value: 
+      objectReference: {fileID: 3847565996628944517}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[2].otherObjects.Array.data[24]
+      value: 
+      objectReference: {fileID: 8726465197014626670}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[2].otherObjects.Array.data[25]
+      value: 
+      objectReference: {fileID: 482326272}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[2].otherObjects.Array.data[26]
+      value: 
+      objectReference: {fileID: 1709133651034879144}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[2].otherObjects.Array.data[27]
+      value: 
+      objectReference: {fileID: 2886503754907660197}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[2].otherObjects.Array.data[28]
+      value: 
+      objectReference: {fileID: 7478359970217831314}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[2].otherObjects.Array.data[29]
+      value: 
+      objectReference: {fileID: 6747151828124725617}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[2].otherObjects.Array.data[30]
+      value: 
+      objectReference: {fileID: 1554760949}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[2].otherObjects.Array.data[31]
+      value: 
+      objectReference: {fileID: 1846799693}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[2].otherObjects.Array.data[32]
+      value: 
+      objectReference: {fileID: 1231384447}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[2].otherObjects.Array.data[33]
+      value: 
+      objectReference: {fileID: 2001565651}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[2].otherObjects.Array.data[34]
+      value: 
+      objectReference: {fileID: 23314889}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[2].otherObjects.Array.data[35]
+      value: 
+      objectReference: {fileID: 487017170}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[2].otherObjects.Array.data[36]
+      value: 
+      objectReference: {fileID: 466925655}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[2].otherObjects.Array.data[37]
+      value: 
+      objectReference: {fileID: 11460294}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[2].otherObjects.Array.data[38]
+      value: 
+      objectReference: {fileID: 1857964233}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[2].otherObjects.Array.data[39]
+      value: 
+      objectReference: {fileID: 959966285}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[2].otherObjects.Array.data[40]
+      value: 
+      objectReference: {fileID: 1461296901}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[2].otherObjects.Array.data[41]
+      value: 
+      objectReference: {fileID: 1427598643}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[2].otherObjects.Array.data[42]
+      value: 
+      objectReference: {fileID: 1374733785}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[2].otherObjects.Array.data[43]
+      value: 
+      objectReference: {fileID: 185379220}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[2].otherObjects.Array.data[44]
+      value: 
+      objectReference: {fileID: 397888215315197654}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[2].otherObjects.Array.data[45]
+      value: 
+      objectReference: {fileID: 455238733255764751}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[2].otherObjects.Array.data[46]
+      value: 
+      objectReference: {fileID: 3994072662545557620}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[2].otherObjects.Array.data[47]
+      value: 
+      objectReference: {fileID: 8157302720861044073}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[2].otherObjects.Array.data[48]
+      value: 
+      objectReference: {fileID: 719386923000626255}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[10]
+      value: 
+      objectReference: {fileID: 96525181}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[11]
+      value: 
+      objectReference: {fileID: 2125734422}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[12]
+      value: 
+      objectReference: {fileID: 2879335493788484692}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[13]
+      value: 
+      objectReference: {fileID: 55178232837691324}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[14]
+      value: 
+      objectReference: {fileID: 6144858040022921448}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[15]
+      value: 
+      objectReference: {fileID: 5647464808616906832}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[16]
+      value: 
+      objectReference: {fileID: 6482263928364847551}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[17]
+      value: 
+      objectReference: {fileID: 4595292587059606295}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[18]
+      value: 
+      objectReference: {fileID: 3915462642277759252}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[19]
+      value: 
+      objectReference: {fileID: 2143177570525337164}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[20]
+      value: 
+      objectReference: {fileID: 4925464912648730998}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[21]
+      value: 
+      objectReference: {fileID: 6575030401764739537}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[22]
+      value: 
+      objectReference: {fileID: 5454705309397387293}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[23]
+      value: 
+      objectReference: {fileID: 8202224254307916173}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[24]
+      value: 
+      objectReference: {fileID: 6824688470573831728}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[25]
+      value: 
+      objectReference: {fileID: 7822350161175594128}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[26]
+      value: 
+      objectReference: {fileID: 7412201281712156894}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[27]
+      value: 
+      objectReference: {fileID: 4455462286894677275}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[28]
+      value: 
+      objectReference: {fileID: 2121484738212618540}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[29]
+      value: 
+      objectReference: {fileID: 2865840433242682543}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[30]
+      value: 
+      objectReference: {fileID: 3847565996628944517}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[31]
+      value: 
+      objectReference: {fileID: 8726465197014626670}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[32]
+      value: 
+      objectReference: {fileID: 1709133651034879144}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[33]
+      value: 
+      objectReference: {fileID: 2886503754907660197}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[34]
+      value: 
+      objectReference: {fileID: 7478359970217831314}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[35]
+      value: 
+      objectReference: {fileID: 6747151828124725617}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[36]
+      value: 
+      objectReference: {fileID: 1554760949}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[37]
+      value: 
+      objectReference: {fileID: 1846799693}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[38]
+      value: 
+      objectReference: {fileID: 1231384447}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[39]
+      value: 
+      objectReference: {fileID: 2001565651}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[40]
+      value: 
+      objectReference: {fileID: 23314889}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[41]
+      value: 
+      objectReference: {fileID: 487017170}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[42]
+      value: 
+      objectReference: {fileID: 466925655}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[43]
+      value: 
+      objectReference: {fileID: 11460294}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[44]
+      value: 
+      objectReference: {fileID: 1857964233}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[45]
+      value: 
+      objectReference: {fileID: 959966285}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[46]
+      value: 
+      objectReference: {fileID: 1461296901}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[47]
+      value: 
+      objectReference: {fileID: 1427598643}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[48]
+      value: 
+      objectReference: {fileID: 1374733785}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[49]
+      value: 
+      objectReference: {fileID: 185379220}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[50]
+      value: 
+      objectReference: {fileID: 397888215315197654}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[51]
+      value: 
+      objectReference: {fileID: 455238733255764751}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[52]
+      value: 
+      objectReference: {fileID: 3994072662545557620}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[53]
+      value: 
+      objectReference: {fileID: 8157302720861044073}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[54]
+      value: 
+      objectReference: {fileID: 719386923000626255}
     - target: {fileID: 7561173581255509744, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: interactObjects.Array.size
       value: 6
@@ -2954,6 +4216,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 934838439}
   m_CullTransparentMesh: 1
+--- !u!23 &959966285 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -4447872019186088799, guid: 3640e77d28b9a416cbf4c9b9f11292e4, type: 3}
+  m_PrefabInstance: {fileID: 1144254455}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1007704721
 GameObject:
   m_ObjectHideFlags: 0
@@ -3249,7 +4516,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1704627128}
-  currentScreen: {fileID: 1103165887}
   nextScreen: {fileID: 1295433413}
   distanceBar: {fileID: 1734392997}
   maxDistance: 10
@@ -3293,6 +4559,142 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1103165887}
   m_CullTransparentMesh: 1
+--- !u!1 &1135602744
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1135602745}
+  - component: {fileID: 1135602747}
+  - component: {fileID: 1135602746}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1135602745
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1135602744}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1726754672}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 142}
+  m_SizeDelta: {x: 2500, y: 599.4}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1135602746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1135602744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Jika kesulitan, kamu dapat menekan tombol Triangle untuk mengaktifkan mode
+    Hint. Cobalah!
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: e3a0b9ce384a4bb4a8d42ca2f49a4a0f, type: 2}
+  m_sharedMaterial: {fileID: 8784826141694165198, guid: e3a0b9ce384a4bb4a8d42ca2f49a4a0f, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4279572302
+  m_fontColor: {r: 0.30588236, g: 0.09019608, b: 0.08235294, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 82
+  m_fontSizeBase: 82
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1135602747
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1135602744}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1144254455
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3302,7 +4704,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 3640e77d28b9a416cbf4c9b9f11292e4, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3640e77d28b9a416cbf4c9b9f11292e4, type: 3}
       propertyPath: m_LocalScale.x
@@ -3390,7 +4792,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 930fb1b17202c49c59f39a65bf156e49, type: 2}
     - target: {fileID: 919132149155446097, guid: 3640e77d28b9a416cbf4c9b9f11292e4, type: 3}
       propertyPath: m_Name
-      value: jam.rev
+      value: Jam
       objectReference: {fileID: 0}
     - target: {fileID: 3630336463472306531, guid: 3640e77d28b9a416cbf4c9b9f11292e4, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -3650,6 +5052,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1225980181}
   m_CullTransparentMesh: 1
+--- !u!23 &1231384447 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -2445977506380834873, guid: 3640e77d28b9a416cbf4c9b9f11292e4, type: 3}
+  m_PrefabInstance: {fileID: 1144254455}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1235617042
 GameObject:
   m_ObjectHideFlags: 0
@@ -3958,8 +5365,84 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInteract: {fileID: 1704627132}
-  currentScreen: {fileID: 1295433413}
+  taskManager: {fileID: 1527071172}
   nextScreen: {fileID: 1672721287}
+--- !u!1 &1335747525
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1335747526}
+  - component: {fileID: 1335747528}
+  - component: {fileID: 1335747527}
+  m_Layer: 5
+  m_Name: Duration Bar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1335747526
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1335747525}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 1726754672}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 175, y: -175}
+  m_SizeDelta: {x: 200, y: 200}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1335747527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1335747525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.5471698, g: 0.14122994, b: 0.1264685, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 3
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 0
+  m_FillClockwise: 1
+  m_FillOrigin: 2
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1335747528
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1335747525}
+  m_CullTransparentMesh: 1
 --- !u!1 &1356245202
 GameObject:
   m_ObjectHideFlags: 0
@@ -4106,7 +5589,7 @@ GameObject:
   - component: {fileID: 1363123474}
   - component: {fileID: 1363123475}
   m_Layer: 0
-  m_Name: e
+  m_Name: Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4178,7 +5661,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -4266,6 +5749,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1374354178}
   m_CullTransparentMesh: 1
+--- !u!23 &1374733785 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 7453479510493607913, guid: 3640e77d28b9a416cbf4c9b9f11292e4, type: 3}
+  m_PrefabInstance: {fileID: 1144254455}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &1427598643 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -4954950501891836105, guid: 3640e77d28b9a416cbf4c9b9f11292e4, type: 3}
+  m_PrefabInstance: {fileID: 1144254455}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &1461296901 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -5915692109776802001, guid: 3640e77d28b9a416cbf4c9b9f11292e4, type: 3}
+  m_PrefabInstance: {fileID: 1144254455}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1466693357
 GameObject:
   m_ObjectHideFlags: 0
@@ -4534,7 +6032,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 422e1ff0b6531ee4c97b60b0b98850bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentScreen: {fileID: 1524141481}
   nextScreen: {fileID: 151478321}
   durationBar: {fileID: 458847239}
   setDuration: 7
@@ -4587,6 +6084,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad77d1ec764be65449c8e54b7fc5d76b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!23 &1554760949 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: 3640e77d28b9a416cbf4c9b9f11292e4, type: 3}
+  m_PrefabInstance: {fileID: 1144254455}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1589842694
 GameObject:
   m_ObjectHideFlags: 0
@@ -4921,7 +6423,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1672721287
 GameObject:
@@ -5015,7 +6517,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerController: {fileID: 744457161}
-  currentScreen: {fileID: 1672721287}
   nextScreen: {fileID: 349184186}
 --- !u!1 &1695287617
 GameObject:
@@ -5343,6 +6844,99 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &1726754671
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1726754672}
+  - component: {fileID: 1726754675}
+  - component: {fileID: 1726754674}
+  - component: {fileID: 1726754676}
+  m_Layer: 5
+  m_Name: Tutorial 10
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1726754672
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1726754671}
+  m_LocalRotation: {x: 0.000000021854936, y: 0.0083411615, z: -1.8230124e-10, w: 0.9999652}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
+  m_ConstrainProportionsScale: 1
+  m_Children:
+  - {fileID: 1135602745}
+  - {fileID: 1335747526}
+  - {fileID: 596169147}
+  m_Father: {fileID: 741674057}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 409.20996, y: -228.79999}
+  m_SizeDelta: {x: 2671.0002, y: 1402.0143}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1726754674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1726754671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: c0960e8b37a1d984ab9e95d4b99b46c9, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1726754675
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1726754671}
+  m_CullTransparentMesh: 1
+--- !u!114 &1726754676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1726754671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4df181440fcae76499dd99a925c3b94c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputManager: {fileID: 1910596797}
 --- !u!1 &1734392995
 GameObject:
   m_ObjectHideFlags: 0
@@ -5660,6 +7254,27 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!23 &1846799693 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7343331172465130696, guid: 3640e77d28b9a416cbf4c9b9f11292e4, type: 3}
+  m_PrefabInstance: {fileID: 1144254455}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &1857964233 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 8123290515447324372, guid: 3640e77d28b9a416cbf4c9b9f11292e4, type: 3}
+  m_PrefabInstance: {fileID: 1144254455}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1910596797 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8711533634222017590, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+  m_PrefabInstance: {fileID: 741674056}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5533d86025daaf4478639648ac21526c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1964053830
 GameObject:
   m_ObjectHideFlags: 0
@@ -5736,6 +7351,87 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1964053830}
   m_CullTransparentMesh: 1
+--- !u!1 &2001356191
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2001356192}
+  - component: {fileID: 2001356194}
+  - component: {fileID: 2001356193}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2001356192
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2001356191}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 596169147}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 319.6, y: 192.4}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2001356193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2001356191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0.5296155, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2001356194
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2001356191}
+  m_CullTransparentMesh: 1
+--- !u!23 &2001565651 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 7069352439918489068, guid: 3640e77d28b9a416cbf4c9b9f11292e4, type: 3}
+  m_PrefabInstance: {fileID: 1144254455}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2005674608
 GameObject:
   m_ObjectHideFlags: 0
@@ -5791,7 +7487,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1704627128}
-  currentScreen: {fileID: 2005674608}
   nextScreen: {fileID: 1103165887}
   distanceBar: {fileID: 46894557}
   maxDistance: 7
@@ -6310,21 +8005,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &349155343867465249
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1083998234743223491}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 4.4959707, y: 2.3919709, z: 0.04244057}
-  m_LocalScale: {x: 100.538895, y: 100.538895, z: 111.11645}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 7667923830456168092}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &397888215315197654
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6488,7 +8168,7 @@ Transform:
   - {fileID: 2086846596551158249}
   - {fileID: 96525180}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &543450653130986783
 Transform:
@@ -6506,7 +8186,7 @@ Transform:
   - {fileID: 2004295576731804409}
   - {fileID: 8470136995429993221}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &543450653236204101
 Transform:
@@ -6525,7 +8205,7 @@ Transform:
   - {fileID: 3089285614287794794}
   - {fileID: 9018699928709547983}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &543450653622002158
 Transform:
@@ -6638,7 +8318,7 @@ GameObject:
   m_Component:
   - component: {fileID: 543450653130986783}
   m_Layer: 0
-  m_Name: tv.rev
+  m_Name: TV
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6654,7 +8334,7 @@ GameObject:
   m_Component:
   - component: {fileID: 543450652959799478}
   m_Layer: 0
-  m_Name: puzzlemainmenu
+  m_Name: Puzzle Main Menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6688,7 +8368,7 @@ GameObject:
   m_Component:
   - component: {fileID: 543450653236204101}
   m_Layer: 0
-  m_Name: meja.rev
+  m_Name: Meja
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6709,32 +8389,6 @@ Transform:
   m_Father: {fileID: 543450652959799478}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &1067908605317787893
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5761530332911313422}
-  m_Mesh: {fileID: 1568430912363920408, guid: cd95871b6dd3c43db819835eebb4c7f6, type: 3}
---- !u!1 &1083998234743223491
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 349155343867465249}
-  - component: {fileID: 3040864381285384677}
-  - component: {fileID: 4477668328679363237}
-  m_Layer: 0
-  m_Name: kaki meja
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
 --- !u!33 &1091974647136902419
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -6810,7 +8464,7 @@ GameObject:
   - component: {fileID: 1091709889}
   - component: {fileID: 1091709892}
   m_Layer: 7
-  m_Name: kursi
+  m_Name: Kursi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6879,7 +8533,7 @@ GameObject:
   - component: {fileID: 2231906483626928745}
   - component: {fileID: 2231906483626928744}
   m_Layer: 0
-  m_Name: lampu
+  m_Name: Lampu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7054,7 +8708,7 @@ Transform:
   - {fileID: 6888583812365226572}
   - {fileID: 6226172642359651875}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &1996064635163778081
 MeshFilter:
@@ -7274,7 +8928,7 @@ Transform:
   - {fileID: 4842192057207681086}
   - {fileID: 9109377178132757442}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &2231906483626928744
 Rigidbody:
@@ -7379,7 +9033,7 @@ Transform:
   - {fileID: 6820795586679623239}
   - {fileID: 6969372603981904476}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2671904947826447589
 Transform:
@@ -7621,29 +9275,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2998840742607258628
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5761530332911313422}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 4.4959707, y: 2.3354084, z: 0.04244057}
-  m_LocalScale: {x: 301.61673, y: 150.80836, z: 22.381725}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 7667923830456168092}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &3040864381285384677
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1083998234743223491}
-  m_Mesh: {fileID: -7967560793815813790, guid: 6391179a79b8d40539d77aa94f66bb3a, type: 3}
 --- !u!4 &3089285614287794794
 Transform:
   m_ObjectHideFlags: 0
@@ -7688,7 +9319,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2799634115839805355}
   m_Layer: 0
-  m_Name: mading
+  m_Name: Mading
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7761,7 +9392,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2597387561383854696}
   m_Layer: 0
-  m_Name: kasur
+  m_Name: Kasur
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8052,48 +9683,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3676185504872428223}
   m_Mesh: {fileID: 1352410488928797927, guid: 5b948eca7f61749939e2f4d711322e7f, type: 3}
---- !u!23 &4393890774055457981
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5761530332911313422}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: f7100859a6e58444a87d7e6ed83adc43, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!23 &4455462286894677275
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8115,48 +9704,6 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: a7decca76df0546fd9b4a79ebeaf5388, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!23 &4477668328679363237
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1083998234743223491}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 9e44ea99fa979441f828803520e55f47, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8621,25 +10168,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &5761530332911313422
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2998840742607258628}
-  - component: {fileID: 1067908605317787893}
-  - component: {fileID: 4393890774055457981}
-  - component: {fileID: 359658840}
-  m_Layer: 0
-  m_Name: papan meja
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
 --- !u!33 &5778539884268722682
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -8698,7 +10226,7 @@ Transform:
   - {fileID: 9068160054542395118}
   - {fileID: 6874503157956188843}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &6144858040022921448
 MeshRenderer:
@@ -9043,7 +10571,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6126891947343743300}
   m_Layer: 0
-  m_Name: ruangan
+  m_Name: Ruangan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9275,22 +10803,6 @@ Transform:
   m_Father: {fileID: 2597387561383854696}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &6999192730327315494
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7667923830456168092}
-  m_Layer: 0
-  m_Name: meja
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
-  m_IsActive: 0
 --- !u!23 &7165000979120261843
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9579,23 +11091,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.019999996, y: 0.019999994, z: 0.002632692}
   m_Center: {x: -0.0000000055879354, y: -0.0000000018626451, z: 0.0013163423}
---- !u!4 &7667923830456168092
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6999192730327315494}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.2060001, y: 0, z: 0.060000002}
-  m_LocalScale: {x: 0.55, y: 0.55, z: 0.55}
-  m_ConstrainProportionsScale: 1
-  m_Children:
-  - {fileID: 349155343867465249}
-  - {fileID: 2998840742607258628}
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &7718285673921037163
 Transform:
   m_ObjectHideFlags: 0
@@ -9922,7 +11417,7 @@ Transform:
   - {fileID: 5031844681816679757}
   - {fileID: 5536072481097456738}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &8202224254307916173
 MeshRenderer:
@@ -9988,7 +11483,7 @@ Transform:
   m_Children:
   - {fileID: 1297045153798812962}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &8470136995429993221
 Transform:
@@ -10199,7 +11694,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8201242061263175517}
   m_Layer: 0
-  m_Name: door
+  m_Name: Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
