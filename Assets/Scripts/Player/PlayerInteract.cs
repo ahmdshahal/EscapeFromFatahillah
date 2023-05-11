@@ -14,6 +14,8 @@ public class PlayerInteract : MonoBehaviour
     [SerializeField] private float timerValue;
     [SerializeField] private Transform dragHand;
 
+    [HideInInspector] public bool isDrag;
+
     private float countTime;
 
     private Camera cam;
@@ -95,15 +97,22 @@ public class PlayerInteract : MonoBehaviour
         {
             playerUI.UpdateText("Geser");
             if (inputManager.onFootActions.Interact.IsPressed())
+            {
                 dragHit.transform.SetParent(dragHand.transform);
+                isDrag = true;
+            }
             else
+            {
                 dragHand.DetachChildren(); // Lepaskan object yang digeser dari tangan
+                isDrag = false;
+            }
 
         }
         else // Jika tidak, lepaskan object yang digeser dari tangan
         {
             playerUI.UpdateText(string.Empty);
             dragHand.DetachChildren();
+            isDrag = false;
         }
     }
 }

@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class MainMenuTask : MonoBehaviour
 {
-    [SerializeField] TaskManager taskManager;
-    [SerializeField] Interactable interactable;
+    [SerializeField] private TaskManager taskManager;
+    [SerializeField] private Interactable drawerLock;
     
     public int puzzlePlaced;
 
@@ -14,7 +14,7 @@ public class MainMenuTask : MonoBehaviour
         if (puzzlePlaced >= 3)
         {
             taskManager.CompleteCurrentTask();
-            interactable.BaseInteract();
+            drawerLock.BaseInteract();
             Debug.Log("Task 1 Completed");
         }
     }

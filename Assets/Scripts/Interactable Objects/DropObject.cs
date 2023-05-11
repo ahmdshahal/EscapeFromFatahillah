@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Data.SqlTypes;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -36,7 +33,7 @@ public class DropObject : Interactable
                     pickDropSystem.pickObject.layer = 0; // set layer objek yang di-drop menjadi default
                 }
 
-                switch (scene) // cek nomor scene yang dimuat
+                switch (scene) // cek nomor scene saat ini
                 {
                     case 0: // jika nomor scene adalah 0
                         mainMenuTask.PuzzleCompleted(); // jalankan method PuzzleCompleted() pada MainMenuTask

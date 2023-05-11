@@ -12,8 +12,8 @@ public class PlayerController : MonoBehaviour
     private Vector3 playerVelocity;
     private Vector3 originalPositionCam;
     private bool isGrounded;
-    private bool isCrouch;
-    private bool isSprint;
+    [HideInInspector] public bool isCrouch;
+    [HideInInspector] public bool isSprint;
     private bool isPause;
 
     public float speed = 5f;
