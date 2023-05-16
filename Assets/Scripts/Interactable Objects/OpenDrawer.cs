@@ -41,6 +41,6 @@ public class OpenDrawer : Interactable
 
         if (!anythingInside) return;
         objectIn.promptMessage = isOpen ? "Ambil" : string.Empty;
-        objectIn.canPick = isOpen ? true : false;
+        objectIn.canPick = isOpen;
     }
 }

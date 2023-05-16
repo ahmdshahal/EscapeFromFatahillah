@@ -11,7 +11,7 @@ public class MainMenuTask : MonoBehaviour
     {
         puzzlePlaced++;
 
-        if (puzzlePlaced >= 3)
+        if (puzzlePlaced == 3)
         {
             drawerLock.BaseInteract();
             Debug.Log("Task 1 Completed");

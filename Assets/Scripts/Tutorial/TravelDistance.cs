@@ -19,12 +19,6 @@ public class TravelDistance : MonoBehaviour
     private float distanceTraveled;
     private Vector3 lastPosition;
 
-    private void OnDisable()
-    {
-        distanceBar.fillAmount = 0f;
-        distanceTraveled = 0f;
-    }
-
     void Start()
     {
         lastPosition = player.transform.position;
@@ -79,5 +73,10 @@ public class TravelDistance : MonoBehaviour
 
             audioSource.Play();
         }
+    }
+    private void OnDisable()
+    {
+        distanceBar.fillAmount = 0f;
+        distanceTraveled = 0f;
     }
 }

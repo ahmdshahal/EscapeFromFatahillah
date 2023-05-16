@@ -13,7 +13,7 @@ public class WaitForSecond : MonoBehaviour
     private float duration;
     private bool isCount;
 
-    private void Start()
+    private void OnEnable()
     {
         duration = 0;
         isCount = true;
@@ -33,5 +33,9 @@ public class WaitForSecond : MonoBehaviour
             nextScreen.SetActive(true);
             audioSource.Play();
         }
+    }
+    private void OnDisable()
+    {
+        durationBar.fillAmount = 0f;
     }
 }
