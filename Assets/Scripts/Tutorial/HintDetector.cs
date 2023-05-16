@@ -8,7 +8,7 @@ public class HintDetector : MonoBehaviour
     {
         if (inputManager.onFootActions.Hint.triggered)
         {
-            gameObject.SetActive(false);
+            //gameObject.SetActive(false);
         }
     }
 }

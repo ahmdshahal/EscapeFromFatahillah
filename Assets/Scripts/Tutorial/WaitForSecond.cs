@@ -8,6 +8,7 @@ public class WaitForSecond : MonoBehaviour
     [SerializeField] private GameObject nextScreen;
     [SerializeField] private Image durationBar;
     [SerializeField] private float setDuration;
+    [SerializeField] private AudioSource audioSource;
 
     private float duration;
     private bool isCount;
@@ -30,6 +31,7 @@ public class WaitForSecond : MonoBehaviour
             isCount = false;
 
             nextScreen.SetActive(true);
+            audioSource.Play();
         }
     }
 }
