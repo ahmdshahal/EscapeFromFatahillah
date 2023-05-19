@@ -280,7 +280,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 409.08685, y: -227.96}
+  m_AnchoredPosition: {x: 409.08685, y: -227.96002}
   m_SizeDelta: {x: 2671.0002, y: 1402.0143}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &9424355
@@ -1474,7 +1474,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 409.08685, y: -227.96}
+  m_AnchoredPosition: {x: 409.08685, y: -227.96002}
   m_SizeDelta: {x: 2671.0002, y: 1402.0143}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &151478324
@@ -3278,7 +3278,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 409.08685, y: -227.96}
+  m_AnchoredPosition: {x: 409.08685, y: -227.96002}
   m_SizeDelta: {x: 2671.0002, y: 1402.0143}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &349184189
@@ -6039,6 +6039,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 893313539}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: hintDuration
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: notHintMaterial
       value: 
       objectReference: {fileID: 2100000, guid: 8bdfeaaa0b88ad64c94415ecf189b9b6, type: 2}
@@ -6064,11 +6068,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.size
-      value: 54
+      value: 53
       objectReference: {fileID: 0}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.size
-      value: 55
+      value: 54
       objectReference: {fileID: 0}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[2].otherObjects.Array.size
@@ -6076,7 +6080,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.size
-      value: 55
+      value: 54
       objectReference: {fileID: 0}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[0]
@@ -6609,31 +6613,31 @@ PrefabInstance:
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[23]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 7412201281712156894}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[24]
       value: 
-      objectReference: {fileID: 7412201281712156894}
+      objectReference: {fileID: 4455462286894677275}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[25]
       value: 
-      objectReference: {fileID: 4455462286894677275}
+      objectReference: {fileID: 2121484738212618540}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[26]
       value: 
-      objectReference: {fileID: 2121484738212618540}
+      objectReference: {fileID: 2865840433242682543}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[27]
       value: 
-      objectReference: {fileID: 2865840433242682543}
+      objectReference: {fileID: 3847565996628944517}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[28]
       value: 
-      objectReference: {fileID: 3847565996628944517}
+      objectReference: {fileID: 8726465197014626670}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[29]
       value: 
-      objectReference: {fileID: 8726465197014626670}
+      objectReference: {fileID: 1709133651034879144}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[30]
       value: 
@@ -6641,95 +6645,99 @@ PrefabInstance:
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[31]
       value: 
-      objectReference: {fileID: 1709133651034879144}
+      objectReference: {fileID: 2886503754907660197}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[32]
       value: 
-      objectReference: {fileID: 2886503754907660197}
+      objectReference: {fileID: 7478359970217831314}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[33]
       value: 
-      objectReference: {fileID: 7478359970217831314}
+      objectReference: {fileID: 6747151828124725617}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[34]
       value: 
-      objectReference: {fileID: 6747151828124725617}
+      objectReference: {fileID: 1554760949}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[35]
       value: 
-      objectReference: {fileID: 1554760949}
+      objectReference: {fileID: 1846799693}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[36]
       value: 
-      objectReference: {fileID: 1846799693}
+      objectReference: {fileID: 1231384447}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[37]
       value: 
-      objectReference: {fileID: 1231384447}
+      objectReference: {fileID: 2001565651}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[38]
       value: 
-      objectReference: {fileID: 2001565651}
+      objectReference: {fileID: 23314889}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[39]
       value: 
-      objectReference: {fileID: 23314889}
+      objectReference: {fileID: 487017170}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[40]
       value: 
-      objectReference: {fileID: 487017170}
+      objectReference: {fileID: 466925655}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[41]
       value: 
-      objectReference: {fileID: 466925655}
+      objectReference: {fileID: 11460294}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[42]
       value: 
-      objectReference: {fileID: 11460294}
+      objectReference: {fileID: 1857964233}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[43]
       value: 
-      objectReference: {fileID: 1857964233}
+      objectReference: {fileID: 959966285}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[44]
       value: 
-      objectReference: {fileID: 959966285}
+      objectReference: {fileID: 1461296901}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[45]
       value: 
-      objectReference: {fileID: 1461296901}
+      objectReference: {fileID: 1427598643}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[46]
       value: 
-      objectReference: {fileID: 1427598643}
+      objectReference: {fileID: 1374733785}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[47]
       value: 
-      objectReference: {fileID: 1374733785}
+      objectReference: {fileID: 185379220}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[48]
       value: 
-      objectReference: {fileID: 185379220}
+      objectReference: {fileID: 397888215315197654}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[49]
       value: 
-      objectReference: {fileID: 397888215315197654}
+      objectReference: {fileID: 455238733255764751}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[50]
       value: 
-      objectReference: {fileID: 455238733255764751}
+      objectReference: {fileID: 3994072662545557620}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[51]
       value: 
-      objectReference: {fileID: 3994072662545557620}
+      objectReference: {fileID: 8157302720861044073}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[52]
       value: 
-      objectReference: {fileID: 8157302720861044073}
+      objectReference: {fileID: 719386923000626255}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[53]
       value: 
       objectReference: {fileID: 719386923000626255}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[54]
+      value: 
+      objectReference: {fileID: 5454705309397387293}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[10]
       value: 
@@ -6797,31 +6805,31 @@ PrefabInstance:
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[26]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 7412201281712156894}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[27]
       value: 
-      objectReference: {fileID: 7412201281712156894}
+      objectReference: {fileID: 4455462286894677275}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[28]
       value: 
-      objectReference: {fileID: 4455462286894677275}
+      objectReference: {fileID: 2121484738212618540}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[29]
       value: 
-      objectReference: {fileID: 2121484738212618540}
+      objectReference: {fileID: 2865840433242682543}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[30]
       value: 
-      objectReference: {fileID: 2865840433242682543}
+      objectReference: {fileID: 3847565996628944517}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[31]
       value: 
-      objectReference: {fileID: 3847565996628944517}
+      objectReference: {fileID: 8726465197014626670}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[32]
       value: 
-      objectReference: {fileID: 8726465197014626670}
+      objectReference: {fileID: 1709133651034879144}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[33]
       value: 
@@ -6829,83 +6837,83 @@ PrefabInstance:
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[34]
       value: 
-      objectReference: {fileID: 1709133651034879144}
+      objectReference: {fileID: 6747151828124725617}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[35]
       value: 
-      objectReference: {fileID: 6747151828124725617}
+      objectReference: {fileID: 1554760949}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[36]
       value: 
-      objectReference: {fileID: 1554760949}
+      objectReference: {fileID: 1846799693}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[37]
       value: 
-      objectReference: {fileID: 1846799693}
+      objectReference: {fileID: 1231384447}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[38]
       value: 
-      objectReference: {fileID: 1231384447}
+      objectReference: {fileID: 2001565651}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[39]
       value: 
-      objectReference: {fileID: 2001565651}
+      objectReference: {fileID: 23314889}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[40]
       value: 
-      objectReference: {fileID: 23314889}
+      objectReference: {fileID: 487017170}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[41]
       value: 
-      objectReference: {fileID: 487017170}
+      objectReference: {fileID: 466925655}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[42]
       value: 
-      objectReference: {fileID: 466925655}
+      objectReference: {fileID: 11460294}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[43]
       value: 
-      objectReference: {fileID: 11460294}
+      objectReference: {fileID: 1857964233}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[44]
       value: 
-      objectReference: {fileID: 1857964233}
+      objectReference: {fileID: 959966285}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[45]
       value: 
-      objectReference: {fileID: 959966285}
+      objectReference: {fileID: 1461296901}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[46]
       value: 
-      objectReference: {fileID: 1461296901}
+      objectReference: {fileID: 1427598643}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[47]
       value: 
-      objectReference: {fileID: 1427598643}
+      objectReference: {fileID: 1374733785}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[48]
       value: 
-      objectReference: {fileID: 1374733785}
+      objectReference: {fileID: 185379220}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[49]
       value: 
-      objectReference: {fileID: 185379220}
+      objectReference: {fileID: 397888215315197654}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[50]
       value: 
-      objectReference: {fileID: 397888215315197654}
+      objectReference: {fileID: 455238733255764751}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[51]
       value: 
-      objectReference: {fileID: 455238733255764751}
+      objectReference: {fileID: 3994072662545557620}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[52]
       value: 
-      objectReference: {fileID: 3994072662545557620}
+      objectReference: {fileID: 8157302720861044073}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[53]
       value: 
-      objectReference: {fileID: 8157302720861044073}
+      objectReference: {fileID: 719386923000626255}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.data[54]
       value: 
@@ -6937,15 +6945,15 @@ PrefabInstance:
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[2].otherObjects.Array.data[16]
       value: 
-      objectReference: {fileID: 8202224254307916173}
+      objectReference: {fileID: 5454705309397387293}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[2].otherObjects.Array.data[17]
       value: 
-      objectReference: {fileID: 6824688470573831728}
+      objectReference: {fileID: 8202224254307916173}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[2].otherObjects.Array.data[18]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 6824688470573831728}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[2].otherObjects.Array.data[19]
       value: 
@@ -6973,11 +6981,11 @@ PrefabInstance:
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[2].otherObjects.Array.data[25]
       value: 
-      objectReference: {fileID: 47026}
+      objectReference: {fileID: 1709133651034879144}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[2].otherObjects.Array.data[26]
       value: 
-      objectReference: {fileID: 1709133651034879144}
+      objectReference: {fileID: 47026}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[2].otherObjects.Array.data[27]
       value: 
@@ -7129,119 +7137,119 @@ PrefabInstance:
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[25]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 7412201281712156894}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[26]
       value: 
-      objectReference: {fileID: 7412201281712156894}
+      objectReference: {fileID: 4455462286894677275}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[27]
       value: 
-      objectReference: {fileID: 4455462286894677275}
+      objectReference: {fileID: 2121484738212618540}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[28]
       value: 
-      objectReference: {fileID: 2121484738212618540}
+      objectReference: {fileID: 2865840433242682543}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[29]
       value: 
-      objectReference: {fileID: 2865840433242682543}
+      objectReference: {fileID: 3847565996628944517}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[30]
       value: 
-      objectReference: {fileID: 3847565996628944517}
+      objectReference: {fileID: 8726465197014626670}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[31]
       value: 
-      objectReference: {fileID: 8726465197014626670}
+      objectReference: {fileID: 1709133651034879144}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[32]
       value: 
-      objectReference: {fileID: 1709133651034879144}
+      objectReference: {fileID: 2886503754907660197}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[33]
       value: 
-      objectReference: {fileID: 2886503754907660197}
+      objectReference: {fileID: 7478359970217831314}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[34]
       value: 
-      objectReference: {fileID: 7478359970217831314}
+      objectReference: {fileID: 6747151828124725617}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[35]
       value: 
-      objectReference: {fileID: 6747151828124725617}
+      objectReference: {fileID: 1554760949}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[36]
       value: 
-      objectReference: {fileID: 1554760949}
+      objectReference: {fileID: 1846799693}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[37]
       value: 
-      objectReference: {fileID: 1846799693}
+      objectReference: {fileID: 1231384447}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[38]
       value: 
-      objectReference: {fileID: 1231384447}
+      objectReference: {fileID: 2001565651}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[39]
       value: 
-      objectReference: {fileID: 2001565651}
+      objectReference: {fileID: 23314889}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[40]
       value: 
-      objectReference: {fileID: 23314889}
+      objectReference: {fileID: 487017170}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[41]
       value: 
-      objectReference: {fileID: 487017170}
+      objectReference: {fileID: 466925655}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[42]
       value: 
-      objectReference: {fileID: 466925655}
+      objectReference: {fileID: 11460294}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[43]
       value: 
-      objectReference: {fileID: 11460294}
+      objectReference: {fileID: 1857964233}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[44]
       value: 
-      objectReference: {fileID: 1857964233}
+      objectReference: {fileID: 959966285}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[45]
       value: 
-      objectReference: {fileID: 959966285}
+      objectReference: {fileID: 1461296901}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[46]
       value: 
-      objectReference: {fileID: 1461296901}
+      objectReference: {fileID: 1427598643}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[47]
       value: 
-      objectReference: {fileID: 1427598643}
+      objectReference: {fileID: 1374733785}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[48]
       value: 
-      objectReference: {fileID: 1374733785}
+      objectReference: {fileID: 185379220}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[49]
       value: 
-      objectReference: {fileID: 185379220}
+      objectReference: {fileID: 397888215315197654}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[50]
       value: 
-      objectReference: {fileID: 397888215315197654}
+      objectReference: {fileID: 455238733255764751}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[51]
       value: 
-      objectReference: {fileID: 455238733255764751}
+      objectReference: {fileID: 3994072662545557620}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[52]
       value: 
-      objectReference: {fileID: 3994072662545557620}
+      objectReference: {fileID: 8157302720861044073}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[53]
       value: 
-      objectReference: {fileID: 8157302720861044073}
+      objectReference: {fileID: 719386923000626255}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[3].otherObjects.Array.data[54]
       value: 
@@ -9880,7 +9888,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 409.08685, y: -227.96}
+  m_AnchoredPosition: {x: 409.08685, y: -227.96002}
   m_SizeDelta: {x: 2671.0002, y: 1402.0143}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1103165889
@@ -10854,7 +10862,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 409.08685, y: -227.96}
+  m_AnchoredPosition: {x: 409.08685, y: -227.96002}
   m_SizeDelta: {x: 2671.0002, y: 1402.0143}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1295433416
@@ -12335,7 +12343,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 409.08685, y: -227.96}
+  m_AnchoredPosition: {x: 409.08685, y: -227.96002}
   m_SizeDelta: {x: 2671.0002, y: 1402.0143}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1524141483
@@ -13119,7 +13127,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 409.08685, y: -227.96}
+  m_AnchoredPosition: {x: 409.08685, y: -227.96002}
   m_SizeDelta: {x: 2671.0002, y: 1402.0143}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1672721290
@@ -13911,7 +13919,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 409.08685, y: -227.96}
+  m_AnchoredPosition: {x: 409.08685, y: -227.96002}
   m_SizeDelta: {x: 2671.0002, y: 1402.0143}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1726754674
@@ -15358,7 +15366,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 409.08685, y: -227.96}
+  m_AnchoredPosition: {x: 409.08685, y: -227.96002}
   m_SizeDelta: {x: 2671.0002, y: 1402.0143}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2005674610
@@ -17315,7 +17323,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -4988325759724391367, guid: ea80eef524a7b46ffbf600b10e0748f6, type: 3}
+  - {fileID: 2100000, guid: 9e44ea99fa979441f828803520e55f47, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

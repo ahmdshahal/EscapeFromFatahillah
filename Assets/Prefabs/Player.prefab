@@ -520,7 +520,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1367860681488408851}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -610,6 +610,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 1367860680962074270}
+  isCrouch: 0
+  isSprint: 0
   speed: 5
   gravity: -9.8
   jumpHeight: 1.5
@@ -652,6 +654,7 @@ MonoBehaviour:
   imgTimer: {fileID: 5549474471162714770}
   timerValue: 0
   dragHand: {fileID: 8295043486345519724}
+  isDrag: 0
 --- !u!114 &7561173581255509750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -694,9 +697,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hintSystem: {fileID: 7561173581255509744}
   hintMaterial: {fileID: 2100000, guid: 695ca3a6c4956bd4aa091f9e7ccb14f3, type: 2}
-  notHintMaterial: {fileID: 0}
+  notHintMaterial: {fileID: 2100000, guid: 8bdfeaaa0b88ad64c94415ecf189b9b6, type: 2}
   currentTaskIndex: 0
-  hintDuration: 3
+  hintDuration: 2
   taskPuzzlesList: []
 --- !u!114 &6088650979473950510
 MonoBehaviour:
