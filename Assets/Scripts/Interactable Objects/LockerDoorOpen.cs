@@ -3,7 +3,9 @@ using UnityEngine;
 
 public class LockerDoorOpen : Interactable
 {
-    [SerializeField] private bool isDifferentFace;
+    [SerializeField] private bool anythingInside;
+    [SerializeField] private PickObject objectIn;
+
     private Animator anim;
     private bool isOpen;
 
@@ -14,7 +16,7 @@ public class LockerDoorOpen : Interactable
 
     private void Start()
     {
-        promptMessage = "Buka!";
+        isOpen = false;
         timer = 2;
     }
 
@@ -22,29 +24,20 @@ public class LockerDoorOpen : Interactable
     {
         isOpen = !isOpen;
         
-        if (isOpen)
-        {
-            promptMessage = "Tutup!";
-            if (!isDifferentFace)
-            {
-                anim.Play("LockerDoorOpen");
-            }
-            else
-            {
-                anim.Play("AnotherLockerDoorOpen");
-            }
-        }
+        if (isOpen)        
+            anim.Play("LockerDoorOpen");
         else
-        {
-            promptMessage = "Buka!";
-            if (!isDifferentFace)
-            {
-                anim.Play("LockerDoorClose");
-            }
-            else
-            {
-                anim.Play("AnotherLockerDoorClose");
-            }
-        }
+            anim.Play("LockerDoorClose");
+
+        CheckLockerIsOpen();
+    }
+
+    private void CheckLockerIsOpen()
+    {
+        promptMessage = isOpen ? "Tutup!" : "Buka!";
+
+        if (!anythingInside) return;
+        objectIn.promptMessage = isOpen ? "Ambil" : string.Empty;
+        objectIn.canPick = isOpen;
     }
 }

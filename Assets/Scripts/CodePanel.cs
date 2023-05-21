@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 using TMPro;
+using UnityEngine.Events;
 
 public class CodePanel : MonoBehaviour 
 {
@@ -8,6 +9,7 @@ public class CodePanel : MonoBehaviour
 	[SerializeField] private string rightCode;
 	[SerializeField] private AudioSource rightSound, wrongSound, numPress;
 	[SerializeField] private AddNumCode[] numButtons;
+	[SerializeField] private UnityEvent onPassed;
 	
 	[HideInInspector] public bool canInput;
 
@@ -34,7 +36,7 @@ public class CodePanel : MonoBehaviour
 
 	private void CheckCorrectCode()
 	{
-		if (codeTextValue.Length >= 4)
+		if (codeTextValue.Length >= rightCode.Length)
 		{
 			StartCoroutine(CheckCorrectCodeCoroutine());
 		}
@@ -52,6 +54,8 @@ public class CodePanel : MonoBehaviour
 			{
 				num.promptMessage = "Kode yang dimasukkan sudah benar";
 			}
+
+			onPassed.Invoke();
 		}
 		else
 		{

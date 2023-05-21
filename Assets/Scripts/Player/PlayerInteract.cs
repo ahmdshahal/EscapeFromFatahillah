@@ -110,7 +110,7 @@ public class PlayerInteract : MonoBehaviour
         }
         else // Jika tidak, lepaskan object yang digeser dari tangan
         {
-            playerUI.UpdateText(string.Empty);
+            //playerUI.UpdateText(string.Empty);
             dragHand.DetachChildren();
             isDrag = false;
         }

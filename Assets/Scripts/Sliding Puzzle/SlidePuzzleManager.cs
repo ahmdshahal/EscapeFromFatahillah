@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 using Random = UnityEngine.Random;
 
 public class SlidePuzzleManager : MonoBehaviour
@@ -9,6 +10,7 @@ public class SlidePuzzleManager : MonoBehaviour
     [SerializeField] private int correctPuzzle;
     [SerializeField] private Renderer lukisan;
     [SerializeField] private Material materialLukisan;
+    [SerializeField] private GameObject locker;
 
     private float minDistance;
     private bool isSolved;
@@ -60,8 +62,9 @@ public class SlidePuzzleManager : MonoBehaviour
             lukisan.material = materialLukisan;
             foreach (var puzzle in tilesPuzzle)
             {
-                puzzle.promptMessage = "Perhatikan lukisan!";
+                puzzle.promptMessage = "Perhatikan tembok di samping!";
             }
+            locker.SetActive(true);
             
             taskManager.CompleteCurrentTask();
         }
