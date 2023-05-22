@@ -6038,6 +6038,10 @@ PrefabInstance:
       propertyPath: hand
       value: 
       objectReference: {fileID: 893313539}
+    - target: {fileID: 1439129254410404789, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: distance
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: hintDuration
       value: 2
@@ -7305,6 +7309,17 @@ Camera:
   m_CorrespondingSourceObject: {fileID: 1367860680962074270, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
   m_PrefabInstance: {fileID: 741674056}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &741674060 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7561173581255509747, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+  m_PrefabInstance: {fileID: 741674056}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d860ed18eaec4a428ed80af563a545c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &742006393
 GameObject:
   m_ObjectHideFlags: 0
@@ -9285,12 +9300,24 @@ MonoBehaviour:
   promptMessage: Masukkan Kunci!
   timer: 0
   pickDropSystem: {fileID: 741674058}
-  mainMenuTask: {fileID: 1658890987}
   dropID: kunci
-  LoadToScene: Level3
-  scene: 0
   dropPoint: {fileID: 1007704722}
-  isDoor: 1
+  isEventOnly: 0
+  onPassed:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 741674060}
+        m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
+        m_MethodName: GoToScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Level3
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &1007704724
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19404,12 +19431,24 @@ MonoBehaviour:
   promptMessage: Letakkan di sini!
   timer: 0
   pickDropSystem: {fileID: 741674058}
-  mainMenuTask: {fileID: 1658890987}
   dropID: kotak
-  LoadToScene: 
-  scene: 0
   dropPoint: {fileID: 2671904947826447589}
-  isDoor: 0
+  isEventOnly: 0
+  onPassed:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1658890987}
+        m_TargetAssemblyTypeName: MainMenuTask, Assembly-CSharp
+        m_MethodName: PuzzleCompleted
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &6360205568878409978
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20118,12 +20157,24 @@ MonoBehaviour:
   promptMessage: Letakkan di sini!
   timer: 0
   pickDropSystem: {fileID: 741674058}
-  mainMenuTask: {fileID: 1658890987}
   dropID: segitiga
-  LoadToScene: 
-  scene: 0
   dropPoint: {fileID: 452730169940237489}
-  isDoor: 0
+  isEventOnly: 0
+  onPassed:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1658890987}
+        m_TargetAssemblyTypeName: MainMenuTask, Assembly-CSharp
+        m_MethodName: PuzzleCompleted
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &7480059780885719862
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20867,12 +20918,24 @@ MonoBehaviour:
   promptMessage: Letakkan di sini!
   timer: 0
   pickDropSystem: {fileID: 741674058}
-  mainMenuTask: {fileID: 1658890987}
   dropID: penta
-  LoadToScene: 
-  scene: 0
   dropPoint: {fileID: 8832277846204306098}
-  isDoor: 0
+  isEventOnly: 0
+  onPassed:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1658890987}
+        m_TargetAssemblyTypeName: MainMenuTask, Assembly-CSharp
+        m_MethodName: PuzzleCompleted
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &9125047358490603739
 BoxCollider:
   m_ObjectHideFlags: 0

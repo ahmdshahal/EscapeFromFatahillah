@@ -13,7 +13,8 @@ public class ExplodeCannon : Interactable
 
     protected override void Interact()
     {
-
+        if (canExplode)
+            promptMessage = "Selamat kamu sudah menyelesaikan level 3";
     }
 
     public void CanExplodeCannon()

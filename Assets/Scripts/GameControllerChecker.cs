@@ -1,12 +1,11 @@
-using System;
 using System.Collections;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class GameControllerChecker : MonoBehaviour
 {
-    [SerializeField] private Text controllerText;
+    [SerializeField] private TextMeshProUGUI controllerText;
     
     private bool connected;
     private string sceneName;
@@ -17,7 +16,7 @@ public class GameControllerChecker : MonoBehaviour
 
             if (!connected && controllers.Length > 0) {
                 connected = true;
-                controllerText.text = "Connected!";
+                controllerText.text = "Koneksi kontroler tersambung!";
                 Debug.Log("Connected");
 
                 yield return new WaitForSeconds(2f);
@@ -26,7 +25,7 @@ public class GameControllerChecker : MonoBehaviour
             }
             else if (connected && controllers.Length == 0) {         
                 connected = false;
-                controllerText.text = "Disconnected!";
+                controllerText.text = "Koneksi kontroler terputus!";
                 Debug.Log("Disconnected");
             }
 
