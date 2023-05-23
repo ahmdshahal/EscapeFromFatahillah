@@ -9,7 +9,7 @@ public class TaskCompletedCheck : MonoBehaviour
     [SerializeField] private int taskAmount;
     [SerializeField] private UnityEvent onCompleted;
 
-    public int taskPassed;
+    [HideInInspector] public int taskPassed;
 
     public void PuzzleCompleted()
     {

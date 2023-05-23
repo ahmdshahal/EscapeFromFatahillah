@@ -7,6 +7,7 @@ public class HintSystem : MonoBehaviour
     public Renderer[] hintObjects; // list dari semua objek hint
     public Renderer[] otherObjects; // list dari semua objek lain selain hint objects
     public bool canShowHint;
+
     private Dictionary<Renderer, Material[]> originalMaterials; // dictionary dari material asli dari setiap objek hint
     private Dictionary<Renderer, Material[]> originalOtherMaterials; // dictionary dari material asli dari setiap objek hint
 
@@ -47,9 +48,10 @@ public class HintSystem : MonoBehaviour
     private IEnumerator ChangeHintMaterialCoroutine(Material hintMaterial,Material notHintMaterial, float duration)
     {
         canShowHint = false;
-        
+
         SaveOriginalMaterials();
-        
+
+        //Mengganti material asli hintObjects menjadi hint material
         foreach (Renderer hintObject in hintObjects)
         {
             Material[] materials = hintObject.materials;
@@ -60,7 +62,8 @@ public class HintSystem : MonoBehaviour
             }
             hintObject.materials = materials;
         }
-        
+
+        //Mengganti material asli other Objects menjadi not hint material
         foreach (Renderer otherObject in otherObjects)
         {
             Material[] materials = otherObject.materials;
@@ -74,6 +77,14 @@ public class HintSystem : MonoBehaviour
 
         yield return new WaitForSeconds(duration);
 
+        ReturnOriginalMaterials(hintMaterial, notHintMaterial);
+
+        canShowHint = true;
+    }
+
+    public void ReturnOriginalMaterials(Material hintMaterial, Material notHintMaterial)
+    {
+        //Mengganti hint material hintObjects menjadi material aslinya
         foreach (Renderer hintObject in hintObjects)
         {
             Material[] materials = hintObject.materials;
@@ -82,7 +93,8 @@ public class HintSystem : MonoBehaviour
                 if (originalMaterial != null) materials[j] = originalMaterial[j];
             hintObject.materials = materials;
         }
-        
+
+        //Mengganti hint material otherObjects menjadi material aslinya
         foreach (Renderer otherObject in otherObjects)
         {
             Material[] materials = otherObject.materials;
@@ -91,7 +103,5 @@ public class HintSystem : MonoBehaviour
                 if (originalOtherMaterial != null) materials[j] = originalOtherMaterial[j];
             otherObject.materials = materials;
         }
-
-        canShowHint = true;
     }
 }

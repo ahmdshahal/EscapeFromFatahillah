@@ -112,7 +112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   useEvents: 0
-  promptMessage: Masukkan angka!
+  promptMessage: 9
   timer: 0
   codePanel: {fileID: 8105211046751703314}
   num: 9
@@ -228,7 +228,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   useEvents: 0
-  promptMessage: Masukkan angka!
+  promptMessage: 6
   timer: 0
   codePanel: {fileID: 8105211046751703314}
   num: 6
@@ -344,7 +344,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   useEvents: 0
-  promptMessage: Masukkan angka!
+  promptMessage: 2
   timer: 0
   codePanel: {fileID: 8105211046751703314}
   num: 2
@@ -460,7 +460,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   useEvents: 0
-  promptMessage: Masukkan angka!
+  promptMessage: 7
   timer: 0
   codePanel: {fileID: 8105211046751703314}
   num: 7
@@ -660,7 +660,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   useEvents: 0
-  promptMessage: Masukkan angka!
+  promptMessage: 3
   timer: 0
   codePanel: {fileID: 8105211046751703314}
   num: 3
@@ -776,7 +776,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   useEvents: 0
-  promptMessage: Masukkan angka!
+  promptMessage: 1
   timer: 0
   codePanel: {fileID: 8105211046751703314}
   num: 1
@@ -975,7 +975,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   useEvents: 0
-  promptMessage: Masukkan angka!
+  promptMessage: 8
   timer: 0
   codePanel: {fileID: 8105211046751703314}
   num: 8
@@ -1091,7 +1091,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   useEvents: 0
-  promptMessage: Masukkan angka!
+  promptMessage: 5
   timer: 0
   codePanel: {fileID: 8105211046751703314}
   num: 5
@@ -1207,7 +1207,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   useEvents: 0
-  promptMessage: Masukkan angka!
+  promptMessage: 0
   timer: 0
   codePanel: {fileID: 8105211046751703314}
   num: 0
@@ -1323,7 +1323,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   useEvents: 0
-  promptMessage: Masukkan angka!
+  promptMessage: 4
   timer: 0
   codePanel: {fileID: 8105211046751703314}
   num: 4
@@ -1402,6 +1402,9 @@ MonoBehaviour:
   - {fileID: 3136833640846766706}
   - {fileID: 1606027228594791854}
   - {fileID: 647032759771509691}
+  onPassed:
+    m_PersistentCalls:
+      m_Calls: []
   canInput: 0
 --- !u!1 &8987521643149994109
 GameObject:
