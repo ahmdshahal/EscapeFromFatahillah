@@ -8,9 +8,7 @@ public class SlidePuzzleManager : MonoBehaviour
     [SerializeField] private Transform emptySpace;
     [SerializeField] private SlidePuzzle[] tilesPuzzle;
     [SerializeField] private int correctPuzzle;
-    [SerializeField] private Renderer lukisan;
-    [SerializeField] private Material materialLukisan;
-    [SerializeField] private GameObject locker;
+    [SerializeField] private GameObject locker, wall, lukisan;
 
     private float minDistance;
     private bool isSolved;
@@ -59,11 +57,13 @@ public class SlidePuzzleManager : MonoBehaviour
         if (correctPuzzle == tilesPuzzle.Length)
         {
             isSolved = true;
-            lukisan.material = materialLukisan;
+
             foreach (var puzzle in tilesPuzzle)
             {
                 puzzle.promptMessage = "Perhatikan tembok di samping!";
             }
+            wall.SetActive(false);
+            lukisan.SetActive(true);
             locker.SetActive(true);
             
             taskManager.CompleteCurrentTask();

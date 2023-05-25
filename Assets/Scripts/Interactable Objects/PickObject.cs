@@ -30,4 +30,9 @@ public class PickObject : Interactable
             transform.SetParent(hand);
         }
     }
+
+    public void SetCanPick(bool CanPick)
+    {
+        canPick = CanPick;
+    }
 }

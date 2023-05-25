@@ -43,6 +43,14 @@ public class HintSystem : MonoBehaviour
     {
         StartCoroutine(ChangeHintMaterialCoroutine(hintMaterial, notHintMaterial,duration));
     }
+
+    public void StopChangeHintMaterial(Material hintMaterial,Material notHintMaterial, float duration)
+    {
+        StopCoroutine(ChangeHintMaterialCoroutine(hintMaterial, notHintMaterial, duration));
+
+        ReturnOriginalMaterials(hintMaterial, notHintMaterial);
+        canShowHint = true;
+    }
     
     // method untuk mengubah material dari semua objek hint
     private IEnumerator ChangeHintMaterialCoroutine(Material hintMaterial,Material notHintMaterial, float duration)

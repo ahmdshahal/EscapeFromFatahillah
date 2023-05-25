@@ -23,7 +23,7 @@ public class TaskManager : MonoBehaviour
     // method untuk menyelesaikan tugas yang sedang aktif
     public void CompleteCurrentTask()
     {
-        hintSystem.ReturnOriginalMaterials(hintMaterial, notHintMaterial);
+        hintSystem.StopChangeHintMaterial(hintMaterial, notHintMaterial, hintDuration);
         currentTaskIndex++;
         if (currentTaskIndex < taskPuzzlesList.Count) // jika masih ada tugas berikutnya
         {

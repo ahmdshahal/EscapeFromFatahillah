@@ -7,6 +7,8 @@ public class OpenDrawer : Interactable
     [SerializeField] private Vector3 openPosition;
     [SerializeField] private bool anythingInside;
     [SerializeField] private PickObject objectIn;
+    [SerializeField] private AudioSource drawerSoundOpen;
+    [SerializeField] private AudioSource drawerSoundClose;
     
     [HideInInspector] public bool isOpen;
 
@@ -26,18 +28,24 @@ public class OpenDrawer : Interactable
     {
         isOpen = !isOpen;
         (closePosition, openPosition) = (openPosition, closePosition);
-        
+
         CheckDrawerIsOpen();
+
+        if (isOpen)
+            drawerSoundOpen.Play();
+        else
+            drawerSoundClose.Play();
     }
 
     private void Update()
     {
-        transform.localPosition = Vector3.Lerp(transform.localPosition, openPosition, 2.5f * Time.deltaTime);
+        transform.localPosition = Vector3.Lerp(transform.localPosition, openPosition, 3f * Time.deltaTime);
     }
 
     private void CheckDrawerIsOpen()
     {
         promptMessage = isOpen ? "Tutup!" : "Buka!";
+
 
         if (!anythingInside) return;
         objectIn.promptMessage = isOpen ? "Ambil" : string.Empty;
