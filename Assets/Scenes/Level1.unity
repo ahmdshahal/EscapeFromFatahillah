@@ -204,7 +204,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &120350167 stripped
 MeshRenderer:
@@ -398,6 +398,8 @@ MonoBehaviour:
   openPosition: {x: -13.16102, y: 1.350588, z: 3.66}
   anythingInside: 0
   objectIn: {fileID: 0}
+  drawerSoundOpen: {fileID: 1972970396}
+  drawerSoundClose: {fileID: 1972970395}
   isOpen: 0
 --- !u!65 &270444418
 BoxCollider:
@@ -629,12 +631,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   useEvents: 0
-  promptMessage: Letakkan pecahan prasasti di sini!
+  promptMessage: 5
   timer: 0
   pickDropSystem: {fileID: 1076598949}
   dropID: kebonkopi5
   dropPoint: {fileID: 320706089}
-  isEventOnly: 0
+  isEventOnly: 1
   onPassed:
     m_PersistentCalls:
       m_Calls:
@@ -819,7 +821,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &390134861 stripped
 MeshRenderer:
@@ -1082,7 +1084,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &759088344
 GameObject:
@@ -1169,6 +1171,8 @@ MonoBehaviour:
   openPosition: {x: -7.68575, y: 1.36, z: -4.79}
   anythingInside: 1
   objectIn: {fileID: 759088346}
+  drawerSoundOpen: {fileID: 1972970396}
+  drawerSoundClose: {fileID: 1972970395}
   isOpen: 0
 --- !u!1 &786488543
 GameObject:
@@ -1218,7 +1222,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   useEvents: 0
-  promptMessage: Letakkan pecahan prasasti di sini!
+  promptMessage: 1
   timer: 0
   pickDropSystem: {fileID: 1076598949}
   dropID: kebonkopi1
@@ -1408,7 +1412,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &864656361 stripped
 MeshRenderer:
@@ -1429,7 +1433,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 05902616d504b4f08bf87b6b93e1d0ec, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 05902616d504b4f08bf87b6b93e1d0ec, type: 3}
       propertyPath: m_LocalScale.x
@@ -1624,7 +1628,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!23 &1011200768 stripped
 MeshRenderer:
@@ -1766,6 +1770,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1055204577}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!23 &1055204583
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1886,12 +1902,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   useEvents: 0
-  promptMessage: Letakkan pecahan prasasti di sini!
+  promptMessage: 4
   timer: 0
   pickDropSystem: {fileID: 1076598949}
   dropID: kebonkopi4
   dropPoint: {fileID: 1095135783}
-  isEventOnly: 0
+  isEventOnly: 1
   onPassed:
     m_PersistentCalls:
       m_Calls:
@@ -2013,6 +2029,8 @@ MonoBehaviour:
   openPosition: {x: -7.68575, y: 1.350589, z: 3.66}
   anythingInside: 0
   objectIn: {fileID: 0}
+  drawerSoundOpen: {fileID: 1972970396}
+  drawerSoundClose: {fileID: 1972970395}
   isOpen: 0
 --- !u!65 &1104110185
 BoxCollider:
@@ -2217,11 +2235,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.size
-      value: 6
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.size
-      value: 11
+      value: 55
       objectReference: {fileID: 0}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[1].hintObjects.Array.size
@@ -2245,7 +2263,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.size
-      value: 67
+      value: 29
       objectReference: {fileID: 0}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[1].otherObjects.Array.size
@@ -2270,43 +2288,43 @@ PrefabInstance:
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[0]
       value: 
-      objectReference: {fileID: 1055204583}
+      objectReference: {fileID: 4434043541982530372}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[1]
       value: 
-      objectReference: {fileID: 2269199364120168617}
+      objectReference: {fileID: 8217513364249402973}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[2]
       value: 
-      objectReference: {fileID: 5546339546836073462}
+      objectReference: {fileID: 5356452997505570932}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[3]
       value: 
-      objectReference: {fileID: 4284517697597157870}
+      objectReference: {fileID: 7196371284504955364}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[4]
       value: 
-      objectReference: {fileID: 1636029316763299965}
+      objectReference: {fileID: 2815807652846259349}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[5]
       value: 
-      objectReference: {fileID: 3331527089300905843}
+      objectReference: {fileID: 8349013914229296233}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[6]
       value: 
-      objectReference: {fileID: 2511080969311797146}
+      objectReference: {fileID: 786488547}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[7]
       value: 
-      objectReference: {fileID: 3126393998887742065}
+      objectReference: {fileID: 1362340875}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[8]
       value: 
-      objectReference: {fileID: 2632965100111291977}
+      objectReference: {fileID: 1775413359}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[9]
       value: 
-      objectReference: {fileID: 1131558466064767859}
+      objectReference: {fileID: 1095135786}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[1].hintObjects.Array.data[0]
       value: 
@@ -2478,47 +2496,227 @@ PrefabInstance:
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[10]
       value: 
-      objectReference: {fileID: 5637443006892683657}
-    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
-      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[0]
-      value: 
-      objectReference: {fileID: 786488547}
-    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
-      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[1]
-      value: 
-      objectReference: {fileID: 1362340875}
-    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
-      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[2]
-      value: 
-      objectReference: {fileID: 1775413359}
-    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
-      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[3]
-      value: 
-      objectReference: {fileID: 1095135786}
-    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
-      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[4]
-      value: 
       objectReference: {fileID: 320706092}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
-      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[5]
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[11]
       value: 
       objectReference: {fileID: 1474158730}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
-      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[6]
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[12]
       value: 
       objectReference: {fileID: 4434043540957390434}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
-      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[7]
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[13]
       value: 
       objectReference: {fileID: 8217513363526579067}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
-      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[8]
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[14]
       value: 
       objectReference: {fileID: 5356452998698497362}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
-      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[9]
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[15]
       value: 
       objectReference: {fileID: 7196371285426300098}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[16]
+      value: 
+      objectReference: {fileID: 2815807653129806259}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[17]
+      value: 
+      objectReference: {fileID: 8349013916159107407}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[18]
+      value: 
+      objectReference: {fileID: 1055204583}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[19]
+      value: 
+      objectReference: {fileID: 1642449687}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[20]
+      value: 
+      objectReference: {fileID: 1579519163}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[21]
+      value: 
+      objectReference: {fileID: 2112249393}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[22]
+      value: 
+      objectReference: {fileID: 1115248283}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[23]
+      value: 
+      objectReference: {fileID: 316468087}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[24]
+      value: 
+      objectReference: {fileID: 1011624986}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[25]
+      value: 
+      objectReference: {fileID: 120350167}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[26]
+      value: 
+      objectReference: {fileID: 917257060}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[27]
+      value: 
+      objectReference: {fileID: 390134861}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[28]
+      value: 
+      objectReference: {fileID: 1261628922}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[29]
+      value: 
+      objectReference: {fileID: 864656361}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[30]
+      value: 
+      objectReference: {fileID: 1011200768}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[31]
+      value: 
+      objectReference: {fileID: 1199931491}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[32]
+      value: 
+      objectReference: {fileID: 1677595709}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[33]
+      value: 
+      objectReference: {fileID: 2095359208}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[34]
+      value: 
+      objectReference: {fileID: 1969106311}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[35]
+      value: 
+      objectReference: {fileID: 1469544316}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[36]
+      value: 
+      objectReference: {fileID: 2269199364120168617}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[37]
+      value: 
+      objectReference: {fileID: 5546339546836073462}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[38]
+      value: 
+      objectReference: {fileID: 4284517697597157870}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[39]
+      value: 
+      objectReference: {fileID: 1636029316763299965}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[40]
+      value: 
+      objectReference: {fileID: 3331527089300905843}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[41]
+      value: 
+      objectReference: {fileID: 2511080969311797146}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[42]
+      value: 
+      objectReference: {fileID: 3126393998887742065}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[43]
+      value: 
+      objectReference: {fileID: 2632965100111291977}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[44]
+      value: 
+      objectReference: {fileID: 1131558466064767859}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[45]
+      value: 
+      objectReference: {fileID: 5637443006892683657}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[46]
+      value: 
+      objectReference: {fileID: 7579325361417785658}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[47]
+      value: 
+      objectReference: {fileID: 2408538132054991218}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[48]
+      value: 
+      objectReference: {fileID: 5317193457287209759}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[49]
+      value: 
+      objectReference: {fileID: 5793344789573799146}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[50]
+      value: 
+      objectReference: {fileID: 659459175277250322}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[51]
+      value: 
+      objectReference: {fileID: 3128390550601771560}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[52]
+      value: 
+      objectReference: {fileID: 234443202006771903}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[53]
+      value: 
+      objectReference: {fileID: 2994042935010260854}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[54]
+      value: 
+      objectReference: {fileID: 1414646675032649668}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].hintObjects.Array.data[55]
+      value: 
+      objectReference: {fileID: 1414646675032649668}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[0]
+      value: 
+      objectReference: {fileID: 6040175926281886853}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[1]
+      value: 
+      objectReference: {fileID: 559107746203921137}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[2]
+      value: 
+      objectReference: {fileID: 8780516198756925139}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[3]
+      value: 
+      objectReference: {fileID: 3873010040889412118}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[4]
+      value: 
+      objectReference: {fileID: 1048993834208116408}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[5]
+      value: 
+      objectReference: {fileID: 9175636495498522247}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[6]
+      value: 
+      objectReference: {fileID: 3341839844961521136}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[7]
+      value: 
+      objectReference: {fileID: 6124951995104338581}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[8]
+      value: 
+      objectReference: {fileID: 1681104523984384096}
+    - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
+      propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[9]
+      value: 
+      objectReference: {fileID: 6252655843281506434}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[1].hintObjects.Array.data[10]
       value: 
@@ -2762,79 +2960,79 @@ PrefabInstance:
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[10]
       value: 
-      objectReference: {fileID: 2815807653129806259}
+      objectReference: {fileID: 5346643882744399611}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[11]
       value: 
-      objectReference: {fileID: 8349013916159107407}
+      objectReference: {fileID: 9138371550791831532}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[12]
       value: 
-      objectReference: {fileID: 6040175926281886853}
+      objectReference: {fileID: 8051657833977335378}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[13]
       value: 
-      objectReference: {fileID: 559107746203921137}
+      objectReference: {fileID: 8131472664757993205}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[14]
       value: 
-      objectReference: {fileID: 1642449687}
+      objectReference: {fileID: 4136205966571239465}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[15]
       value: 
-      objectReference: {fileID: 1579519163}
+      objectReference: {fileID: 1337108718137644913}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[16]
       value: 
-      objectReference: {fileID: 8780516198756925139}
+      objectReference: {fileID: 2502087569299472627}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[17]
       value: 
-      objectReference: {fileID: 3873010040889412118}
+      objectReference: {fileID: 2752884429305139626}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[18]
       value: 
-      objectReference: {fileID: 1048993834208116408}
+      objectReference: {fileID: 2352376440746643518}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[19]
       value: 
-      objectReference: {fileID: 9175636495498522247}
+      objectReference: {fileID: 2020444489898137752}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[20]
       value: 
-      objectReference: {fileID: 2112249393}
+      objectReference: {fileID: 1545862284}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[21]
       value: 
-      objectReference: {fileID: 3341839844961521136}
+      objectReference: {fileID: 1447897963}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[22]
       value: 
-      objectReference: {fileID: 6124951995104338581}
+      objectReference: {fileID: 257388019}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[23]
       value: 
-      objectReference: {fileID: 1681104523984384096}
+      objectReference: {fileID: 102763344}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[24]
       value: 
-      objectReference: {fileID: 6252655843281506434}
+      objectReference: {fileID: 361750033}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[25]
       value: 
-      objectReference: {fileID: 5346643882744399611}
+      objectReference: {fileID: 1327671179}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[26]
       value: 
-      objectReference: {fileID: 9138371550791831532}
+      objectReference: {fileID: 815259966}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[27]
       value: 
-      objectReference: {fileID: 8051657833977335378}
+      objectReference: {fileID: 1849154540}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[28]
       value: 
-      objectReference: {fileID: 8131472664757993205}
+      objectReference: {fileID: 927107472}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[0].otherObjects.Array.data[29]
       value: 
@@ -4458,7 +4656,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &1330331268
 Mesh:
@@ -4773,12 +4971,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   useEvents: 0
-  promptMessage: Letakkan pecahan prasasti di sini!
+  promptMessage: 2
   timer: 0
   pickDropSystem: {fileID: 1076598949}
   dropID: kebonkopi2
   dropPoint: {fileID: 1362340872}
-  isEventOnly: 0
+  isEventOnly: 1
   onPassed:
     m_PersistentCalls:
       m_Calls:
@@ -5016,12 +5214,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   useEvents: 0
-  promptMessage: Letakkan pecahan prasasti di sini!
+  promptMessage: 6
   timer: 0
   pickDropSystem: {fileID: 1076598949}
   dropID: kebonkopi6
   dropPoint: {fileID: 1474158727}
-  isEventOnly: 0
+  isEventOnly: 1
   onPassed:
     m_PersistentCalls:
       m_Calls:
@@ -5278,6 +5476,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1579519157}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!23 &1579519163
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5458,6 +5668,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1642449681}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!23 &1642449687
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5561,12 +5783,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   useEvents: 0
-  promptMessage: Letakkan pecahan prasasti di sini!
+  promptMessage: 3
   timer: 0
   pickDropSystem: {fileID: 1076598949}
   dropID: kebonkopi3
   dropPoint: {fileID: 1775413356}
-  isEventOnly: 0
+  isEventOnly: 1
   onPassed:
     m_PersistentCalls:
       m_Calls:
@@ -5843,7 +6065,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8876786371386493867, guid: d059239a69be3d444b5b85a9dd0679f5, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 8876786371386493867, guid: d059239a69be3d444b5b85a9dd0679f5, type: 3}
       propertyPath: m_LocalScale.x
@@ -5999,34 +6221,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d059239a69be3d444b5b85a9dd0679f5, type: 3}
---- !u!64 &1821781407
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6387169965881712172}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4973442699388453362, guid: 29e5d45de7ec44e0d81c35c3c3f912f6, type: 3}
---- !u!64 &1821781408
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8601781207334566762}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -70656693566436113, guid: 29e5d45de7ec44e0d81c35c3c3f912f6, type: 3}
 --- !u!1 &1837444397
 GameObject:
   m_ObjectHideFlags: 0
@@ -6177,7 +6371,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &1852445539
 Mesh:
@@ -6435,12 +6629,79 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1969106311 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 9094334458765098986, guid: d059239a69be3d444b5b85a9dd0679f5, type: 3}
   m_PrefabInstance: {fileID: 1813212112}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1972970394
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6982043156117578949, guid: 849e531381753eb44afe04ab0e65ef51, type: 3}
+      propertyPath: m_Name
+      value: Audio
+      objectReference: {fileID: 0}
+    - target: {fileID: 6982043156117578954, guid: 849e531381753eb44afe04ab0e65ef51, type: 3}
+      propertyPath: m_RootOrder
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 6982043156117578954, guid: 849e531381753eb44afe04ab0e65ef51, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6982043156117578954, guid: 849e531381753eb44afe04ab0e65ef51, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6982043156117578954, guid: 849e531381753eb44afe04ab0e65ef51, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6982043156117578954, guid: 849e531381753eb44afe04ab0e65ef51, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6982043156117578954, guid: 849e531381753eb44afe04ab0e65ef51, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6982043156117578954, guid: 849e531381753eb44afe04ab0e65ef51, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6982043156117578954, guid: 849e531381753eb44afe04ab0e65ef51, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6982043156117578954, guid: 849e531381753eb44afe04ab0e65ef51, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6982043156117578954, guid: 849e531381753eb44afe04ab0e65ef51, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6982043156117578954, guid: 849e531381753eb44afe04ab0e65ef51, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 849e531381753eb44afe04ab0e65ef51, type: 3}
+--- !u!82 &1972970395 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 6982043156442198305, guid: 849e531381753eb44afe04ab0e65ef51, type: 3}
+  m_PrefabInstance: {fileID: 1972970394}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1972970396 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 6982043156223282802, guid: 849e531381753eb44afe04ab0e65ef51, type: 3}
+  m_PrefabInstance: {fileID: 1972970394}
   m_PrefabAsset: {fileID: 0}
 --- !u!43 &2024267349
 Mesh:
@@ -6635,7 +6896,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 5c0d53459b43743cc830094e1e39f830, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5c0d53459b43743cc830094e1e39f830, type: 3}
       propertyPath: m_LocalScale.x
@@ -6789,7 +7050,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2053444845 stripped
 Transform:
@@ -6937,6 +7198,8 @@ MonoBehaviour:
   openPosition: {x: -13.16102, y: 1.350589, z: -4.79}
   anythingInside: 0
   objectIn: {fileID: 0}
+  drawerSoundOpen: {fileID: 1972970396}
+  drawerSoundClose: {fileID: 1972970395}
   isOpen: 0
 --- !u!65 &2115621353
 BoxCollider:
@@ -7149,21 +7412,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &543450652402343238
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 919132148212238332}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 2.64, y: 0, z: -10.45}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
-  m_ConstrainProportionsScale: 1
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!4 &543450652411739066
 Transform:
   m_ObjectHideFlags: 0
@@ -7293,7 +7541,7 @@ Transform:
   - {fileID: 1224287124994546261}
   - {fileID: 4849239709274455618}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &654584255480200858
 MonoBehaviour:
@@ -7497,22 +7745,6 @@ GameObject:
   - component: {fileID: 543450652411739066}
   m_Layer: 0
   m_Name: kebonkopi
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &919132148212238332
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 543450652402343238}
-  m_Layer: 0
-  m_Name: papan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10459,7 +10691,7 @@ GameObject:
   - component: {fileID: 3774178039966935566}
   - component: {fileID: 6249903292085621047}
   - component: {fileID: 559107746203921137}
-  - component: {fileID: 1821781407}
+  - component: {fileID: 6387169965881712173}
   m_Layer: 0
   m_Name: kotak2
   m_TagString: Untagged
@@ -10467,6 +10699,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
   m_IsActive: 1
+--- !u!65 &6387169965881712173
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6387169965881712172}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.019999998, y: 0.019999994, z: 0.036666654}
+  m_Center: {x: 5.359293e-18, y: 0.00000000372529, z: -0.008333329}
 --- !u!4 &6500754944615991417
 Transform:
   m_ObjectHideFlags: 0
@@ -12017,7 +12262,7 @@ GameObject:
   - component: {fileID: 7993498915839491433}
   - component: {fileID: 1457318263745267395}
   - component: {fileID: 6040175926281886853}
-  - component: {fileID: 1821781408}
+  - component: {fileID: 8601781207334566763}
   m_Layer: 0
   m_Name: kotak1
   m_TagString: Untagged
@@ -12025,6 +12270,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
   m_IsActive: 1
+--- !u!65 &8601781207334566763
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8601781207334566762}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.019999998, y: 0.019999996, z: 0.036666654}
+  m_Center: {x: -1.645363e-24, y: 0.000000004071604, z: -0.008333329}
 --- !u!33 &8603614297548783463
 MeshFilter:
   m_ObjectHideFlags: 0

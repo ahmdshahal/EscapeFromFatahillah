@@ -14,6 +14,7 @@ public class HintSystem : MonoBehaviour
     private void Start()
     {
         canShowHint = true;
+        SaveOriginalMaterials();
     }
 
     private void SaveOriginalMaterials()

@@ -1,14 +1,20 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class HintDetector : MonoBehaviour
 {
     [SerializeField] private InputManager inputManager;
+    [SerializeField] private GameObject nextScreen;
+    [SerializeField] private AudioSource audioSource;
 
     private void Update()
     {
         if (inputManager.onFootActions.Hint.triggered)
         {
-            //gameObject.SetActive(false);
+            gameObject.SetActive(false);
+            nextScreen.SetActive(true);
+
+            audioSource.Play();
         }
     }
 }

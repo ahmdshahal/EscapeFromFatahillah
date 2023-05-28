@@ -13,7 +13,6 @@ public class TravelDistance : MonoBehaviour
 
     [SerializeField] private PlayerController playerController;
     [SerializeField] private bool isSprintChecker;
-    [SerializeField] private bool isHeadTracker;
     [SerializeField] private AudioSource audioSource;
 
     private float distanceTraveled;
@@ -23,10 +22,6 @@ public class TravelDistance : MonoBehaviour
     {
         lastPosition = player.transform.position;
         distanceTraveled = 0f;
-        if (isHeadTracker)
-        {
-            playerController.speed = 0f;
-        }
     }
 
     private void Update()
@@ -64,10 +59,6 @@ public class TravelDistance : MonoBehaviour
     {
         if (distanceBar.fillAmount >= 1)
         {
-            if (isHeadTracker)
-            {
-                playerController.speed = 5f;
-            }
             gameObject.SetActive(false);
             nextScreen.SetActive(true);
 

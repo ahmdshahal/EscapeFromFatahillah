@@ -6,7 +6,6 @@ using UnityEngine.UI;
 
 public class WaitForSecond : MonoBehaviour
 {
-    [SerializeField] private GameObject nextScreen;
     [SerializeField] private Image durationBar;
     [SerializeField] private float setDuration;
     [SerializeField] private AudioSource audioSource;
@@ -28,10 +27,8 @@ public class WaitForSecond : MonoBehaviour
         durationBar.fillAmount = duration / setDuration;
         if (duration >= setDuration)
         {
-            gameObject.SetActive(false);
+            //gameObject.SetActive(false);
             isCount = false;
-
-            nextScreen.SetActive(true);
             audioSource.Play();
         }
     }

@@ -24,6 +24,7 @@ public class TaskManager : MonoBehaviour
     public void CompleteCurrentTask()
     {
         hintSystem.StopChangeHintMaterial(hintMaterial, notHintMaterial, hintDuration);
+
         currentTaskIndex++;
         if (currentTaskIndex < taskPuzzlesList.Count) // jika masih ada tugas berikutnya
         {

@@ -1695,7 +1695,7 @@ MonoBehaviour:
   useEvents: 0
   promptMessage: 8
   timer: 0
-  targetRotation: {x: 0, y: 0, z: 0}
+  targetRotation: {x: 90, y: 0, z: 0}
   hand: {fileID: 1376658258}
   pickID: blok 8
   pickDropSystem: {fileID: 1376658259}
@@ -1766,7 +1766,7 @@ MonoBehaviour:
   useEvents: 0
   promptMessage: 9
   timer: 0
-  targetRotation: {x: 0, y: 0, z: 0}
+  targetRotation: {x: 90, y: 0, z: 0}
   hand: {fileID: 1376658258}
   pickID: blok 9
   pickDropSystem: {fileID: 1376658259}
@@ -2079,6 +2079,73 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+--- !u!1001 &570755705
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6982043156117578949, guid: 849e531381753eb44afe04ab0e65ef51, type: 3}
+      propertyPath: m_Name
+      value: Audio
+      objectReference: {fileID: 0}
+    - target: {fileID: 6982043156117578954, guid: 849e531381753eb44afe04ab0e65ef51, type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6982043156117578954, guid: 849e531381753eb44afe04ab0e65ef51, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6982043156117578954, guid: 849e531381753eb44afe04ab0e65ef51, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6982043156117578954, guid: 849e531381753eb44afe04ab0e65ef51, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6982043156117578954, guid: 849e531381753eb44afe04ab0e65ef51, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6982043156117578954, guid: 849e531381753eb44afe04ab0e65ef51, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6982043156117578954, guid: 849e531381753eb44afe04ab0e65ef51, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6982043156117578954, guid: 849e531381753eb44afe04ab0e65ef51, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6982043156117578954, guid: 849e531381753eb44afe04ab0e65ef51, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6982043156117578954, guid: 849e531381753eb44afe04ab0e65ef51, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6982043156117578954, guid: 849e531381753eb44afe04ab0e65ef51, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 849e531381753eb44afe04ab0e65ef51, type: 3}
+--- !u!82 &570755706 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 6982043156442198305, guid: 849e531381753eb44afe04ab0e65ef51, type: 3}
+  m_PrefabInstance: {fileID: 570755705}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &570755707 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 6982043156223282802, guid: 849e531381753eb44afe04ab0e65ef51, type: 3}
+  m_PrefabInstance: {fileID: 570755705}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &578499635
 GameObject:
   m_ObjectHideFlags: 0
@@ -5055,11 +5122,11 @@ PrefabInstance:
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[3].hintObjects.Array.data[1]
       value: 
-      objectReference: {fileID: 23341376}
+      objectReference: {fileID: 7734863130017657497}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[3].hintObjects.Array.data[2]
       value: 
-      objectReference: {fileID: 2033757272785218215}
+      objectReference: {fileID: 7734863130017657497}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[3].hintObjects.Array.data[3]
       value: 
@@ -5739,11 +5806,11 @@ PrefabInstance:
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[4].hintObjects.Array.data[12]
       value: 
-      objectReference: {fileID: 7734863130017657497}
+      objectReference: {fileID: 23341376}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[4].hintObjects.Array.data[13]
       value: 
-      objectReference: {fileID: 1058829001692717836}
+      objectReference: {fileID: 23341376}
     - target: {fileID: 3592690509867010107, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
       propertyPath: taskPuzzlesList.Array.data[4].hintObjects.Array.data[14]
       value: 
@@ -11521,6 +11588,8 @@ MonoBehaviour:
   openPosition: {x: 0.4, y: 0, z: 0}
   anythingInside: 1
   objectIn: {fileID: 636220542}
+  drawerSoundOpen: {fileID: 570755707}
+  drawerSoundClose: {fileID: 570755706}
   isOpen: 0
 --- !u!23 &1436463202
 MeshRenderer:
@@ -11609,6 +11678,8 @@ MonoBehaviour:
   openPosition: {x: 0.5, y: 0, z: 0}
   anythingInside: 1
   objectIn: {fileID: 529797096}
+  drawerSoundOpen: {fileID: 570755707}
+  drawerSoundClose: {fileID: 570755706}
   isOpen: 0
 --- !u!23 &1458600994
 MeshRenderer:
@@ -13280,7 +13351,7 @@ MonoBehaviour:
   useEvents: 0
   promptMessage: 7
   timer: 0
-  targetRotation: {x: 0, y: 0, z: 0}
+  targetRotation: {x: 90, y: 0, z: 0}
   hand: {fileID: 1376658258}
   pickID: blok 7
   pickDropSystem: {fileID: 1376658259}
