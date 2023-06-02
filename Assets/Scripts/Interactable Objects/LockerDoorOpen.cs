@@ -5,6 +5,8 @@ public class LockerDoorOpen : Interactable
 {
     [SerializeField] private bool anythingInside;
     [SerializeField] private PickObject objectIn;
+    [SerializeField] private AudioSource openSound;
+    [SerializeField] private AudioSource closeSound;
 
     private Animator anim;
     private bool isOpen;
@@ -17,17 +19,21 @@ public class LockerDoorOpen : Interactable
     private void Start()
     {
         isOpen = false;
-        timer = 2;
+        timer = 1;
     }
 
     protected override void Interact()
     {
         isOpen = !isOpen;
         
-        if (isOpen)        
-            anim.Play("LockerDoorOpen");
+        if (isOpen)
+        {
+            anim.Play("LockerDoorOpen"); openSound.Play();
+        }
         else
-            anim.Play("LockerDoorClose");
+        {
+            anim.Play("LockerDoorClose"); closeSound.Play();
+        }
 
         CheckLockerIsOpen();
     }

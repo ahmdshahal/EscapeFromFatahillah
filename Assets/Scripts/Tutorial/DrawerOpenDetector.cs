@@ -25,4 +25,12 @@ public class DrawerOpenDetector : MonoBehaviour
             taskManager.CompleteCurrentTask();
         }
     }
+
+    public void CheckDrawerIsClose()
+    {
+        if(!openDrawer.isOpen)
+        {
+            openDrawer.BaseInteract();
+        }
+    }
 }

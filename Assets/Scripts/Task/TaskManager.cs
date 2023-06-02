@@ -33,6 +33,18 @@ public class TaskManager : MonoBehaviour
         }
     }
 
+    public void RepeatPreviousTask()
+    {
+        hintSystem.StopChangeHintMaterial(hintMaterial, notHintMaterial, hintDuration);
+
+        currentTaskIndex--;
+        if (currentTaskIndex >= 0) // jika nilai currentTaskIndex lebih dari sama dengan 0
+        {
+            SetHintObjectsByTaskIndex(); // mengatur objek hint pada hint system sesuai dengan tugas berikutnya
+            SetOtherObjectsByTaskIndex(); // mengatur objek selain hint pada hint system sesuai dengan tugas berikutnya
+        }
+    }
+
     // method untuk mengatur objek hint pada hint system sesuai dengan tugas yang sedang aktif
     private void SetHintObjectsByTaskIndex()
     {

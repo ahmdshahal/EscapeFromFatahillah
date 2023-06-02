@@ -594,8 +594,8 @@ GameObject:
   - component: {fileID: 320706089}
   - component: {fileID: 320706093}
   - component: {fileID: 320706092}
-  - component: {fileID: 320706094}
   - component: {fileID: 320706090}
+  - component: {fileID: 320706094}
   m_Layer: 6
   m_Name: kebonkopi_5.shadow
   m_TagString: Untagged
@@ -667,6 +667,18 @@ MonoBehaviour:
       - m_Target: {fileID: 919132148892322855}
         m_TargetAssemblyTypeName: TaskCompletedCheck, Assembly-CSharp
         m_MethodName: PuzzleCompleted
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1972970399}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1097,6 +1109,7 @@ GameObject:
   - component: {fileID: 759088345}
   - component: {fileID: 759088347}
   - component: {fileID: 759088346}
+  - component: {fileID: 759088348}
   m_Layer: 6
   m_Name: Wishnu 1
   m_TagString: Untagged
@@ -1132,14 +1145,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c60c3b3058585c4fa0d5b99e8387768, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  useEvents: 0
+  useEvents: 1
   promptMessage: Ambil
   timer: 0
   targetRotation: {x: 0, y: 0, z: 0}
   hand: {fileID: 2053444845}
   pickID: wishnu1
   pickDropSystem: {fileID: 1076598949}
-  canPick: 1
+  canPick: 0
 --- !u!65 &759088347
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1153,6 +1166,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.0033932677, y: 0.0065119667, z: 0.010000001}
   m_Center: {x: -0.00011109422, y: 0.00025824123, z: -1.2172735e-17}
+--- !u!114 &759088348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 759088344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2607cd72da991d43985f21cf52c3f1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onInteract:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1972970397}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &762949702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1185,8 +1225,8 @@ GameObject:
   - component: {fileID: 786488544}
   - component: {fileID: 786488548}
   - component: {fileID: 786488547}
-  - component: {fileID: 786488549}
   - component: {fileID: 786488545}
+  - component: {fileID: 786488549}
   m_Layer: 6
   m_Name: kebonkopi_1.shadow
   m_TagString: Untagged
@@ -1258,6 +1298,18 @@ MonoBehaviour:
       - m_Target: {fileID: 919132148892322855}
         m_TargetAssemblyTypeName: TaskCompletedCheck, Assembly-CSharp
         m_MethodName: PuzzleCompleted
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1972970399}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1651,8 +1703,8 @@ GameObject:
   - component: {fileID: 1055204578}
   - component: {fileID: 1055204584}
   - component: {fileID: 1055204583}
-  - component: {fileID: 1055204582}
   - component: {fileID: 1055204579}
+  - component: {fileID: 1055204582}
   m_Layer: 6
   m_Name: Drop Ganesha
   m_TagString: Untagged
@@ -1782,6 +1834,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1972970399}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!23 &1055204583
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1865,8 +1929,8 @@ GameObject:
   - component: {fileID: 1095135783}
   - component: {fileID: 1095135787}
   - component: {fileID: 1095135786}
-  - component: {fileID: 1095135788}
   - component: {fileID: 1095135784}
+  - component: {fileID: 1095135788}
   m_Layer: 6
   m_Name: kebonkopi_4.shadow
   m_TagString: Untagged
@@ -1938,6 +2002,18 @@ MonoBehaviour:
       - m_Target: {fileID: 919132148892322855}
         m_TargetAssemblyTypeName: TaskCompletedCheck, Assembly-CSharp
         m_MethodName: PuzzleCompleted
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1972970399}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4934,8 +5010,8 @@ GameObject:
   - component: {fileID: 1362340872}
   - component: {fileID: 1362340876}
   - component: {fileID: 1362340875}
-  - component: {fileID: 1362340877}
   - component: {fileID: 1362340873}
+  - component: {fileID: 1362340877}
   m_Layer: 6
   m_Name: kebonkopi_2.shadow
   m_TagString: Untagged
@@ -5007,6 +5083,18 @@ MonoBehaviour:
       - m_Target: {fileID: 919132148892322855}
         m_TargetAssemblyTypeName: TaskCompletedCheck, Assembly-CSharp
         m_MethodName: PuzzleCompleted
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1972970399}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5177,8 +5265,8 @@ GameObject:
   - component: {fileID: 1474158727}
   - component: {fileID: 1474158731}
   - component: {fileID: 1474158730}
-  - component: {fileID: 1474158732}
   - component: {fileID: 1474158728}
+  - component: {fileID: 1474158732}
   m_Layer: 6
   m_Name: kebonkopi_6.shadow
   m_TagString: Untagged
@@ -5250,6 +5338,18 @@ MonoBehaviour:
       - m_Target: {fileID: 919132148892322855}
         m_TargetAssemblyTypeName: TaskCompletedCheck, Assembly-CSharp
         m_MethodName: PuzzleCompleted
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1972970399}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5357,8 +5457,8 @@ GameObject:
   - component: {fileID: 1579519158}
   - component: {fileID: 1579519164}
   - component: {fileID: 1579519163}
-  - component: {fileID: 1579519162}
   - component: {fileID: 1579519159}
+  - component: {fileID: 1579519162}
   m_Layer: 6
   m_Name: Drop Wishnu 2
   m_TagString: Untagged
@@ -5488,6 +5588,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1972970399}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!23 &1579519163
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5549,8 +5661,8 @@ GameObject:
   - component: {fileID: 1642449682}
   - component: {fileID: 1642449688}
   - component: {fileID: 1642449687}
-  - component: {fileID: 1642449686}
   - component: {fileID: 1642449683}
+  - component: {fileID: 1642449686}
   m_Layer: 6
   m_Name: Drop Wishnu 1
   m_TagString: Untagged
@@ -5680,6 +5792,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1972970399}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!23 &1642449687
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5746,8 +5870,8 @@ GameObject:
   - component: {fileID: 1775413356}
   - component: {fileID: 1775413360}
   - component: {fileID: 1775413359}
-  - component: {fileID: 1775413361}
   - component: {fileID: 1775413357}
+  - component: {fileID: 1775413361}
   m_Layer: 6
   m_Name: kebonkopi_3.shadow
   m_TagString: Untagged
@@ -5819,6 +5943,18 @@ MonoBehaviour:
       - m_Target: {fileID: 919132148892322855}
         m_TargetAssemblyTypeName: TaskCompletedCheck, Assembly-CSharp
         m_MethodName: PuzzleCompleted
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1972970399}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6013,7 +6149,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8105211046751703314, guid: d059239a69be3d444b5b85a9dd0679f5, type: 3}
       propertyPath: onPassed.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8105211046751703314, guid: d059239a69be3d444b5b85a9dd0679f5, type: 3}
       propertyPath: onPassed.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -6024,6 +6160,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8105211046751703314, guid: d059239a69be3d444b5b85a9dd0679f5, type: 3}
+      propertyPath: onPassed.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8105211046751703314, guid: d059239a69be3d444b5b85a9dd0679f5, type: 3}
       propertyPath: onPassed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 762949702}
@@ -6032,11 +6172,19 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1076598952}
     - target: {fileID: 8105211046751703314, guid: d059239a69be3d444b5b85a9dd0679f5, type: 3}
+      propertyPath: onPassed.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 6984122300999724740}
+    - target: {fileID: 8105211046751703314, guid: d059239a69be3d444b5b85a9dd0679f5, type: 3}
       propertyPath: onPassed.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8105211046751703314, guid: d059239a69be3d444b5b85a9dd0679f5, type: 3}
       propertyPath: onPassed.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8105211046751703314, guid: d059239a69be3d444b5b85a9dd0679f5, type: 3}
+      propertyPath: onPassed.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8105211046751703314, guid: d059239a69be3d444b5b85a9dd0679f5, type: 3}
@@ -6048,6 +6196,10 @@ PrefabInstance:
       value: CompleteCurrentTask
       objectReference: {fileID: 0}
     - target: {fileID: 8105211046751703314, guid: d059239a69be3d444b5b85a9dd0679f5, type: 3}
+      propertyPath: onPassed.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_layer
+      objectReference: {fileID: 0}
+    - target: {fileID: 8105211046751703314, guid: d059239a69be3d444b5b85a9dd0679f5, type: 3}
       propertyPath: onPassed.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: Interactable, Assembly-CSharp
       objectReference: {fileID: 0}
@@ -6056,11 +6208,23 @@ PrefabInstance:
       value: TaskManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 8105211046751703314, guid: d059239a69be3d444b5b85a9dd0679f5, type: 3}
+      propertyPath: onPassed.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8105211046751703314, guid: d059239a69be3d444b5b85a9dd0679f5, type: 3}
+      propertyPath: onPassed.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_IntArgument
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8105211046751703314, guid: d059239a69be3d444b5b85a9dd0679f5, type: 3}
       propertyPath: onPassed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8105211046751703314, guid: d059239a69be3d444b5b85a9dd0679f5, type: 3}
       propertyPath: onPassed.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8105211046751703314, guid: d059239a69be3d444b5b85a9dd0679f5, type: 3}
+      propertyPath: onPassed.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8876786371386493867, guid: d059239a69be3d444b5b85a9dd0679f5, type: 3}
@@ -6703,6 +6867,21 @@ AudioSource:
   m_CorrespondingSourceObject: {fileID: 6982043156223282802, guid: 849e531381753eb44afe04ab0e65ef51, type: 3}
   m_PrefabInstance: {fileID: 1972970394}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &1972970397 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1245421350260553697, guid: 849e531381753eb44afe04ab0e65ef51, type: 3}
+  m_PrefabInstance: {fileID: 1972970394}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1972970398 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 5390133386347387784, guid: 849e531381753eb44afe04ab0e65ef51, type: 3}
+  m_PrefabInstance: {fileID: 1972970394}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1972970399 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1240396641287505780, guid: 849e531381753eb44afe04ab0e65ef51, type: 3}
+  m_PrefabInstance: {fileID: 1972970394}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &2024267349
 Mesh:
   m_ObjectHideFlags: 0
@@ -7073,8 +7252,6 @@ GameObject:
   - component: {fileID: 2112249390}
   - component: {fileID: 2112249394}
   - component: {fileID: 2112249393}
-  - component: {fileID: 2112249392}
-  - component: {fileID: 2112249391}
   m_Layer: 0
   m_Name: Arca Wishnu 1
   m_TagString: Untagged
@@ -7097,39 +7274,6 @@ Transform:
   m_Father: {fileID: 759088345}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
---- !u!114 &2112249391
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2112249389}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c60c3b3058585c4fa0d5b99e8387768, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  useEvents: 0
-  promptMessage: Ambil!
-  timer: 0
-  targetRotation: {x: -90, y: 0, z: 0}
-  hand: {fileID: 2053444845}
-  pickID: wishnu1
-  pickDropSystem: {fileID: 1076598949}
-  canPick: 0
---- !u!65 &2112249392
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2112249389}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.8970539, y: 0.24999894, z: 0.46901917}
-  m_Center: {x: -2.3045442, y: 0.30074415, z: -2.1529112}
 --- !u!23 &2112249393
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7576,6 +7720,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.Collider, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1972970398}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -8762,6 +8918,7 @@ GameObject:
   - component: {fileID: 4434043540957390434}
   - component: {fileID: 8380347020471156772}
   - component: {fileID: 8380347020471156773}
+  - component: {fileID: 8380347020471156774}
   m_Layer: 6
   m_Name: kebonkopi_1
   m_TagString: Untagged
@@ -9430,6 +9587,7 @@ GameObject:
   - component: {fileID: 5356452998698497362}
   - component: {fileID: 8670868957391704012}
   - component: {fileID: 8670868957391704013}
+  - component: {fileID: 8670868957391704014}
   m_Layer: 6
   m_Name: kebonkopi_3
   m_TagString: Untagged
@@ -9741,6 +9899,7 @@ GameObject:
   - component: {fileID: 2815807653129806259}
   - component: {fileID: 6507376923405209400}
   - component: {fileID: 6507376923405209401}
+  - component: {fileID: 6507376923405209402}
   m_Layer: 6
   m_Name: kebonkopi_5
   m_TagString: Untagged
@@ -9918,6 +10077,7 @@ GameObject:
   - component: {fileID: 8349013916159107407}
   - component: {fileID: 8349013916159107409}
   - component: {fileID: 8349013916159107410}
+  - component: {fileID: 8349013916159107411}
   m_Layer: 6
   m_Name: kebonkopi_6
   m_TagString: Untagged
@@ -10597,6 +10757,7 @@ GameObject:
   - component: {fileID: 7579325361417785658}
   - component: {fileID: 7579325361417785659}
   - component: {fileID: 7579325361417785660}
+  - component: {fileID: 7579325361417785661}
   m_Layer: 6
   m_Name: wisnu2
   m_TagString: Untagged
@@ -10783,7 +10944,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c60c3b3058585c4fa0d5b99e8387768, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  useEvents: 0
+  useEvents: 1
   promptMessage: 5
   timer: 0
   targetRotation: {x: 0, y: 0, z: 0}
@@ -10791,6 +10952,33 @@ MonoBehaviour:
   pickID: kebonkopi5
   pickDropSystem: {fileID: 1076598949}
   canPick: 1
+--- !u!114 &6507376923405209402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4703471811432283092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2607cd72da991d43985f21cf52c3f1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onInteract:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1972970397}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &6507376924900123152
 Transform:
   m_ObjectHideFlags: 0
@@ -10930,6 +11118,7 @@ GameObject:
   - component: {fileID: 2269199364120168617}
   - component: {fileID: 6701448066110979764}
   - component: {fileID: 6701448066110979765}
+  - component: {fileID: 6701448066110979766}
   m_Layer: 6
   m_Name: ganesa
   m_TagString: Untagged
@@ -10962,7 +11151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c60c3b3058585c4fa0d5b99e8387768, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  useEvents: 0
+  useEvents: 1
   promptMessage: Ambil!
   timer: 0
   targetRotation: {x: -180, y: 0, z: 0}
@@ -10970,6 +11159,33 @@ MonoBehaviour:
   pickID: ganesha
   pickDropSystem: {fileID: 1076598949}
   canPick: 1
+--- !u!114 &6701448066110979766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6701448066110979763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2607cd72da991d43985f21cf52c3f1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onInteract:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1972970397}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &6734647257780550130
 Transform:
   m_ObjectHideFlags: 0
@@ -11064,6 +11280,7 @@ GameObject:
   - component: {fileID: 5882856346686747991}
   - component: {fileID: 2008093967879092268}
   - component: {fileID: 9175636495498522247}
+  - component: {fileID: 9175636495498522248}
   - component: {fileID: 762949702}
   m_Layer: 0
   m_Name: laci4
@@ -11210,6 +11427,7 @@ GameObject:
   - component: {fileID: 8217513363526579067}
   - component: {fileID: 8217513363526579069}
   - component: {fileID: 8217513363526579070}
+  - component: {fileID: 8217513363526579071}
   m_Layer: 6
   m_Name: kebonkopi_2
   m_TagString: Untagged
@@ -11336,7 +11554,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c60c3b3058585c4fa0d5b99e8387768, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  useEvents: 0
+  useEvents: 1
   promptMessage: Ambil!
   timer: 0
   targetRotation: {x: -90, y: 0, z: 180}
@@ -11344,6 +11562,33 @@ MonoBehaviour:
   pickID: wishnu2
   pickDropSystem: {fileID: 1076598949}
   canPick: 1
+--- !u!114 &7579325361417785661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6178038045187212434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2607cd72da991d43985f21cf52c3f1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onInteract:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1972970397}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!23 &7623884020403934467
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11758,7 +12003,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c60c3b3058585c4fa0d5b99e8387768, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  useEvents: 0
+  useEvents: 1
   promptMessage: 2
   timer: 0
   targetRotation: {x: 0, y: 0, z: 0}
@@ -11766,6 +12011,33 @@ MonoBehaviour:
   pickID: kebonkopi2
   pickDropSystem: {fileID: 1076598949}
   canPick: 1
+--- !u!114 &8217513363526579071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7510756751352950855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2607cd72da991d43985f21cf52c3f1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onInteract:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1972970397}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!23 &8217513364249402973
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11961,7 +12233,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c60c3b3058585c4fa0d5b99e8387768, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  useEvents: 0
+  useEvents: 1
   promptMessage: 6
   timer: 0
   targetRotation: {x: 0, y: 0, z: 0}
@@ -11969,6 +12241,33 @@ MonoBehaviour:
   pickID: kebonkopi6
   pickDropSystem: {fileID: 1076598949}
   canPick: 1
+--- !u!114 &8349013916159107411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5281052612873636406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2607cd72da991d43985f21cf52c3f1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onInteract:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1972970397}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8375084157448168242
 GameObject:
   m_ObjectHideFlags: 0
@@ -12042,7 +12341,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c60c3b3058585c4fa0d5b99e8387768, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  useEvents: 0
+  useEvents: 1
   promptMessage: 1
   timer: 0
   targetRotation: {x: 0, y: 0, z: 0}
@@ -12050,6 +12349,33 @@ MonoBehaviour:
   pickID: kebonkopi1
   pickDropSystem: {fileID: 1076598949}
   canPick: 1
+--- !u!114 &8380347020471156774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2678747802186259319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2607cd72da991d43985f21cf52c3f1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onInteract:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1972970397}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &8380394461655721475
 Transform:
   m_ObjectHideFlags: 0
@@ -12101,6 +12427,7 @@ GameObject:
   - component: {fileID: 7196371285426300098}
   - component: {fileID: 8526604995301508200}
   - component: {fileID: 8526604995301508201}
+  - component: {fileID: 8526604995301508202}
   m_Layer: 6
   m_Name: kebonkopi_4
   m_TagString: Untagged
@@ -12133,7 +12460,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c60c3b3058585c4fa0d5b99e8387768, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  useEvents: 0
+  useEvents: 1
   promptMessage: 4
   timer: 0
   targetRotation: {x: 0, y: 0, z: 0}
@@ -12141,6 +12468,33 @@ MonoBehaviour:
   pickID: kebonkopi4
   pickDropSystem: {fileID: 1076598949}
   canPick: 1
+--- !u!114 &8526604995301508202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8526604995301508198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2607cd72da991d43985f21cf52c3f1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onInteract:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1972970397}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8526604995387074880
 GameObject:
   m_ObjectHideFlags: 0
@@ -12346,7 +12700,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c60c3b3058585c4fa0d5b99e8387768, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  useEvents: 0
+  useEvents: 1
   promptMessage: 3
   timer: 0
   targetRotation: {x: 0, y: 0, z: 0}
@@ -12354,6 +12708,33 @@ MonoBehaviour:
   pickID: kebonkopi3
   pickDropSystem: {fileID: 1076598949}
   canPick: 1
+--- !u!114 &8670868957391704014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4080846021099335282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2607cd72da991d43985f21cf52c3f1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onInteract:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1972970397}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8772604484518841769
 GameObject:
   m_ObjectHideFlags: 0
@@ -12547,6 +12928,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &9175636495498522248
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6984122300999724740}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.004230309, y: 0.002000801, z: 0.01125773}
+  m_Center: {x: 3.9533296e-19, y: -0.0009296866, z: 0.000028868411}
 --- !u!33 &9193100542588303520
 MeshFilter:
   m_ObjectHideFlags: 0

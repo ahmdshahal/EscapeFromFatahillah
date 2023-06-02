@@ -46,7 +46,6 @@ public class OpenDrawer : Interactable
     {
         promptMessage = isOpen ? "Tutup!" : "Buka!";
 
-
         if (!anythingInside) return;
         objectIn.promptMessage = isOpen ? "Ambil" : string.Empty;
         objectIn.canPick = isOpen;

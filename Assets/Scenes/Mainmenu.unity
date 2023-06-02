@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 47026}
   - component: {fileID: 47025}
   - component: {fileID: 47023}
+  - component: {fileID: 47028}
   m_Layer: 6
   m_Name: Kunci
   m_TagString: Untagged
@@ -155,7 +156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c60c3b3058585c4fa0d5b99e8387768, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  useEvents: 0
+  useEvents: 1
   promptMessage: Ambil!
   timer: 0
   targetRotation: {x: 0, y: 0, z: 0}
@@ -241,6 +242,33 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 47022}
   m_Mesh: {fileID: 1547891668}
+--- !u!114 &47028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2607cd72da991d43985f21cf52c3f1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onInteract:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6982043156452450804}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &9424352
 GameObject:
   m_ObjectHideFlags: 0
@@ -1404,82 +1432,6 @@ MonoBehaviour:
   playerController: {fileID: 0}
   isSprintChecker: 0
   audioSource: {fileID: 0}
---- !u!1 &179396098
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 179396099}
-  - component: {fileID: 179396101}
-  - component: {fileID: 179396100}
-  m_Layer: 5
-  m_Name: Duration Bar
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
---- !u!224 &179396099
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 179396098}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 1
-  m_Children: []
-  m_Father: {fileID: 919722147}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 150, y: 250}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &179396100
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 179396098}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.5471698, g: 0.14122994, b: 0.1264685, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 3
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 0
-  m_FillClockwise: 1
-  m_FillOrigin: 2
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &179396101
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 179396098}
-  m_CullTransparentMesh: 1
 --- !u!23 &185379220 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 7621398573360556756, guid: 3640e77d28b9a416cbf4c9b9f11292e4, type: 3}
@@ -2115,7 +2067,6 @@ RectTransform:
   - {fileID: 863960247}
   - {fileID: 1690442773}
   - {fileID: 798593749}
-  - {fileID: 919722147}
   - {fileID: 352853289}
   m_Father: {fileID: 233519047}
   m_RootOrder: 9
@@ -2418,7 +2369,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 215728517}
+      - m_Target: {fileID: 909963451}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -3142,7 +3093,7 @@ RectTransform:
   m_Children:
   - {fileID: 500106588}
   m_Father: {fileID: 215728518}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -4221,6 +4172,42 @@ MonoBehaviour:
       - m_Target: {fileID: 1872578573}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1527071172}
+        m_TargetAssemblyTypeName: TaskManager, Assembly-CSharp
+        m_MethodName: RepeatPreviousTask
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 56912890}
+        m_TargetAssemblyTypeName: DrawerOpenDetector, Assembly-CSharp
+        m_MethodName: CheckDrawerIsClose
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 5010710963794124748}
+        m_TargetAssemblyTypeName: Interactable, Assembly-CSharp
+        m_MethodName: BaseInteract
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8127,83 +8114,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 909963451}
   m_CullTransparentMesh: 1
---- !u!1 &919722146
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 919722147}
-  - component: {fileID: 919722149}
-  - component: {fileID: 919722148}
-  m_Layer: 5
-  m_Name: Bar
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
---- !u!224 &919722147
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 919722146}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 1
-  m_Children:
-  - {fileID: 179396099}
-  m_Father: {fileID: 215728518}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 110, y: -160}
-  m_SizeDelta: {x: 150, y: 250}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &919722148
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 919722146}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.7830189, g: 0.7830189, b: 0.7830189, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 2
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &919722149
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 919722146}
-  m_CullTransparentMesh: 1
 --- !u!1 &934838439
 GameObject:
   m_ObjectHideFlags: 0
@@ -8841,6 +8751,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6982043156452450805}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -12559,53 +12481,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1648019695}
   m_CullTransparentMesh: 1
---- !u!1 &1658890986
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1658890988}
-  - component: {fileID: 1658890987}
-  m_Layer: 0
-  m_Name: MainMenu Task
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1658890987
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1658890986}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24a3f501a92d62a41bbac1a105ff20a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  taskManager: {fileID: 1527071172}
-  drawerLock: {fileID: 8726465197014626671}
-  puzzlePlaced: 0
---- !u!4 &1658890988
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1658890986}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.741528, z: -3.2359853}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 14
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1672721287
 GameObject:
   m_ObjectHideFlags: 0
@@ -12845,7 +12720,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 190491702}
+      - m_Target: {fileID: 1604780920}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -12860,6 +12735,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1872578573}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1527071172}
+        m_TargetAssemblyTypeName: TaskManager, Assembly-CSharp
+        m_MethodName: RepeatPreviousTask
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14471,7 +14358,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 909963451}
+      - m_Target: {fileID: 190491702}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -15254,7 +15141,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1604780920}
+      - m_Target: {fileID: 998022586}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -15645,8 +15532,9 @@ GameObject:
   - component: {fileID: 2125734419}
   - component: {fileID: 2125734423}
   - component: {fileID: 2125734422}
-  - component: {fileID: 2125734420}
   - component: {fileID: 2125734421}
+  - component: {fileID: 2125734420}
+  - component: {fileID: 2125734424}
   m_Layer: 6
   m_Name: Penta
   m_TagString: Untagged
@@ -15681,7 +15569,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c60c3b3058585c4fa0d5b99e8387768, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  useEvents: 0
+  useEvents: 1
   promptMessage: Ambil!
   timer: 0
   targetRotation: {x: 0, y: 0, z: 0}
@@ -15752,6 +15640,33 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2125734418}
   m_Mesh: {fileID: 1904797209830384405, guid: c7b505375fbebee4b966b4668498369e, type: 3}
+--- !u!114 &2125734424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2125734418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2607cd72da991d43985f21cf52c3f1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onInteract:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6982043156452450804}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2126319267
 GameObject:
   m_ObjectHideFlags: 0
@@ -16710,6 +16625,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 543450652959799478}
+  - component: {fileID: 919132148687905293}
   m_Layer: 0
   m_Name: Puzzle Main Menu
   m_TagString: Untagged
@@ -16717,6 +16633,60 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &919132148687905293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132148687905292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 140f0eca9cb10cb4d9c7cdb84a97e430, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  taskManager: {fileID: 1527071172}
+  taskAmount: 3
+  onCompleted:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8726465197014626671}
+        m_TargetAssemblyTypeName: Interactable, Assembly-CSharp
+        m_MethodName: BaseInteract
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1527071172}
+        m_TargetAssemblyTypeName: TaskManager, Assembly-CSharp
+        m_MethodName: CompleteCurrentTask
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6953729852539843127}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: set_layer
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 6
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  taskPassed: 0
 --- !u!1 &919132149098462036
 GameObject:
   m_ObjectHideFlags: 0
@@ -16785,8 +16755,8 @@ GameObject:
   - component: {fileID: 2671904947826447589}
   - component: {fileID: 1091974647136902419}
   - component: {fileID: 6360205568878409976}
-  - component: {fileID: 6360205568878409978}
   - component: {fileID: 6360205568878409977}
+  - component: {fileID: 6360205568878409978}
   m_Layer: 6
   m_Name: case.kotak
   m_TagString: Untagged
@@ -16941,8 +16911,8 @@ GameObject:
   - component: {fileID: 452730169940237489}
   - component: {fileID: 222491439402861043}
   - component: {fileID: 7480059780885719860}
-  - component: {fileID: 7480059780885719862}
   - component: {fileID: 7480059780885719861}
+  - component: {fileID: 7480059780885719862}
   m_Layer: 6
   m_Name: case.segitiga
   m_TagString: Untagged
@@ -17624,8 +17594,9 @@ GameObject:
   - component: {fileID: 2086846596551158249}
   - component: {fileID: 8188053412647384438}
   - component: {fileID: 3401049561142578638}
-  - component: {fileID: 8188053412647384439}
   - component: {fileID: 8188053412647384440}
+  - component: {fileID: 8188053412647384439}
+  - component: {fileID: 8188053412647384441}
   m_Layer: 6
   m_Name: segitiga
   m_TagString: Untagged
@@ -17929,8 +17900,8 @@ GameObject:
   - component: {fileID: 8832277846204306098}
   - component: {fileID: 58533682979091848}
   - component: {fileID: 9125047358490603737}
-  - component: {fileID: 9125047358490603739}
   - component: {fileID: 9125047358490603738}
+  - component: {fileID: 9125047358490603739}
   m_Layer: 6
   m_Name: case.pentta
   m_TagString: Untagged
@@ -18274,8 +18245,9 @@ GameObject:
   - component: {fileID: 958049588282153661}
   - component: {fileID: 5249129772171387786}
   - component: {fileID: 6914781848677967146}
-  - component: {fileID: 6914781848677967147}
   - component: {fileID: 6914781848677967148}
+  - component: {fileID: 6914781848677967147}
+  - component: {fileID: 6914781848677967149}
   m_Layer: 6
   m_Name: kotak
   m_TagString: Untagged
@@ -18710,9 +18682,21 @@ MonoBehaviour:
   onPassed:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1658890987}
-        m_TargetAssemblyTypeName: MainMenuTask, Assembly-CSharp
+      - m_Target: {fileID: 919132148687905293}
+        m_TargetAssemblyTypeName: TaskCompletedCheck, Assembly-CSharp
         m_MethodName: PuzzleCompleted
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6982043156452450803}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -19097,7 +19081,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c60c3b3058585c4fa0d5b99e8387768, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  useEvents: 0
+  useEvents: 1
   promptMessage: Ambil!
   timer: 0
   targetRotation: {x: 0, y: 0, z: 0}
@@ -19118,6 +19102,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.016002024, y: 0.016002024, z: 0.0021061534}
   m_Center: {x: 0.000000007450581, y: -0.000000014901161, z: 0.001579611}
+--- !u!114 &6914781848677967149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5018860282124287137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2607cd72da991d43985f21cf52c3f1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onInteract:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6982043156452450804}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6953729852539843127
 GameObject:
   m_ObjectHideFlags: 0
@@ -19174,7 +19185,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6982043156117578954, guid: 849e531381753eb44afe04ab0e65ef51, type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 6982043156117578954, guid: 849e531381753eb44afe04ab0e65ef51, type: 3}
       propertyPath: m_LocalPosition.x
@@ -19218,6 +19229,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 849e531381753eb44afe04ab0e65ef51, type: 3}
+--- !u!82 &6982043156452450803 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1240396641287505780, guid: 849e531381753eb44afe04ab0e65ef51, type: 3}
+  m_PrefabInstance: {fileID: 6982043156452450802}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &6982043156452450804 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1245421350260553697, guid: 849e531381753eb44afe04ab0e65ef51, type: 3}
+  m_PrefabInstance: {fileID: 6982043156452450802}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &6982043156452450805 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 5390133386347387784, guid: 849e531381753eb44afe04ab0e65ef51, type: 3}
+  m_PrefabInstance: {fileID: 6982043156452450802}
+  m_PrefabAsset: {fileID: 0}
 --- !u!23 &7165000979120261843
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19493,9 +19519,21 @@ MonoBehaviour:
   onPassed:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1658890987}
-        m_TargetAssemblyTypeName: MainMenuTask, Assembly-CSharp
+      - m_Target: {fileID: 919132148687905293}
+        m_TargetAssemblyTypeName: TaskCompletedCheck, Assembly-CSharp
         m_MethodName: PuzzleCompleted
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6982043156452450803}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -19709,7 +19747,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c60c3b3058585c4fa0d5b99e8387768, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  useEvents: 0
+  useEvents: 1
   promptMessage: Ambil!
   timer: 0
   targetRotation: {x: 0, y: 0, z: 0}
@@ -19730,6 +19768,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.015999997, y: 0.015999995, z: 0.0021061534}
   m_Center: {x: 0.000000014901161, y: 0.00066665147, z: 0.001579611}
+--- !u!114 &8188053412647384441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2963350030156817100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2607cd72da991d43985f21cf52c3f1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onInteract:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6982043156452450804}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8197709019246327998
 GameObject:
   m_ObjectHideFlags: 0
@@ -20016,8 +20081,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.005810001, y: 0.0034769906, z: 0.0010599993}
-  m_Center: {x: -0.000104997205, y: 0.001903992, z: -6.1410854e-10}
+  m_Size: {x: 0.005810001, y: 0.0007372698, z: 0.0010599993}
+  m_Center: {x: -0.000104997256, y: 0.0005341322, z: -7.734241e-10}
 --- !u!4 &8832277846204306098
 Transform:
   m_ObjectHideFlags: 0
@@ -20277,9 +20342,21 @@ MonoBehaviour:
   onPassed:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1658890987}
-        m_TargetAssemblyTypeName: MainMenuTask, Assembly-CSharp
+      - m_Target: {fileID: 919132148687905293}
+        m_TargetAssemblyTypeName: TaskCompletedCheck, Assembly-CSharp
         m_MethodName: PuzzleCompleted
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6982043156452450803}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
