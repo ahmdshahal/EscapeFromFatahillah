@@ -5,12 +5,13 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private Camera cam;
-    
+    [SerializeField] private Camera cam; 
+    [SerializeField] private AudioSource footstepSound;
+
     private CharacterController controller;
     private InputManager inputManager;
     private Vector3 playerVelocity;
-    private Vector3 originalPositionCam;
+    private Vector3 standPosition;
     private bool isGrounded;
     [HideInInspector] public bool isCrouch;
     [HideInInspector] public bool isSprint;
@@ -31,16 +32,15 @@ public class PlayerController : MonoBehaviour
         isCrouch = false;
         isSprint = false;
 
-        originalPositionCam = cam.transform.localPosition;
+        standPosition = cam.transform.localPosition;
     }
 
     void Update()
     {
         isGrounded = controller.isGrounded;
-        if (inputManager.onFootActions.Crouch.triggered) Crouch();
-
+        if (inputManager.onFootActions.Crouch.triggered) 
+            Crouch();
     }
-
 
     /// <summary>
     /// Receive the inputs for our InputManager.cs and Apply them to our Character Controller.
@@ -50,6 +50,7 @@ public class PlayerController : MonoBehaviour
         Vector3 moveDirection = Vector3.zero;
         moveDirection.x = input.x;
         moveDirection.z = input.y;
+
         if (Camera.main != null)
             controller.Move(Camera.main.transform.TransformDirection(moveDirection) * (speed * Time.deltaTime));
 
@@ -57,7 +58,15 @@ public class PlayerController : MonoBehaviour
         if(isGrounded && playerVelocity.y < 0) 
             playerVelocity.y = -2f;
         controller.Move(playerVelocity * Time.deltaTime);
-        
+
+        //Set up footstep sound
+        if (input.magnitude != 0 && speed > 0)
+        {
+            if (!footstepSound.isPlaying)
+                footstepSound.Play();
+        }
+        else
+            footstepSound.Stop();
     }
 
     public void Jump()
@@ -72,18 +81,28 @@ public class PlayerController : MonoBehaviour
     {
         isCrouch = !isCrouch;
 
-        cam.transform.localPosition = isCrouch ? originalPositionCam / 2.7f : originalPositionCam;
+        cam.transform.localPosition = isCrouch ? standPosition / 2.7f : standPosition;
         speed = isCrouch ? 3 : 5;
+
+        //Set up footstep sound if player is crouch
+        footstepSound.pitch = isCrouch ? 0.75f : 1f;
     }
 
     public void Sprint()
     {
         isSprint = !isSprint;
-        
+
+        //Set up player speed and footstep sound if player is sprint
         if (isSprint && !isCrouch)
+        {
             speed = 8;
+            footstepSound.pitch = 1.75f;
+        }
         else if(!isSprint && !isCrouch)
+        {
             speed = 5;
+            footstepSound.pitch = 1f;
+        }
     }
 
     public void Pause()

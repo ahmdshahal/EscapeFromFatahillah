@@ -9,6 +9,7 @@ public class SlidePuzzleManager : MonoBehaviour
     [SerializeField] private SlidePuzzle[] tilesPuzzle;
     [SerializeField] private int correctPuzzle;
     [SerializeField] private GameObject locker, wall, lukisan;
+    [SerializeField] private AudioSource soundLukisan;
 
     private float minDistance;
     private bool isSolved;
@@ -65,6 +66,8 @@ public class SlidePuzzleManager : MonoBehaviour
             wall.SetActive(false);
             lukisan.SetActive(true);
             locker.SetActive(true);
+
+            soundLukisan.Play();
             
             taskManager.CompleteCurrentTask();
         }

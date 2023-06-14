@@ -447,6 +447,7 @@ MonoBehaviour:
   useEvents: 0
   promptMessage: 8
   timer: 0
+  interactSound: {fileID: 0}
   pickDropSystem: {fileID: 1376658259}
   dropID: blok 8
   dropPoint: {fileID: 0}
@@ -738,7 +739,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -1685,6 +1686,7 @@ MonoBehaviour:
   useEvents: 1
   promptMessage: 8
   timer: 0
+  interactSound: {fileID: 0}
   targetRotation: {x: 90, y: 0, z: 0}
   hand: {fileID: 1376658258}
   pickID: blok 8
@@ -1784,6 +1786,7 @@ MonoBehaviour:
   useEvents: 1
   promptMessage: 9
   timer: 0
+  interactSound: {fileID: 0}
   targetRotation: {x: 90, y: 0, z: 0}
   hand: {fileID: 1376658258}
   pickID: blok 9
@@ -2003,6 +2006,7 @@ MonoBehaviour:
   useEvents: 1
   promptMessage: Ambil!
   timer: 0
+  interactSound: {fileID: 0}
   targetRotation: {x: 0, y: 0, z: 0}
   hand: {fileID: 1376658258}
   pickID: kuas
@@ -2109,6 +2113,7 @@ MonoBehaviour:
   useEvents: 0
   promptMessage: 1
   timer: 0
+  interactSound: {fileID: 0}
   pickDropSystem: {fileID: 1376658259}
   dropID: blok 1
   dropPoint: {fileID: 0}
@@ -2426,6 +2431,7 @@ MonoBehaviour:
   useEvents: 1
   promptMessage: Ambil!
   timer: 0
+  interactSound: {fileID: 0}
   targetRotation: {x: 0, y: 0, z: 0}
   hand: {fileID: 1376658258}
   pickID: blok3
@@ -2532,6 +2538,7 @@ MonoBehaviour:
   useEvents: 0
   promptMessage: 7
   timer: 0
+  interactSound: {fileID: 0}
   pickDropSystem: {fileID: 1376658259}
   dropID: blok 7
   dropPoint: {fileID: 0}
@@ -2690,6 +2697,7 @@ MonoBehaviour:
   useEvents: 1
   promptMessage: Ambil
   timer: 0
+  interactSound: {fileID: 0}
   targetRotation: {x: 0, y: 0, z: 0}
   hand: {fileID: 1376658258}
   pickID: palu
@@ -2969,6 +2977,7 @@ MonoBehaviour:
   useEvents: 1
   promptMessage: 2
   timer: 0
+  interactSound: {fileID: 0}
   targetRotation: {x: 0, y: 0, z: 0}
   hand: {fileID: 1376658258}
   pickID: blok 2
@@ -3062,6 +3071,7 @@ MonoBehaviour:
   useEvents: 0
   promptMessage: 4
   timer: 0
+  interactSound: {fileID: 0}
   pickDropSystem: {fileID: 1376658259}
   dropID: blok 4
   dropPoint: {fileID: 0}
@@ -3940,6 +3950,7 @@ MonoBehaviour:
   useEvents: 0
   promptMessage: Lanjut ke level 3!
   timer: 0
+  interactSound: {fileID: 0}
   menuController: {fileID: 1376658261}
   sceneWantToGo: Level3
 --- !u!65 &989727714
@@ -4432,6 +4443,7 @@ MonoBehaviour:
   useEvents: 0
   promptMessage: 5
   timer: 0
+  interactSound: {fileID: 0}
   pickDropSystem: {fileID: 1376658259}
   dropID: blok 5
   dropPoint: {fileID: 0}
@@ -11037,6 +11049,7 @@ MonoBehaviour:
   useEvents: 0
   promptMessage: 3
   timer: 0
+  interactSound: {fileID: 0}
   pickDropSystem: {fileID: 1376658259}
   dropID: blok 3
   dropPoint: {fileID: 0}
@@ -11565,6 +11578,7 @@ MonoBehaviour:
   useEvents: 0
   promptMessage: 6
   timer: 0
+  interactSound: {fileID: 0}
   pickDropSystem: {fileID: 1376658259}
   dropID: blok 6
   dropPoint: {fileID: 0}
@@ -11837,6 +11851,7 @@ MonoBehaviour:
   useEvents: 0
   promptMessage: 
   timer: 0
+  interactSound: {fileID: 0}
   openPosition: {x: 0.4, y: 0, z: 0}
   anythingInside: 1
   objectIn: {fileID: 636220542}
@@ -11941,6 +11956,7 @@ MonoBehaviour:
   useEvents: 0
   promptMessage: 
   timer: 0
+  interactSound: {fileID: 0}
   openPosition: {x: 0.5, y: 0, z: 0}
   anythingInside: 1
   objectIn: {fileID: 529797096}
@@ -12087,6 +12103,7 @@ MonoBehaviour:
   useEvents: 0
   promptMessage: 9
   timer: 0
+  interactSound: {fileID: 0}
   pickDropSystem: {fileID: 1376658259}
   dropID: blok 9
   dropPoint: {fileID: 0}
@@ -12762,6 +12779,134 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1508615303}
   m_Mesh: {fileID: -7763291051929899961, guid: ac635d4292ce541d1b1f668193cb26ab, type: 3}
+--- !u!1 &1536286509
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1536286510}
+  - component: {fileID: 1536286511}
+  m_Layer: 0
+  m_Name: Kuas Sound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1536286510
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1536286509}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 543450652067774139}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1536286511
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1536286509}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: f2ee374e543ae0b4e844e0d5a596a0d5, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1573527360
 GameObject:
   m_ObjectHideFlags: 0
@@ -13478,6 +13623,7 @@ MonoBehaviour:
   useEvents: 1
   promptMessage: Ambil!
   timer: 0
+  interactSound: {fileID: 0}
   targetRotation: {x: 0, y: 0, z: 0}
   hand: {fileID: 1376658258}
   pickID: blok2
@@ -13671,6 +13817,7 @@ MonoBehaviour:
   useEvents: 1
   promptMessage: 7
   timer: 0
+  interactSound: {fileID: 0}
   targetRotation: {x: 90, y: 0, z: 0}
   hand: {fileID: 1376658258}
   pickID: blok 7
@@ -13768,6 +13915,7 @@ MonoBehaviour:
   useEvents: 1
   promptMessage: 5
   timer: 0
+  interactSound: {fileID: 0}
   targetRotation: {x: 0, y: 0, z: 0}
   hand: {fileID: 1376658258}
   pickID: blok 5
@@ -14027,6 +14175,7 @@ MonoBehaviour:
   useEvents: 0
   promptMessage: 2
   timer: 0
+  interactSound: {fileID: 0}
   pickDropSystem: {fileID: 1376658259}
   dropID: blok 2
   dropPoint: {fileID: 0}
@@ -14349,6 +14498,7 @@ MonoBehaviour:
   useEvents: 1
   promptMessage: Ambil!
   timer: 0
+  interactSound: {fileID: 0}
   targetRotation: {x: 0, y: 0, z: 0}
   hand: {fileID: 1376658258}
   pickID: blok1
@@ -15423,6 +15573,7 @@ Transform:
   - {fileID: 871813161983504776}
   - {fileID: 6931577527870959628}
   - {fileID: 5534309784600236616}
+  - {fileID: 1536286510}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -17729,7 +17880,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!23 &2387223249595669660
 MeshRenderer:
@@ -19464,7 +19615,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!23 &3850350636014975662
 MeshRenderer:
@@ -20316,7 +20467,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!23 &4568802682315229803
 MeshRenderer:
@@ -21667,7 +21818,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &6215457616160894287
 GameObject:
@@ -22451,6 +22602,7 @@ MonoBehaviour:
   useEvents: 0
   promptMessage: Letakkan puzzle di sini!
   timer: 0
+  interactSound: {fileID: 0}
   pickDropSystem: {fileID: 1376658259}
   dropID: blok3
   dropPoint: {fileID: 704988877661320008}
@@ -22597,6 +22749,7 @@ MonoBehaviour:
   useEvents: 1
   promptMessage: 1
   timer: 0
+  interactSound: {fileID: 0}
   targetRotation: {x: 0, y: 0, z: 0}
   hand: {fileID: 1376658258}
   pickID: blok 1
@@ -23303,6 +23456,7 @@ MonoBehaviour:
   useEvents: 1
   promptMessage: 3
   timer: 0
+  interactSound: {fileID: 0}
   targetRotation: {x: 0, y: 0, z: 0}
   hand: {fileID: 1376658258}
   pickID: blok 3
@@ -23623,6 +23777,7 @@ MonoBehaviour:
   useEvents: 0
   promptMessage: Lengkapi lukisan menggunakan kuas!
   timer: 3
+  interactSound: {fileID: 1536286511}
   pickDropSystem: {fileID: 1376658259}
   dropID: kuas
   dropPoint: {fileID: 3660885254673278196}
@@ -23670,6 +23825,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1536286511}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -23784,6 +23951,7 @@ MonoBehaviour:
   useEvents: 0
   promptMessage: Pecahkan menggunakan palu!
   timer: 0
+  interactSound: {fileID: 0}
   pickDropSystem: {fileID: 1376658259}
   dropID: palu
   dropPoint: {fileID: 59066754317148693}
@@ -24647,6 +24815,7 @@ MonoBehaviour:
   useEvents: 0
   promptMessage: Letakkan puzzle di sini!
   timer: 0
+  interactSound: {fileID: 0}
   pickDropSystem: {fileID: 1376658259}
   dropID: blok1
   dropPoint: {fileID: 7725709826671246232}
@@ -24785,6 +24954,7 @@ MonoBehaviour:
   useEvents: 1
   promptMessage: 6
   timer: 0
+  interactSound: {fileID: 0}
   targetRotation: {x: 0, y: 0, z: 0}
   hand: {fileID: 1376658258}
   pickID: blok 6
@@ -25337,6 +25507,7 @@ MonoBehaviour:
   useEvents: 1
   promptMessage: 4
   timer: 0
+  interactSound: {fileID: 0}
   targetRotation: {x: 0, y: 0, z: 0}
   hand: {fileID: 1376658258}
   pickID: blok 4
@@ -26044,6 +26215,7 @@ MonoBehaviour:
   useEvents: 0
   promptMessage: Letakkan puzzle di sini!
   timer: 0
+  interactSound: {fileID: 0}
   pickDropSystem: {fileID: 1376658259}
   dropID: blok2
   dropPoint: {fileID: 9119752126067094865}

@@ -3907,7 +3907,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 3002a1307729142498a08099da9ead6e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3953,7 +3953,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &592265129464242557
 Transform:
@@ -4310,7 +4310,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!23 &683000487106506276
 MeshRenderer:
@@ -4484,7 +4484,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!23 &766582431666726590
 MeshRenderer:
@@ -5258,7 +5258,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 3002a1307729142498a08099da9ead6e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5819,7 +5819,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1172970943190344482
 Transform:
@@ -7560,7 +7560,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1777101498276433180
 Transform:
@@ -7914,7 +7914,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1943707035810428052
 Transform:
@@ -9053,7 +9053,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &2378695153399677100
 GameObject:
@@ -9072,7 +9072,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!23 &2389848476622687906
 MeshRenderer:
@@ -11414,7 +11414,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!23 &3124595605020144054
 MeshRenderer:
@@ -12423,7 +12423,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!23 &3487371277047537242
 MeshRenderer:
@@ -13598,7 +13598,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!33 &3835102178137022327
 MeshFilter:
@@ -13672,7 +13672,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 3002a1307729142498a08099da9ead6e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14210,7 +14210,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!33 &4123790685386797690
 MeshFilter:
@@ -14772,7 +14772,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!23 &4320916026476038860
 MeshRenderer:
@@ -15094,7 +15094,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!33 &4423446102792268599
 MeshFilter:
@@ -15484,7 +15484,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!33 &4572895594774519470
 MeshFilter:
@@ -16239,7 +16239,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &4940229419398829976
 GameObject:
@@ -16963,6 +16963,7 @@ MonoBehaviour:
   useEvents: 1
   promptMessage: Kapal VOC
   timer: 0
+  interactSound: {fileID: 0}
 --- !u!33 &5143069892214158450
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -17981,6 +17982,7 @@ MonoBehaviour:
   useEvents: 1
   promptMessage: Senjata Api
   timer: 0
+  interactSound: {fileID: 0}
 --- !u!114 &5434829222327697725
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18109,7 +18111,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &5524463564153635463
 Transform:
@@ -18597,6 +18599,7 @@ MonoBehaviour:
   useEvents: 1
   promptMessage: Prasasti Ciaruteun
   timer: 0
+  interactSound: {fileID: 0}
 --- !u!4 &5661427791621134881
 Transform:
   m_ObjectHideFlags: 0
@@ -18854,7 +18857,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!33 &5719405327455708479
 MeshFilter:
@@ -19051,7 +19054,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &5845539219165451245
 GameObject:
@@ -19464,7 +19467,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &5988404018438554288
 GameObject:
@@ -19657,7 +19660,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 3002a1307729142498a08099da9ead6e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -20168,7 +20171,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &6196084959755009131
 Transform:
@@ -20522,6 +20525,7 @@ MonoBehaviour:
   useEvents: 1
   promptMessage: Pedang Keadilan
   timer: 0
+  interactSound: {fileID: 0}
 --- !u!23 &6259292586456940243
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20978,6 +20982,7 @@ MonoBehaviour:
   useEvents: 1
   promptMessage: Meriam Cirebon
   timer: 0
+  interactSound: {fileID: 0}
 --- !u!65 &6347810929739503649
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21161,7 +21166,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!65 &6387169965497733963
 BoxCollider:
@@ -21951,6 +21956,7 @@ MonoBehaviour:
   useEvents: 1
   promptMessage: Arca Wishnu Cibuaya 1
   timer: 0
+  interactSound: {fileID: 0}
 --- !u!65 &6626681969440437172
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23032,7 +23038,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!23 &6988671108514828071
 MeshRenderer:
@@ -24509,6 +24515,7 @@ MonoBehaviour:
   useEvents: 1
   promptMessage: Prasasti Kebon Kopi
   timer: 0
+  interactSound: {fileID: 0}
 --- !u!23 &7623884021613795429
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -24581,6 +24588,7 @@ MonoBehaviour:
   useEvents: 1
   promptMessage: Arca Ganesha
   timer: 0
+  interactSound: {fileID: 0}
 --- !u!65 &7623884021613795432
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24933,6 +24941,7 @@ MonoBehaviour:
   useEvents: 1
   promptMessage: Batavia 1650
   timer: 0
+  interactSound: {fileID: 0}
 --- !u!1 &7689083920842182493
 GameObject:
   m_ObjectHideFlags: 0
@@ -25345,6 +25354,7 @@ MonoBehaviour:
   useEvents: 1
   promptMessage: Batavia 1619
   timer: 0
+  interactSound: {fileID: 0}
 --- !u!4 &7788351043390450149
 Transform:
   m_ObjectHideFlags: 0
@@ -25419,7 +25429,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!64 &7807689773226213214
 MeshCollider:
@@ -26000,6 +26010,7 @@ MonoBehaviour:
   useEvents: 1
   promptMessage: Arca Wishnu Cibuaya 2
   timer: 0
+  interactSound: {fileID: 0}
 --- !u!65 &8047526684289851751
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26206,6 +26217,7 @@ MonoBehaviour:
   useEvents: 1
   promptMessage: Prasasti Kebon Kopi
   timer: 0
+  interactSound: {fileID: 0}
 --- !u!23 &8077622701746174850
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -26485,6 +26497,7 @@ MonoBehaviour:
   useEvents: 1
   promptMessage: Prasasti Kebon Kopi
   timer: 0
+  interactSound: {fileID: 0}
 --- !u!1 &8155571265126157406
 GameObject:
   m_ObjectHideFlags: 0
@@ -27218,6 +27231,7 @@ MonoBehaviour:
   useEvents: 1
   promptMessage: Prasasti Kebon Kopi
   timer: 0
+  interactSound: {fileID: 0}
 --- !u!114 &8360594576161413561
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27591,7 +27605,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &8466099056691752299
 GameObject:
@@ -27641,6 +27655,7 @@ MonoBehaviour:
   useEvents: 1
   promptMessage: Senjata Api
   timer: 0
+  interactSound: {fileID: 0}
 --- !u!1 &8469829813031109582
 GameObject:
   m_ObjectHideFlags: 0
@@ -27963,6 +27978,7 @@ MonoBehaviour:
   useEvents: 1
   promptMessage: Prasasti Kebon Kopi
   timer: 0
+  interactSound: {fileID: 0}
 --- !u!23 &8530047702995072972
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -28110,6 +28126,7 @@ MonoBehaviour:
   useEvents: 1
   promptMessage: Arca Durga-Kali
   timer: 0
+  interactSound: {fileID: 0}
 --- !u!65 &8555563855794364004
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28269,7 +28286,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!65 &8601781208817055245
 BoxCollider:
@@ -28455,7 +28472,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!23 &8710916294725187811
 MeshRenderer:
@@ -28700,6 +28717,7 @@ MonoBehaviour:
   useEvents: 1
   promptMessage: Raden Wijayakrama
   timer: 0
+  interactSound: {fileID: 0}
 --- !u!33 &8749641616939058033
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -28765,7 +28783,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!33 &8775353256472706239
 MeshFilter:
@@ -28803,6 +28821,7 @@ MonoBehaviour:
   useEvents: 1
   promptMessage: Prasasti Kebon Kopi
   timer: 0
+  interactSound: {fileID: 0}
 --- !u!114 &8775353256472706242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28838,7 +28857,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 3002a1307729142498a08099da9ead6e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -29208,6 +29227,7 @@ MonoBehaviour:
   useEvents: 1
   promptMessage: Prasasti Tugu
   timer: 0
+  interactSound: {fileID: 0}
 --- !u!114 &8846980004417012254
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30076,7 +30096,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 3002a1307729142498a08099da9ead6e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
