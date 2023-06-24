@@ -4,6 +4,7 @@ using UnityEngine;
 public class HintDetector : MonoBehaviour
 {
     [SerializeField] private InputManager inputManager;
+    [SerializeField] private PlayerController playerController;
     [SerializeField] private GameObject nextScreen;
     [SerializeField] private AudioSource audioSource;
 
@@ -15,6 +16,7 @@ public class HintDetector : MonoBehaviour
             nextScreen.SetActive(true);
 
             audioSource.Play();
+            playerController.canCrouch = true;
         }
     }
 }

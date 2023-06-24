@@ -609,8 +609,8 @@ GameObject:
   - component: {fileID: 7561173581255509744}
   - component: {fileID: 3592690509867010107}
   - component: {fileID: 6088650979473950510}
-  - component: {fileID: 7561173581255509745}
   - component: {fileID: 5228746010673601403}
+  - component: {fileID: 5260651308568900477}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -741,6 +741,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 1367860680962074270}
   footstepSound: {fileID: 6990377344072031840}
+  canCrouch: 1
   isCrouch: 0
   isSprint: 0
   speed: 5
@@ -847,18 +848,6 @@ MonoBehaviour:
   id: 
   pickObject: {fileID: 0}
   isEmpty: 0
---- !u!114 &7561173581255509745
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1367860681488408851}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f478d43f27e324b7199d5dccff4298b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &5228746010673601403
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -872,6 +861,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bgmFinish: {fileID: 8300000, guid: aeb17e87982d7ec44bec0ee98fd4c3a8, type: 3}
+  bgmGame: {fileID: 8300000, guid: c1c04bade33b9d148a36400f74f3cba9, type: 3}
+--- !u!114 &5260651308568900477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1367860681488408851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd68f027e715c44aa8d097000d4cccfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5549474471162714768
 GameObject:
   m_ObjectHideFlags: 0

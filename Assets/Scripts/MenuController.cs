@@ -1,13 +1,16 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MenuController : MonoBehaviour
 {
-    public void Restart()
+    private void Start()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SaveLoadManager.SaveSceneData();
+    }
+
+    private void OnApplicationQuit()
+    {
+        SaveLoadManager.SaveSceneData();
     }
 
     public void GoToScene(string sceneName)

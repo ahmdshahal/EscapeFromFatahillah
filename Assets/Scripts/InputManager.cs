@@ -28,7 +28,7 @@ public class InputManager : MonoBehaviour
         onFootActions.Hint.performed += ctx => taskManager.ShowHintOnHintObjects();
         onFootActions.Sprint.performed += ctx => playerController.Sprint();
 
-        onGameActions.Pause.performed += ctx => playerController.Pause();
+        //onGameActions.Pause.performed += ctx => playerController.Pause();
     }
 
     void FixedUpdate()

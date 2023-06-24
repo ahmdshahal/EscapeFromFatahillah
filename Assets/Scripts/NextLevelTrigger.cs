@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class NextLevelTrigger : Interactable
@@ -9,7 +7,7 @@ public class NextLevelTrigger : Interactable
 
     protected override void Interact()
     {
-        menuController.GoToScene(sceneWantToGo);
+        //menuController.GoToScene(sceneWantToGo);
     }
 
     private void OnTriggerEnter(Collider other)

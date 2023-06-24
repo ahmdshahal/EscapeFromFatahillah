@@ -657,6 +657,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: chair
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 80d0e675a79e84bdfb60ae6e0544fc0e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7339356831882890532, guid: 80d0e675a79e84bdfb60ae6e0544fc0e, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -1095,6 +1099,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: lilin (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 296ad6d25460a4165a8a682abab25836, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2667838097934301123, guid: 296ad6d25460a4165a8a682abab25836, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -1449,6 +1457,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 296ad6d25460a4165a8a682abab25836, type: 3}
       propertyPath: m_Name
       value: lilin (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 296ad6d25460a4165a8a682abab25836, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2667838097934301123, guid: 296ad6d25460a4165a8a682abab25836, type: 3}
       propertyPath: m_Materials.Array.data[0]

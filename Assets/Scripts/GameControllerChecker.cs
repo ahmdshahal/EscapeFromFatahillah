@@ -21,7 +21,7 @@ public class GameControllerChecker : MonoBehaviour
 
                 yield return new WaitForSeconds(2f);
                 
-                LoadMainMenu();
+                LoadSavedScene();
             }
             else if (connected && controllers.Length == 0) {         
                 connected = false;
@@ -33,9 +33,18 @@ public class GameControllerChecker : MonoBehaviour
         }
     }
 
-    private void LoadMainMenu()
+    private void LoadSavedScene()
     {
-        SceneManager.LoadScene(sceneName);
+        if (PlayerPrefs.GetInt("HasLaunched", 0) != 0)
+        {
+            SaveLoadManager.LoadSceneData();
+            Debug.Log("Load Early");
+        }
+        else
+        {
+            SceneManager.LoadScene("Mainmenu");
+        }
+        PlayerPrefs.SetInt("HasLaunched", 1);
     }
 
     void Awake()
@@ -47,5 +56,10 @@ public class GameControllerChecker : MonoBehaviour
     private void Start()
     {
         sceneName = "Mainmenu";
+    }
+
+    private void OnApplicationQuit()
+    {
+        SaveLoadManager.SaveSceneData();
     }
 }

@@ -12,7 +12,7 @@ public class BackgroundMusic : MonoBehaviour
 
     public static void ChangeAudioClip(AudioClip clip)
     {
-        bgm.clip = clip;
-        bgm.Play();
+        bgm.Stop();
+        bgm.PlayOneShot(clip);
     }
 }

@@ -40,7 +40,7 @@ public class ExplodeCannon : Interactable
     private IEnumerator ExplodeTheCannon()
     {
 
-        yield return new WaitForSeconds(10);
+        yield return new WaitForSeconds(5);
 
         controller.GoToScene("Kamar");
     }

@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -13,6 +10,7 @@ public class PlayerController : MonoBehaviour
     private Vector3 playerVelocity;
     private Vector3 standPosition;
     private bool isGrounded;
+    public bool canCrouch;
     [HideInInspector] public bool isCrouch;
     [HideInInspector] public bool isSprint;
     private bool isPause;
@@ -79,13 +77,16 @@ public class PlayerController : MonoBehaviour
 
     public void Crouch()
     {
-        isCrouch = !isCrouch;
+        if (canCrouch)
+        {
+            isCrouch = !isCrouch;
 
-        cam.transform.localPosition = isCrouch ? standPosition / 2.7f : standPosition;
-        speed = isCrouch ? 3 : 5;
+            cam.transform.localPosition = isCrouch ? standPosition / 2.7f : standPosition;
+            speed = isCrouch ? 3 : 5;
 
-        //Set up footstep sound if player is crouch
-        footstepSound.pitch = isCrouch ? 0.75f : 1f;
+            //Set up footstep sound if player is crouch
+            footstepSound.pitch = isCrouch ? 0.75f : 1f;
+        }
     }
 
     public void Sprint()
