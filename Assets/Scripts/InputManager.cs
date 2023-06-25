@@ -1,8 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class InputManager : MonoBehaviour
 {
@@ -24,7 +20,6 @@ public class InputManager : MonoBehaviour
         playerLook = GetComponent<PlayerLook>();
         taskManager = GetComponent<TaskManager>();
 
-        //onFootActions.Jump.performed += ctx => playerController.Crouch();
         onFootActions.Hint.performed += ctx => taskManager.ShowHintOnHintObjects();
         onFootActions.Sprint.performed += ctx => playerController.Sprint();
 
