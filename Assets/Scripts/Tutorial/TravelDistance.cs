@@ -12,7 +12,6 @@ public class TravelDistance : MonoBehaviour
     [SerializeField] private float maxDistance;
 
     [SerializeField] private PlayerController playerController;
-    [SerializeField] private bool isSprintChecker;
     [SerializeField] private AudioSource audioSource;
 
     private float distanceTraveled;
@@ -38,19 +37,8 @@ public class TravelDistance : MonoBehaviour
         Vector3 currentPosition = player.transform.position;
         float distance = Vector3.Distance(currentPosition, lastPosition);
 
-        if (isSprintChecker)
-        {
-            if (playerController.isSprint)
-            {
-                distanceTraveled += distance;
-                lastPosition = currentPosition;
-            }
-        }
-        else
-        {
-            distanceTraveled += distance;
-            lastPosition = currentPosition;
-        }
+        distanceTraveled += distance;
+        lastPosition = currentPosition;
 
         DistanceChecker();
     }

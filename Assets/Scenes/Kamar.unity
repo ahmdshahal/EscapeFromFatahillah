@@ -2706,7 +2706,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 2448f8ca6ba778946b24178865eeb948, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.5
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -6321,7 +6321,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -2854706942980834044, guid: 75dc636f898224366827d97e2754d96a, type: 3}
+  - {fileID: 2100000, guid: 8b175e9d8cd07664a83e761e59881dec, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

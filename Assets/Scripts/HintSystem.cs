@@ -59,7 +59,17 @@ public class HintSystem : MonoBehaviour
         canShowHint = false;
 
         SaveOriginalMaterials();
+        ChangeHintMaterials(hintMaterial, notHintMaterial);
 
+        yield return new WaitForSeconds(duration);
+
+        ReturnOriginalMaterials(hintMaterial, notHintMaterial);
+
+        canShowHint = true;
+    }
+
+    private void ChangeHintMaterials(Material hintMaterial, Material notHintMaterial)
+    {
         //Mengganti material asli hintObjects menjadi hint material
         foreach (Renderer hintObject in hintObjects)
         {
@@ -83,12 +93,6 @@ public class HintSystem : MonoBehaviour
             }
             otherObject.materials = materials;
         }
-
-        yield return new WaitForSeconds(duration);
-
-        ReturnOriginalMaterials(hintMaterial, notHintMaterial);
-
-        canShowHint = true;
     }
 
     public void ReturnOriginalMaterials(Material hintMaterial, Material notHintMaterial)

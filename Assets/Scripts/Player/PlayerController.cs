@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
     private Vector3 playerVelocity;
     private Vector3 standPosition;
     private bool isGrounded;
-    public bool canCrouch;
+    public bool canMove;
     [HideInInspector] public bool isCrouch;
     [HideInInspector] public bool isSprint;
     private bool isPause;
@@ -77,7 +77,7 @@ public class PlayerController : MonoBehaviour
 
     public void Crouch()
     {
-        if (canCrouch)
+        if (canMove)
         {
             isCrouch = !isCrouch;
 
@@ -91,18 +91,21 @@ public class PlayerController : MonoBehaviour
 
     public void Sprint()
     {
-        isSprint = !isSprint;
+        if (canMove)
+        {
+            isSprint = !isSprint;
 
-        //Set up player speed and footstep sound if player is sprint
-        if (isSprint && !isCrouch)
-        {
-            speed = 8;
-            footstepSound.pitch = 1.75f;
-        }
-        else if(!isSprint && !isCrouch)
-        {
-            speed = 5;
-            footstepSound.pitch = 1f;
+            //Set up player speed and footstep sound if player is sprint
+            if (isSprint && !isCrouch)
+            {
+                speed = 8;
+                footstepSound.pitch = 1.75f;
+            }
+            else if (!isSprint && !isCrouch)
+            {
+                speed = 5;
+                footstepSound.pitch = 1f;
+            }
         }
     }
 

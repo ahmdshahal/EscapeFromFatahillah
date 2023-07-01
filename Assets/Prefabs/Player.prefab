@@ -741,7 +741,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 1367860680962074270}
   footstepSound: {fileID: 6990377344072031840}
-  canCrouch: 1
+  canMove: 1
   isCrouch: 0
   isSprint: 0
   speed: 5
@@ -760,8 +760,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 1367860680962074270}
-  xSensitivity: 50
-  ySensitivity: 50
+  xSensitivity: 60
+  ySensitivity: 60
 --- !u!114 &1439129254410404789
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1430,7 +1430,6 @@ MonoBehaviour:
   distanceBar: {fileID: 1225980183}
   maxDistance: 3
   playerController: {fileID: 0}
-  isSprintChecker: 0
   audioSource: {fileID: 0}
 --- !u!23 &185379220 stripped
 MeshRenderer:
@@ -6877,7 +6876,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4902390569410494616, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
-      propertyPath: canCrouch
+      propertyPath: canMove
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7561173581255509744, guid: e2cdeb7482e71244bbcefb62bf4b85ba, type: 3}
@@ -7862,7 +7861,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Di meja terdapat puzzle segitiga, kotak, dan pentagon yang harus ditemukan.
+  m_text: "Di meja terdapat puzzle kotak, pentagon, dan segitiga yang harus ditemukan.
     \n\nCarilah di sekitar ruangan ini!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e3a0b9ce384a4bb4a8d42ca2f49a4a0f, type: 2}
@@ -8081,9 +8080,8 @@ MonoBehaviour:
   player: {fileID: 741674057}
   nextScreen: {fileID: 998022586}
   distanceBar: {fileID: 511096933}
-  maxDistance: 3
+  maxDistance: 1.5
   playerController: {fileID: 744457161}
-  isSprintChecker: 0
   audioSource: {fileID: 1872578573}
 --- !u!114 &909963454
 MonoBehaviour:
@@ -8501,7 +8499,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Selamat datang di  \n<b>Escape From Fathillah</b>\n\nSebuah permainan
+  m_text: "Selamat datang di  \n<b>Escape From Fatahillah</b>\n\nSebuah permainan
     yang akan mengajakmu memecahkan misteri yang sangat seru!\nSebelum bermain mari
     ikuti tutorial terlebih dulu!"
   m_isRightToLeft: 0
@@ -8905,9 +8903,8 @@ MonoBehaviour:
   player: {fileID: 1704627128}
   nextScreen: {fileID: 1604780920}
   distanceBar: {fileID: 1530766586}
-  maxDistance: 15
+  maxDistance: 7
   playerController: {fileID: 744457161}
-  isSprintChecker: 0
   audioSource: {fileID: 1872578573}
 --- !u!114 &1020166394
 MonoBehaviour:
@@ -9398,7 +9395,6 @@ MonoBehaviour:
   distanceBar: {fileID: 1734392997}
   maxDistance: 10
   playerController: {fileID: 744457161}
-  isSprintChecker: 1
   audioSource: {fileID: 0}
 --- !u!114 &1103165890
 MonoBehaviour:
@@ -14599,7 +14595,6 @@ MonoBehaviour:
   distanceBar: {fileID: 46894557}
   maxDistance: 7
   playerController: {fileID: 744457161}
-  isSprintChecker: 0
   audioSource: {fileID: 0}
 --- !u!114 &2005674611
 MonoBehaviour:
@@ -16370,7 +16365,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -2854706942980834044, guid: 75dc636f898224366827d97e2754d96a, type: 3}
+  - {fileID: 2100000, guid: 8b175e9d8cd07664a83e761e59881dec, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

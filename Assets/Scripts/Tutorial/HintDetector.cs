@@ -16,7 +16,7 @@ public class HintDetector : MonoBehaviour
             nextScreen.SetActive(true);
 
             audioSource.Play();
-            playerController.canCrouch = true;
+            playerController.canMove = true;
         }
     }
 }

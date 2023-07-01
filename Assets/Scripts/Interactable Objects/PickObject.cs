@@ -11,9 +11,6 @@ public class PickObject : Interactable
 
     public bool canPick;
 
-    /// <summary>
-    /// This function is where we will design our interaction using code
-    /// </summary>
     protected override void Interact()
     {
         // Cek apakah tangan pemain kosong

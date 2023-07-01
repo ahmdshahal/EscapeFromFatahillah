@@ -21,13 +21,11 @@ public static class SaveLoadManager
     {
         GetSceneData();
         PlayerPrefs.SetString("theScene", theScene);
-        Debug.Log("Save " + theScene);
     }
 
     public static void LoadSceneData()
     {
         theScene = PlayerPrefs.GetString("theScene", theScene);
-        Debug.Log(theScene);
         SetSceneData();
     }
 }
