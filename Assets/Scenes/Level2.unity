@@ -397,6 +397,7 @@ GameObject:
   - component: {fileID: 68020071}
   - component: {fileID: 68020072}
   - component: {fileID: 68020073}
+  - component: {fileID: 68020074}
   m_Layer: 6
   m_Name: Drop Point 8
   m_TagString: Untagged
@@ -502,6 +503,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+--- !u!65 &68020074
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68020070}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.85961616, y: 0.25, z: 0.9677203}
+  m_Center: {x: 0.7545604, y: 0, z: -2.140291}
 --- !u!1 &85121320
 GameObject:
   m_ObjectHideFlags: 0
@@ -2482,6 +2496,8 @@ GameObject:
   - component: {fileID: 597397140}
   - component: {fileID: 597397141}
   - component: {fileID: 597397142}
+  - component: {fileID: 597397143}
+  - component: {fileID: 597397144}
   m_Layer: 6
   m_Name: Drop Point 7
   m_TagString: Untagged
@@ -2587,6 +2603,32 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+--- !u!65 &597397143
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 597397139}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.3034463, y: 0.25, z: 0.59135497}
+  m_Center: {x: -0.91334736, y: 0, z: -2.1078022}
+--- !u!65 &597397144
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 597397139}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.13073653, y: 0.25, z: 0.55177665}
+  m_Center: {x: -1.5307773, y: 0, z: -1.4511614}
 --- !u!1 &636220538
 GameObject:
   m_ObjectHideFlags: 0
@@ -4542,8 +4584,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.1299027, y: 0.25, z: 2.3425975}
-  m_Center: {x: -0.06495128, y: 0, z: 0.24678548}
+  m_Size: {x: 1.1299027, y: 0.25, z: 2.2735717}
+  m_Center: {x: -0.06495128, y: 0, z: 0.21227264}
 --- !u!114 &1177724644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11114,6 +11156,8 @@ GameObject:
   - component: {fileID: 1384096689}
   - component: {fileID: 1384096691}
   - component: {fileID: 1384096690}
+  - component: {fileID: 1384096693}
+  - component: {fileID: 1384096692}
   m_Layer: 6
   m_Name: Drop Point 3
   m_TagString: Untagged
@@ -11245,6 +11289,32 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.0017300089, y: 0.049901333, z: 0.0010000034}
   m_Center: {x: -0.008746644, y: -0.00970417, z: 0.000500005}
+--- !u!65 &1384096692
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1384096686}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0033990147, y: 0.0042263027, z: 0.0010000034}
+  m_Center: {x: 0.0019886745, y: 0.009980139, z: 0.000500005}
+--- !u!65 &1384096693
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1384096686}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0077283774, y: 0.005340224, z: 0.0010000034}
+  m_Center: {x: 0.00055016426, y: 0.0043667015, z: 0.00050000503}
 --- !u!1 &1388790025
 GameObject:
   m_ObjectHideFlags: 0
@@ -12197,8 +12267,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.1974478, y: 0.25, z: 7.2315884}
-  m_Center: {x: 0.29726425, y: 0, z: -0.56777155}
+  m_Size: {x: 0.7831946, y: 0.25, z: 7.2315884}
+  m_Center: {x: 0.09013757, y: 0, z: -0.56777155}
 --- !u!114 &1465402432
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14232,6 +14302,8 @@ GameObject:
   - component: {fileID: 1925783260}
   - component: {fileID: 1925783261}
   - component: {fileID: 1925783262}
+  - component: {fileID: 1925783264}
+  - component: {fileID: 1925783263}
   m_Layer: 6
   m_Name: Drop Point 2
   m_TagString: Untagged
@@ -14265,8 +14337,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.2287326, y: 0.25, z: 0.9853784}
-  m_Center: {x: 0.04592836, y: 0, z: 0.6783533}
+  m_Size: {x: 1.2287326, y: 0.25, z: 0.96261775}
+  m_Center: {x: 0.04592836, y: 0, z: 0.6669736}
 --- !u!114 &1925783262
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14337,6 +14409,32 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+--- !u!65 &1925783263
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1925783259}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.36876166, y: 0.25, z: 0.47426143}
+  m_Center: {x: 0.10712283, y: 0, z: -0.9223177}
+--- !u!65 &1925783264
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1925783259}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.3259619, y: 0.25, z: 1.1801505}
+  m_Center: {x: 0.49731374, y: 0, z: -0.5693728}
 --- !u!1 &1967910975
 GameObject:
   m_ObjectHideFlags: 0
