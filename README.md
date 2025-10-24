@@ -1,2 +1,2 @@
 # EscapeFromFatahillah
-College Final Project
+College Final Project by Arkandi Studio
